@@ -5843,6 +5843,60 @@ typedef unsigned char T_BOOL;
 typedef float T_FLOAT;
 # 3 "main.c" 2
 
+# 1 "./UART.h" 1
+
+
+
+
+
+
+void UART_init(T_LONG BAUD);
+T_UBYTE UART_read(void);
+void UART_write(T_BYTE dato);
+void UART_printf(T_BYTE* cadena);
+
+
+void UART_init(T_LONG BAUD) {
+
+    T_LONG frecuenciaCristal = 4000000;
+    TRISC6 = 0;
+    TRISC7 = 1;
+
+
+    SPBRG = (frecuenciaCristal / 16 / BAUD) - 1;
+
+
+    TXSTAbits.BRGH = 1;
+    TXSTAbits.SYNC = 0;
+    RCSTAbits.SPEN = 1;
+
+
+    TXSTAbits.TX9 = 0;
+    TXSTAbits.TXEN = 1;
+
+
+    RCSTAbits.RC9 = 0;
+    RCSTAbits.CREN = 1;
+}
+
+T_UBYTE UART_read(void) {
+    while (!RCIF);
+    RCIF = 0;
+    return RCREG;
+}
+
+void UART_write(T_BYTE dato) {
+    TXREG = dato;
+    while (!TXSTAbits.TRMT);
+}
+
+void UART_printf(T_BYTE* cadena) {
+    while (*cadena) {
+        UART_write(*cadena++);
+    }
+}
+# 4 "main.c" 2
+
 # 1 "./I2C.h" 1
 void i2c_iniciar();
 void i2c_espera();
@@ -5958,110 +6012,54 @@ T_UBYTE i2c_recibe_datoACK(T_UBYTE a) {
 
     return datoleido;
 }
-# 4 "main.c" 2
-
-# 1 "./UART.h" 1
-
-
-
-
-
-
-void UART_init(T_LONG BAUD);
-T_UBYTE UART_read(void);
-void UART_write(T_BYTE dato);
-void UART_printf(T_BYTE* cadena);
-
-
-void UART_init(T_LONG BAUD) {
-
-    T_LONG frecuenciaCristal = 4000000;
-    TRISC6 = 0;
-    TRISC7 = 1;
-
-
-    SPBRG = (frecuenciaCristal / 16 / BAUD) - 1;
-
-
-    TXSTAbits.BRGH = 1;
-    TXSTAbits.SYNC = 0;
-    RCSTAbits.SPEN = 1;
-
-
-    TXSTAbits.TX9 = 0;
-    TXSTAbits.TXEN = 1;
-
-
-    RCSTAbits.RC9 = 0;
-    RCSTAbits.CREN = 1;
-}
-
-T_UBYTE UART_read(void) {
-    while (!RCIF);
-    RCIF = 0;
-    return RCREG;
-}
-
-void UART_write(T_BYTE dato) {
-    TXREG = dato;
-    while (!TXSTAbits.TRMT);
-}
-
-void UART_printf(T_BYTE* cadena) {
-    while (*cadena) {
-        UART_write(*cadena++);
-    }
-}
 # 5 "main.c" 2
 
 # 1 "./bh1750.h" 1
-# 19 "./bh1750.h"
+# 24 "./bh1750.h"
 void BH1750_init(void);
 void BH1750_write(T_UBYTE cmd);
 T_ULONG BH1750_read_word();
 T_ULONG get_lux_value(T_UBYTE mode);
 
-void BH1750_init(void)
-{
-   _delay((unsigned long)((100)*(4000000/4000.0)));
-   BH1750_write(0x00);
+
+void BH1750_init(void) {
+    _delay((unsigned long)((100)*(4000000/4000.0)));
+    BH1750_write(0x00);
 }
 
-
-void BH1750_write(T_UBYTE cmd)
-{
-   i2c_inicia_com();
-   i2c_envia_dato(0x46);
-   i2c_envia_dato(cmd);
-   i2c_detener();
+void BH1750_write(T_UBYTE cmd) {
+    i2c_inicia_com();
+    i2c_envia_dato(0x46);
+    i2c_envia_dato(cmd);
+    i2c_detener();
 }
 
+T_ULONG BH1750_read_word() {
+    register T_ULONG value = 0;
+    T_UBYTE lb = 0;
+    T_UBYTE hb = 0;
 
-T_ULONG BH1750_read_word()
-{
-   T_UBYTE lb = 0;
-   T_UBYTE hb = 0;
+    i2c_inicia_com();
+    i2c_envia_dato(0x47);
+    hb = i2c_recibe_datoACK(1);
+    lb = i2c_recibe_datoACK(0);
+    i2c_detener();
 
-   i2c_inicia_com();
-   i2c_envia_dato(0x47);
-   hb = i2c_recibe_datoACK(1);
-   lb = i2c_recibe_datoACK(0);
-   i2c_detener();
+    value = (( T_UBYTE ) (((( T_UBYTE )( hb )) << 8 ) + (( T_UBYTE )( lb ))));
+    value /= 1.2;
 
-   return (hb << 8) + lb;
+    return value;
 }
 
+T_ULONG get_lux_value(T_UBYTE mode) {
+    register T_ULONG lux_value = 0;
+    BH1750_write(0x01);
+    BH1750_write(mode);
+    lux_value = BH1750_read_word();
+    _delay((unsigned long)((180)*(4000000/4000.0)));
+    BH1750_write(0x00);
 
-T_ULONG get_lux_value(T_UBYTE mode)
-{
-   register T_ULONG lux_value = 0;
-   BH1750_write(0x01);
-   BH1750_write(mode);
-   lux_value = BH1750_read_word();
-   _delay((unsigned long)((180)*(4000000/4000.0)));
-   BH1750_write(0x00);
-   lux_value /= 1.2;
-   return lux_value;
+    return lux_value;
 }
 # 6 "main.c" 2
 
@@ -6074,15 +6072,16 @@ void main(void) {
     T_BYTE buffer[30];
 
     UART_init(9600);
+    UART_printf("\r\nSistema Iniciado\n\r");
     i2c_iniciar();
     BH1750_init();
 
     while(1)
     {
         luzMedida = get_lux_value(0x10);
-        sprintf(buffer, "\rLuz medida: %.2f luxs\r\n",luzMedida);
+        sprintf(buffer, "\rLuz medida: %d luxs\n\r",luzMedida);
         UART_printf(buffer);
-        _delay((unsigned long)((10)*(4000000/4000.0)));
+        _delay((unsigned long)((500)*(4000000/4000.0)));
 
     }
 

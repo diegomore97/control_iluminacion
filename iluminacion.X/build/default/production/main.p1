@@ -1,55 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"3636 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3636:     struct {
-[s S150 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S150 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"3646
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3646:     struct {
-[s S151 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S151 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"3635
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3635: typedef union {
-[u S149 `S150 1 `S151 1 ]
-[n S149 . . . ]
-"3657
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
-[v _TRISBbits `VS149 ~T0 @X0 0 e@3987 ]
-"6938
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6938: extern volatile unsigned char SSPSTAT __attribute__((address(0xFC7)));
-[v _SSPSTAT `Vuc ~T0 @X0 0 e@4039 ]
-"6868
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6868: extern volatile unsigned char SSPCON1 __attribute__((address(0xFC6)));
-[v _SSPCON1 `Vuc ~T0 @X0 0 e@4038 ]
-"6806
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6806: extern volatile unsigned char SSPCON2 __attribute__((address(0xFC5)));
-[v _SSPCON2 `Vuc ~T0 @X0 0 e@4037 ]
-"7186
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7186: extern volatile unsigned char SSPADD __attribute__((address(0xFC8)));
-[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
-"6812
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6812:     struct {
-[s S284 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S284 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
-"6811
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6811: typedef union {
-[u S283 `S284 1 ]
-[n S283 . . ]
-"6823
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6823: extern volatile SSPCON2bits_t SSPCON2bits __attribute__((address(0xFC5)));
-[v _SSPCON2bits `VS283 ~T0 @X0 0 e@4037 ]
-"7193
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7193: extern volatile unsigned char SSPBUF __attribute__((address(0xFC9)));
-[v _SSPBUF `Vuc ~T0 @X0 0 e@4041 ]
-"8916
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8916: extern volatile __bit ACKSTAT __attribute__((address(0x7E2E)));
-[v _ACKSTAT `Vb ~T0 @X0 0 e@32302 ]
-"8910
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8910: extern volatile __bit ACKDT __attribute__((address(0x7E2D)));
-[v _ACKDT `Vb ~T0 @X0 0 e@32301 ]
-"8913
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8913: extern volatile __bit ACKEN __attribute__((address(0x7E2C)));
-[v _ACKEN `Vb ~T0 @X0 0 e@32300 ]
-"10935
+"10935 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 10935: extern volatile __bit TRISC6 __attribute__((address(0x7CA6)));
 [v _TRISC6 `Vb ~T0 @X0 0 e@31910 ]
 "10938
@@ -121,12 +71,62 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5402
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 5402: extern volatile unsigned char TXREG __attribute__((address(0xFAD)));
 [v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
+"3636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3636:     struct {
+[s S150 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S150 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"3646
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3646:     struct {
+[s S151 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S151 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"3635
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3635: typedef union {
+[u S149 `S150 1 `S151 1 ]
+[n S149 . . . ]
+"3657
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 3657: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
+[v _TRISBbits `VS149 ~T0 @X0 0 e@3987 ]
+"6938
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6938: extern volatile unsigned char SSPSTAT __attribute__((address(0xFC7)));
+[v _SSPSTAT `Vuc ~T0 @X0 0 e@4039 ]
+"6868
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6868: extern volatile unsigned char SSPCON1 __attribute__((address(0xFC6)));
+[v _SSPCON1 `Vuc ~T0 @X0 0 e@4038 ]
+"6806
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6806: extern volatile unsigned char SSPCON2 __attribute__((address(0xFC5)));
+[v _SSPCON2 `Vuc ~T0 @X0 0 e@4037 ]
+"7186
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7186: extern volatile unsigned char SSPADD __attribute__((address(0xFC8)));
+[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
+"6812
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6812:     struct {
+[s S284 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S284 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"6811
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6811: typedef union {
+[u S283 `S284 1 ]
+[n S283 . . ]
+"6823
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 6823: extern volatile SSPCON2bits_t SSPCON2bits __attribute__((address(0xFC5)));
+[v _SSPCON2bits `VS283 ~T0 @X0 0 e@4037 ]
+"7193
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 7193: extern volatile unsigned char SSPBUF __attribute__((address(0xFC9)));
+[v _SSPBUF `Vuc ~T0 @X0 0 e@4041 ]
+"8916
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8916: extern volatile __bit ACKSTAT __attribute__((address(0x7E2E)));
+[v _ACKSTAT `Vb ~T0 @X0 0 e@32302 ]
+"8910
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8910: extern volatile __bit ACKDT __attribute__((address(0x7E2D)));
+[v _ACKDT `Vb ~T0 @X0 0 e@32301 ]
+"8913
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8913: extern volatile __bit ACKEN __attribute__((address(0x7E2C)));
+[v _ACKEN `Vb ~T0 @X0 0 e@32300 ]
 [v F3470 `(v ~T0 @X0 1 tf1`ul ]
 "187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
 [v __delay `JF3470 ~T0 @X0 0 e ]
 [p i __delay ]
-"20 ./bh1750.h
-[; ;./bh1750.h: 20: void BH1750_write(T_UBYTE cmd);
+"25 ./bh1750.h
+[; ;./bh1750.h: 25: void BH1750_write(T_UBYTE cmd);
 [v _BH1750_write `(v ~T0 @X0 0 ef1`uc ]
 [p mainexit ]
 "113 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
@@ -720,197 +720,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"13 ./I2C.h
-[; ;./I2C.h: 13: void i2c_iniciar() {
-[v _i2c_iniciar `(v ~T0 @X0 1 ef ]
-{
-[e :U _i2c_iniciar ]
-[f ]
-"14
-[; ;./I2C.h: 14:     TRISBbits.RB0 = 1;
-[e = . . _TRISBbits 1 0 -> -> 1 `i `uc ]
-"15
-[; ;./I2C.h: 15:     TRISBbits.RB1 = 1;
-[e = . . _TRISBbits 1 1 -> -> 1 `i `uc ]
-"16
-[; ;./I2C.h: 16:     SSPSTAT = 0b10000000;
-[e = _SSPSTAT -> -> 128 `i `uc ]
-"17
-[; ;./I2C.h: 17:     SSPCON1 = 0b00101000;
-[e = _SSPCON1 -> -> 40 `i `uc ]
-"18
-[; ;./I2C.h: 18:     SSPCON2 = 0b00000000;
-[e = _SSPCON2 -> -> 0 `i `uc ]
-"19
-[; ;./I2C.h: 19:     SSPADD = 9;
-[e = _SSPADD -> -> 9 `i `uc ]
-"20
-[; ;./I2C.h: 20: }
-[e :UE 369 ]
-}
-"29
-[; ;./I2C.h: 29: void i2c_espera() {
-[v _i2c_espera `(v ~T0 @X0 1 ef ]
-{
-[e :U _i2c_espera ]
-[f ]
-"30
-[; ;./I2C.h: 30:     while ((SSPCON2 & 0b00011111) || (SSPSTAT & 0b00000100));
-[e $U 371  ]
-[e :U 372 ]
-[e :U 371 ]
-[e $ || != & -> _SSPCON2 `i -> 31 `i -> 0 `i != & -> _SSPSTAT `i -> 4 `i -> 0 `i 372  ]
-[e :U 373 ]
-"31
-[; ;./I2C.h: 31: }
-[e :UE 370 ]
-}
-"37
-[; ;./I2C.h: 37: void i2c_inicia_com() {
-[v _i2c_inicia_com `(v ~T0 @X0 1 ef ]
-{
-[e :U _i2c_inicia_com ]
-[f ]
-"38
-[; ;./I2C.h: 38:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"39
-[; ;./I2C.h: 39:     SSPCON2bits.SEN = 1;
-[e = . . _SSPCON2bits 0 0 -> -> 1 `i `uc ]
-"40
-[; ;./I2C.h: 40: }
-[e :UE 374 ]
-}
-"46
-[; ;./I2C.h: 46: void i2c_reinicia_com() {
-[v _i2c_reinicia_com `(v ~T0 @X0 1 ef ]
-{
-[e :U _i2c_reinicia_com ]
-[f ]
-"47
-[; ;./I2C.h: 47:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"48
-[; ;./I2C.h: 48:     SSPCON2bits.RSEN = 1;
-[e = . . _SSPCON2bits 0 1 -> -> 1 `i `uc ]
-"49
-[; ;./I2C.h: 49: }
-[e :UE 375 ]
-}
-"55
-[; ;./I2C.h: 55: void i2c_detener() {
-[v _i2c_detener `(v ~T0 @X0 1 ef ]
-{
-[e :U _i2c_detener ]
-[f ]
-"56
-[; ;./I2C.h: 56:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"57
-[; ;./I2C.h: 57:     SSPCON2bits.PEN = 1;
-[e = . . _SSPCON2bits 0 2 -> -> 1 `i `uc ]
-"58
-[; ;./I2C.h: 58: }
-[e :UE 376 ]
-}
-"66
-[; ;./I2C.h: 66: T_UBYTE i2c_envia_dato(T_UBYTE dato) {
-[v _i2c_envia_dato `(uc ~T0 @X0 1 ef1`uc ]
-{
-[e :U _i2c_envia_dato ]
-[v _dato `uc ~T0 @X0 1 r1 ]
-[f ]
-"67
-[; ;./I2C.h: 67:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"68
-[; ;./I2C.h: 68:     SSPBUF = dato;
-[e = _SSPBUF _dato ]
-"69
-[; ;./I2C.h: 69:     return ACKSTAT;
-[e ) -> _ACKSTAT `uc ]
-[e $UE 377  ]
-"70
-[; ;./I2C.h: 70: }
-[e :UE 377 ]
-}
-"77
-[; ;./I2C.h: 77: T_UBYTE i2c_recibe_dato() {
-[v _i2c_recibe_dato `(uc ~T0 @X0 1 ef ]
-{
-[e :U _i2c_recibe_dato ]
-[f ]
-"79
-[; ;./I2C.h: 79:     T_UBYTE datoleido;
-[v _datoleido `uc ~T0 @X0 1 a ]
-"82
-[; ;./I2C.h: 82:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"83
-[; ;./I2C.h: 83:     SSPCON2bits.RCEN = 1;
-[e = . . _SSPCON2bits 0 3 -> -> 1 `i `uc ]
-"85
-[; ;./I2C.h: 85:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"86
-[; ;./I2C.h: 86:     datoleido = SSPBUF;
-[e = _datoleido _SSPBUF ]
-"89
-[; ;./I2C.h: 89:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"91
-[; ;./I2C.h: 91:     SSPCON2bits.ACKDT = 1;
-[e = . . _SSPCON2bits 0 5 -> -> 1 `i `uc ]
-"96
-[; ;./I2C.h: 96:     SSPCON2bits.ACKEN = 1;
-[e = . . _SSPCON2bits 0 4 -> -> 1 `i `uc ]
-"100
-[; ;./I2C.h: 100:     return datoleido;
-[e ) _datoleido ]
-[e $UE 378  ]
-"101
-[; ;./I2C.h: 101: }
-[e :UE 378 ]
-}
-"103
-[; ;./I2C.h: 103: T_UBYTE i2c_recibe_datoACK(T_UBYTE a) {
-[v _i2c_recibe_datoACK `(uc ~T0 @X0 1 ef1`uc ]
-{
-[e :U _i2c_recibe_datoACK ]
-[v _a `uc ~T0 @X0 1 r1 ]
-[f ]
-"105
-[; ;./I2C.h: 105:     T_UBYTE datoleido;
-[v _datoleido `uc ~T0 @X0 1 a ]
-"108
-[; ;./I2C.h: 108:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"109
-[; ;./I2C.h: 109:     SSPCON2bits.RCEN = 1;
-[e = . . _SSPCON2bits 0 3 -> -> 1 `i `uc ]
-"111
-[; ;./I2C.h: 111:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"112
-[; ;./I2C.h: 112:     datoleido = SSPBUF;
-[e = _datoleido _SSPBUF ]
-"115
-[; ;./I2C.h: 115:     i2c_espera();
-[e ( _i2c_espera ..  ]
-"117
-[; ;./I2C.h: 117:     ACKDT = (a) ? 0 : 1;
-[e = _ACKDT -> ? != -> _a `i -> 0 `i : -> 0 `i -> 1 `i `b ]
-"118
-[; ;./I2C.h: 118:     ACKEN = 1;
-[e = _ACKEN -> -> 1 `i `b ]
-"120
-[; ;./I2C.h: 120:     return datoleido;
-[e ) _datoleido ]
-[e $UE 379  ]
-"121
-[; ;./I2C.h: 121: }
-[e :UE 379 ]
-}
 "13 ./UART.h
 [; ;./UART.h: 13: void UART_init(T_LONG BAUD) {
 [v _UART_init `(v ~T0 @X0 1 ef1`l ]
@@ -954,7 +763,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
 "34
 [; ;./UART.h: 34: }
-[e :UE 380 ]
+[e :UE 369 ]
 }
 "36
 [; ;./UART.h: 36: T_UBYTE UART_read(void) {
@@ -964,21 +773,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "37
 [; ;./UART.h: 37:     while (!RCIF);
-[e $U 382  ]
-[e :U 383 ]
-[e :U 382 ]
-[e $ ! _RCIF 383  ]
-[e :U 384 ]
+[e $U 371  ]
+[e :U 372 ]
+[e :U 371 ]
+[e $ ! _RCIF 372  ]
+[e :U 373 ]
 "38
 [; ;./UART.h: 38:     RCIF = 0;
 [e = _RCIF -> -> 0 `i `b ]
 "39
 [; ;./UART.h: 39:     return RCREG;
 [e ) _RCREG ]
-[e $UE 381  ]
+[e $UE 370  ]
 "40
 [; ;./UART.h: 40: }
-[e :UE 381 ]
+[e :UE 370 ]
 }
 "42
 [; ;./UART.h: 42: void UART_write(T_BYTE dato) {
@@ -992,14 +801,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TXREG -> _dato `uc ]
 "44
 [; ;./UART.h: 44:     while (!TXSTAbits.TRMT);
-[e $U 386  ]
-[e :U 387 ]
-[e :U 386 ]
-[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 387  ]
-[e :U 388 ]
+[e $U 375  ]
+[e :U 376 ]
+[e :U 375 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 376  ]
+[e :U 377 ]
 "45
 [; ;./UART.h: 45: }
-[e :UE 385 ]
+[e :UE 374 ]
 }
 "47
 [; ;./UART.h: 47: void UART_printf(T_BYTE* cadena) {
@@ -1010,8 +819,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "48
 [; ;./UART.h: 48:     while (*cadena) {
-[e $U 390  ]
-[e :U 391 ]
+[e $U 379  ]
+[e :U 380 ]
 {
 "49
 [; ;./UART.h: 49:         UART_write(*cadena++);
@@ -1019,142 +828,324 @@ Version 4.0 HI-TECH Software Intermediate Code
 "50
 [; ;./UART.h: 50:     }
 }
-[e :U 390 ]
+[e :U 379 ]
 "48
 [; ;./UART.h: 48:     while (*cadena) {
-[e $ != -> *U _cadena `i -> 0 `i 391  ]
-[e :U 392 ]
+[e $ != -> *U _cadena `i -> 0 `i 380  ]
+[e :U 381 ]
 "51
 [; ;./UART.h: 51: }
+[e :UE 378 ]
+}
+"13 ./I2C.h
+[; ;./I2C.h: 13: void i2c_iniciar() {
+[v _i2c_iniciar `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_iniciar ]
+[f ]
+"14
+[; ;./I2C.h: 14:     TRISBbits.RB0 = 1;
+[e = . . _TRISBbits 1 0 -> -> 1 `i `uc ]
+"15
+[; ;./I2C.h: 15:     TRISBbits.RB1 = 1;
+[e = . . _TRISBbits 1 1 -> -> 1 `i `uc ]
+"16
+[; ;./I2C.h: 16:     SSPSTAT = 0b10000000;
+[e = _SSPSTAT -> -> 128 `i `uc ]
+"17
+[; ;./I2C.h: 17:     SSPCON1 = 0b00101000;
+[e = _SSPCON1 -> -> 40 `i `uc ]
+"18
+[; ;./I2C.h: 18:     SSPCON2 = 0b00000000;
+[e = _SSPCON2 -> -> 0 `i `uc ]
+"19
+[; ;./I2C.h: 19:     SSPADD = 9;
+[e = _SSPADD -> -> 9 `i `uc ]
+"20
+[; ;./I2C.h: 20: }
+[e :UE 382 ]
+}
+"29
+[; ;./I2C.h: 29: void i2c_espera() {
+[v _i2c_espera `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_espera ]
+[f ]
+"30
+[; ;./I2C.h: 30:     while ((SSPCON2 & 0b00011111) || (SSPSTAT & 0b00000100));
+[e $U 384  ]
+[e :U 385 ]
+[e :U 384 ]
+[e $ || != & -> _SSPCON2 `i -> 31 `i -> 0 `i != & -> _SSPSTAT `i -> 4 `i -> 0 `i 385  ]
+[e :U 386 ]
+"31
+[; ;./I2C.h: 31: }
+[e :UE 383 ]
+}
+"37
+[; ;./I2C.h: 37: void i2c_inicia_com() {
+[v _i2c_inicia_com `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_inicia_com ]
+[f ]
+"38
+[; ;./I2C.h: 38:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"39
+[; ;./I2C.h: 39:     SSPCON2bits.SEN = 1;
+[e = . . _SSPCON2bits 0 0 -> -> 1 `i `uc ]
+"40
+[; ;./I2C.h: 40: }
+[e :UE 387 ]
+}
+"46
+[; ;./I2C.h: 46: void i2c_reinicia_com() {
+[v _i2c_reinicia_com `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_reinicia_com ]
+[f ]
+"47
+[; ;./I2C.h: 47:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"48
+[; ;./I2C.h: 48:     SSPCON2bits.RSEN = 1;
+[e = . . _SSPCON2bits 0 1 -> -> 1 `i `uc ]
+"49
+[; ;./I2C.h: 49: }
+[e :UE 388 ]
+}
+"55
+[; ;./I2C.h: 55: void i2c_detener() {
+[v _i2c_detener `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_detener ]
+[f ]
+"56
+[; ;./I2C.h: 56:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"57
+[; ;./I2C.h: 57:     SSPCON2bits.PEN = 1;
+[e = . . _SSPCON2bits 0 2 -> -> 1 `i `uc ]
+"58
+[; ;./I2C.h: 58: }
 [e :UE 389 ]
 }
-"24 ./bh1750.h
-[; ;./bh1750.h: 24: void BH1750_init(void)
+"66
+[; ;./I2C.h: 66: T_UBYTE i2c_envia_dato(T_UBYTE dato) {
+[v _i2c_envia_dato `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _i2c_envia_dato ]
+[v _dato `uc ~T0 @X0 1 r1 ]
+[f ]
+"67
+[; ;./I2C.h: 67:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"68
+[; ;./I2C.h: 68:     SSPBUF = dato;
+[e = _SSPBUF _dato ]
+"69
+[; ;./I2C.h: 69:     return ACKSTAT;
+[e ) -> _ACKSTAT `uc ]
+[e $UE 390  ]
+"70
+[; ;./I2C.h: 70: }
+[e :UE 390 ]
+}
+"77
+[; ;./I2C.h: 77: T_UBYTE i2c_recibe_dato() {
+[v _i2c_recibe_dato `(uc ~T0 @X0 1 ef ]
+{
+[e :U _i2c_recibe_dato ]
+[f ]
+"79
+[; ;./I2C.h: 79:     T_UBYTE datoleido;
+[v _datoleido `uc ~T0 @X0 1 a ]
+"82
+[; ;./I2C.h: 82:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"83
+[; ;./I2C.h: 83:     SSPCON2bits.RCEN = 1;
+[e = . . _SSPCON2bits 0 3 -> -> 1 `i `uc ]
+"85
+[; ;./I2C.h: 85:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"86
+[; ;./I2C.h: 86:     datoleido = SSPBUF;
+[e = _datoleido _SSPBUF ]
+"89
+[; ;./I2C.h: 89:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"91
+[; ;./I2C.h: 91:     SSPCON2bits.ACKDT = 1;
+[e = . . _SSPCON2bits 0 5 -> -> 1 `i `uc ]
+"96
+[; ;./I2C.h: 96:     SSPCON2bits.ACKEN = 1;
+[e = . . _SSPCON2bits 0 4 -> -> 1 `i `uc ]
+"100
+[; ;./I2C.h: 100:     return datoleido;
+[e ) _datoleido ]
+[e $UE 391  ]
+"101
+[; ;./I2C.h: 101: }
+[e :UE 391 ]
+}
+"103
+[; ;./I2C.h: 103: T_UBYTE i2c_recibe_datoACK(T_UBYTE a) {
+[v _i2c_recibe_datoACK `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _i2c_recibe_datoACK ]
+[v _a `uc ~T0 @X0 1 r1 ]
+[f ]
+"105
+[; ;./I2C.h: 105:     T_UBYTE datoleido;
+[v _datoleido `uc ~T0 @X0 1 a ]
+"108
+[; ;./I2C.h: 108:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"109
+[; ;./I2C.h: 109:     SSPCON2bits.RCEN = 1;
+[e = . . _SSPCON2bits 0 3 -> -> 1 `i `uc ]
+"111
+[; ;./I2C.h: 111:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"112
+[; ;./I2C.h: 112:     datoleido = SSPBUF;
+[e = _datoleido _SSPBUF ]
+"115
+[; ;./I2C.h: 115:     i2c_espera();
+[e ( _i2c_espera ..  ]
+"117
+[; ;./I2C.h: 117:     ACKDT = (a) ? 0 : 1;
+[e = _ACKDT -> ? != -> _a `i -> 0 `i : -> 0 `i -> 1 `i `b ]
+"118
+[; ;./I2C.h: 118:     ACKEN = 1;
+[e = _ACKEN -> -> 1 `i `b ]
+"120
+[; ;./I2C.h: 120:     return datoleido;
+[e ) _datoleido ]
+[e $UE 392  ]
+"121
+[; ;./I2C.h: 121: }
+[e :UE 392 ]
+}
+"30 ./bh1750.h
+[; ;./bh1750.h: 30: void BH1750_init(void) {
 [v _BH1750_init `(v ~T0 @X0 1 ef ]
-"25
-[; ;./bh1750.h: 25: {
 {
 [e :U _BH1750_init ]
 [f ]
-"26
-[; ;./bh1750.h: 26:    _delay((unsigned long)((100)*(4000000/4000.0)));
+"31
+[; ;./bh1750.h: 31:     _delay((unsigned long)((100)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"27
-[; ;./bh1750.h: 27:    BH1750_write(0x00);
+"32
+[; ;./bh1750.h: 32:     BH1750_write(0x00);
 [e ( _BH1750_write (1 -> -> 0 `i `uc ]
-"28
-[; ;./bh1750.h: 28: }
+"33
+[; ;./bh1750.h: 33: }
 [e :UE 393 ]
 }
-"31
-[; ;./bh1750.h: 31: void BH1750_write(T_UBYTE cmd)
+"35
+[; ;./bh1750.h: 35: void BH1750_write(T_UBYTE cmd) {
 [v _BH1750_write `(v ~T0 @X0 1 ef1`uc ]
-"32
-[; ;./bh1750.h: 32: {
 {
 [e :U _BH1750_write ]
-"31
-[; ;./bh1750.h: 31: void BH1750_write(T_UBYTE cmd)
 [v _cmd `uc ~T0 @X0 1 r1 ]
-"32
-[; ;./bh1750.h: 32: {
 [f ]
-"33
-[; ;./bh1750.h: 33:    i2c_inicia_com();
-[e ( _i2c_inicia_com ..  ]
-"34
-[; ;./bh1750.h: 34:    i2c_envia_dato(0x46);
-[e ( _i2c_envia_dato (1 -> -> 70 `i `uc ]
-"35
-[; ;./bh1750.h: 35:    i2c_envia_dato(cmd);
-[e ( _i2c_envia_dato (1 _cmd ]
 "36
-[; ;./bh1750.h: 36:    i2c_detener();
-[e ( _i2c_detener ..  ]
+[; ;./bh1750.h: 36:     i2c_inicia_com();
+[e ( _i2c_inicia_com ..  ]
 "37
-[; ;./bh1750.h: 37: }
+[; ;./bh1750.h: 37:     i2c_envia_dato(0x46);
+[e ( _i2c_envia_dato (1 -> -> 70 `i `uc ]
+"38
+[; ;./bh1750.h: 38:     i2c_envia_dato(cmd);
+[e ( _i2c_envia_dato (1 _cmd ]
+"39
+[; ;./bh1750.h: 39:     i2c_detener();
+[e ( _i2c_detener ..  ]
+"40
+[; ;./bh1750.h: 40: }
 [e :UE 394 ]
 }
-"40
-[; ;./bh1750.h: 40: T_ULONG BH1750_read_word()
+"42
+[; ;./bh1750.h: 42: T_ULONG BH1750_read_word() {
 [v _BH1750_read_word `(ul ~T0 @X0 1 ef ]
-"41
-[; ;./bh1750.h: 41: {
 {
 [e :U _BH1750_read_word ]
 [f ]
-"42
-[; ;./bh1750.h: 42:    T_UBYTE lb = 0;
+"43
+[; ;./bh1750.h: 43:     register T_ULONG value = 0;
+[v _value `ul ~T0 @X0 1 A ]
+[e = _value -> -> -> 0 `i `l `ul ]
+"44
+[; ;./bh1750.h: 44:     T_UBYTE lb = 0;
 [v _lb `uc ~T0 @X0 1 a ]
 [e = _lb -> -> 0 `i `uc ]
-"43
-[; ;./bh1750.h: 43:    T_UBYTE hb = 0;
+"45
+[; ;./bh1750.h: 45:     T_UBYTE hb = 0;
 [v _hb `uc ~T0 @X0 1 a ]
 [e = _hb -> -> 0 `i `uc ]
-"45
-[; ;./bh1750.h: 45:    i2c_inicia_com();
-[e ( _i2c_inicia_com ..  ]
-"46
-[; ;./bh1750.h: 46:    i2c_envia_dato(0x47);
-[e ( _i2c_envia_dato (1 -> -> 71 `i `uc ]
 "47
-[; ;./bh1750.h: 47:    hb = i2c_recibe_datoACK(1);
-[e = _hb ( _i2c_recibe_datoACK (1 -> -> 1 `i `uc ]
+[; ;./bh1750.h: 47:     i2c_inicia_com();
+[e ( _i2c_inicia_com ..  ]
 "48
-[; ;./bh1750.h: 48:    lb = i2c_recibe_datoACK(0);
-[e = _lb ( _i2c_recibe_datoACK (1 -> -> 0 `i `uc ]
+[; ;./bh1750.h: 48:     i2c_envia_dato(0x47);
+[e ( _i2c_envia_dato (1 -> -> 71 `i `uc ]
 "49
-[; ;./bh1750.h: 49:    i2c_detener();
-[e ( _i2c_detener ..  ]
+[; ;./bh1750.h: 49:     hb = i2c_recibe_datoACK(1);
+[e = _hb ( _i2c_recibe_datoACK (1 -> -> 1 `i `uc ]
+"50
+[; ;./bh1750.h: 50:     lb = i2c_recibe_datoACK(0);
+[e = _lb ( _i2c_recibe_datoACK (1 -> -> 0 `i `uc ]
 "51
-[; ;./bh1750.h: 51:    return (hb << 8) + lb;
-[e ) -> -> + << -> _hb `i -> 8 `i -> _lb `i `l `ul ]
+[; ;./bh1750.h: 51:     i2c_detener();
+[e ( _i2c_detener ..  ]
+"53
+[; ;./bh1750.h: 53:     value = (( T_UBYTE ) (((( T_UBYTE )( hb )) << 8 ) + (( T_UBYTE )( lb ))));
+[e = _value -> -> + << -> _hb `i -> 8 `i -> _lb `i `uc `ul ]
+"54
+[; ;./bh1750.h: 54:     value /= 1.2;
+[e =/ _value .1.2 ]
+"56
+[; ;./bh1750.h: 56:     return value;
+[e ) _value ]
 [e $UE 395  ]
-"52
-[; ;./bh1750.h: 52: }
+"57
+[; ;./bh1750.h: 57: }
 [e :UE 395 ]
 }
-"55
-[; ;./bh1750.h: 55: T_ULONG get_lux_value(T_UBYTE mode)
+"59
+[; ;./bh1750.h: 59: T_ULONG get_lux_value(T_UBYTE mode) {
 [v _get_lux_value `(ul ~T0 @X0 1 ef1`uc ]
-"56
-[; ;./bh1750.h: 56: {
 {
 [e :U _get_lux_value ]
-"55
-[; ;./bh1750.h: 55: T_ULONG get_lux_value(T_UBYTE mode)
 [v _mode `uc ~T0 @X0 1 r1 ]
-"56
-[; ;./bh1750.h: 56: {
 [f ]
-"57
-[; ;./bh1750.h: 57:    register T_ULONG lux_value = 0;
+"60
+[; ;./bh1750.h: 60:     register T_ULONG lux_value = 0;
 [v _lux_value `ul ~T0 @X0 1 A ]
 [e = _lux_value -> -> -> 0 `i `l `ul ]
-"58
-[; ;./bh1750.h: 58:    BH1750_write(0x01);
-[e ( _BH1750_write (1 -> -> 1 `i `uc ]
-"59
-[; ;./bh1750.h: 59:    BH1750_write(mode);
-[e ( _BH1750_write (1 _mode ]
-"60
-[; ;./bh1750.h: 60:    lux_value = BH1750_read_word();
-[e = _lux_value ( _BH1750_read_word ..  ]
 "61
-[; ;./bh1750.h: 61:    _delay((unsigned long)((180)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 180 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;./bh1750.h: 61:     BH1750_write(0x01);
+[e ( _BH1750_write (1 -> -> 1 `i `uc ]
 "62
-[; ;./bh1750.h: 62:    BH1750_write(0x00);
-[e ( _BH1750_write (1 -> -> 0 `i `uc ]
+[; ;./bh1750.h: 62:     BH1750_write(mode);
+[e ( _BH1750_write (1 _mode ]
 "63
-[; ;./bh1750.h: 63:    lux_value /= 1.2;
-[e =/ _lux_value .1.2 ]
+[; ;./bh1750.h: 63:     lux_value = BH1750_read_word();
+[e = _lux_value ( _BH1750_read_word ..  ]
 "64
-[; ;./bh1750.h: 64:    return lux_value;
+[; ;./bh1750.h: 64:     _delay((unsigned long)((180)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 180 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"65
+[; ;./bh1750.h: 65:     BH1750_write(0x00);
+[e ( _BH1750_write (1 -> -> 0 `i `uc ]
+"67
+[; ;./bh1750.h: 67:     return lux_value;
 [e ) _lux_value ]
 [e $UE 396  ]
-"65
-[; ;./bh1750.h: 65: }
+"68
+[; ;./bh1750.h: 68: }
 [e :UE 396 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
@@ -1175,41 +1166,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 15:     UART_init(9600);
 [e ( _UART_init (1 -> -> 9600 `i `l ]
 "16
-[; ;main.c: 16:     i2c_iniciar();
-[e ( _i2c_iniciar ..  ]
+[; ;main.c: 16:     UART_printf("\r\nSistema Iniciado\n\r");
+[e ( _UART_printf (1 :s 1C ]
 "17
-[; ;main.c: 17:     BH1750_init();
+[; ;main.c: 17:     i2c_iniciar();
+[e ( _i2c_iniciar ..  ]
+"18
+[; ;main.c: 18:     BH1750_init();
 [e ( _BH1750_init ..  ]
-"19
-[; ;main.c: 19:     while(1)
-[e :U 399 ]
 "20
-[; ;main.c: 20:     {
-{
+[; ;main.c: 20:     while(1)
+[e :U 399 ]
 "21
-[; ;main.c: 21:         luzMedida = get_lux_value(0x10);
-[e = _luzMedida ( _get_lux_value (1 -> -> 16 `i `uc ]
+[; ;main.c: 21:     {
+{
 "22
-[; ;main.c: 22:         sprintf(buffer, "\rLuz medida: %.2f luxs\r\n",luzMedida);
-[e ( _sprintf (1 , (. , &U _buffer :s 1C _luzMedida ]
+[; ;main.c: 22:         luzMedida = get_lux_value(0x10);
+[e = _luzMedida ( _get_lux_value (1 -> -> 16 `i `uc ]
 "23
-[; ;main.c: 23:         UART_printf(buffer);
-[e ( _UART_printf (1 &U _buffer ]
+[; ;main.c: 23:         sprintf(buffer, "\rLuz medida: %d luxs\n\r",luzMedida);
+[e ( _sprintf (1 , (. , &U _buffer :s 2C _luzMedida ]
 "24
-[; ;main.c: 24:         _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"26
-[; ;main.c: 26:     }
+[; ;main.c: 24:         UART_printf(buffer);
+[e ( _UART_printf (1 &U _buffer ]
+"25
+[; ;main.c: 25:         _delay((unsigned long)((500)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"27
+[; ;main.c: 27:     }
 }
 [e :U 398 ]
 [e $U 399  ]
 [e :U 400 ]
-"28
-[; ;main.c: 28:     return;
-[e $UE 397  ]
 "29
-[; ;main.c: 29: }
+[; ;main.c: 29:     return;
+[e $UE 397  ]
+"30
+[; ;main.c: 30: }
 [e :UE 397 ]
 }
-[p f _sprintf 8462336 ]
-[a 1C 13 76 117 122 32 109 101 100 105 100 97 58 32 37 46 50 102 32 108 117 120 115 13 10 0 ]
+[p f _sprintf 8388736 ]
+[a 2C 13 76 117 122 32 109 101 100 105 100 97 58 32 37 100 32 108 117 120 115 10 13 0 ]
+[a 1C 13 10 83 105 115 116 101 109 97 32 73 110 105 99 105 97 100 111 10 13 0 ]
