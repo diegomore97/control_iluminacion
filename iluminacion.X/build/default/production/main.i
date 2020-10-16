@@ -6015,7 +6015,7 @@ T_UBYTE i2c_recibe_datoACK(T_UBYTE a) {
 # 5 "main.c" 2
 
 # 1 "./bh1750.h" 1
-# 24 "./bh1750.h"
+# 18 "./bh1750.h"
 void BH1750_init(void);
 void BH1750_write(T_UBYTE cmd);
 T_ULONG BH1750_read_word();
@@ -6045,7 +6045,7 @@ T_ULONG BH1750_read_word() {
     lb = i2c_recibe_datoACK(0);
     i2c_detener();
 
-    value = (( T_UBYTE ) (((( T_UBYTE )( hb )) << 8 ) + (( T_UBYTE )( lb ))));
+    value = (hb <<8 ) + lb;
     value /= 1.2;
 
     return value;

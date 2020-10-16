@@ -14,13 +14,7 @@
 #define  one_time_H_res_mode2 0x21
 #define  one_time_L_res_mode  0x23   
 #define  RETARDO_SENSOR       180
-
-
-#define MAKEWORD( High, Low )                                     \
-           (( T_UBYTE ) (((( T_UBYTE )( High )) << 8 ) +                \
-            (( T_UBYTE )( Low ))))                                   \
-                       
-
+                     
 void BH1750_init(void);
 void BH1750_write(T_UBYTE cmd);
 T_ULONG BH1750_read_word();
@@ -50,7 +44,7 @@ T_ULONG BH1750_read_word() {
     lb = i2c_recibe_datoACK(0);
     i2c_detener();
 
-    value = MAKEWORD(hb, lb);
+    value = (hb <<8 ) + lb;
     value /= 1.2;
 
     return value;

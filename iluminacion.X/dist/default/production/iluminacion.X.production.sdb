@@ -3,13 +3,13 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"30 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+"24 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
 [v _BH1750_init BH1750_init `(v  1 e 1 0 ]
-"35
+"29
 [v _BH1750_write BH1750_write `(v  1 e 1 0 ]
-"42
+"36
 [v _BH1750_read_word BH1750_read_word `(ul  1 e 4 0 ]
-"59
+"53
 [v _get_lux_value get_lux_value `(ul  1 e 4 0 ]
 "13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_iniciar i2c_iniciar `(v  1 e 1 0 ]
@@ -351,27 +351,27 @@
 {
 "20
 } 0
-"59 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+"53 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
 [v _get_lux_value get_lux_value `(ul  1 e 4 0 ]
 {
 [v get_lux_value@mode mode `uc  1 a 1 wreg ]
-"60
-[v get_lux_value@lux_value lux_value `ul  1 a 4 65 ]
-"59
+"54
+[v get_lux_value@lux_value lux_value `ul  1 a 4 67 ]
+"53
 [v get_lux_value@mode mode `uc  1 a 1 wreg ]
-[v get_lux_value@mode mode `uc  1 a 1 64 ]
-"68
+[v get_lux_value@mode mode `uc  1 a 1 66 ]
+"62
 } 0
-"42
+"36
 [v _BH1750_read_word BH1750_read_word `(ul  1 e 4 0 ]
 {
-"43
-[v BH1750_read_word@value value `ul  1 a 4 55 ]
-"44
-[v BH1750_read_word@lb lb `uc  1 a 1 54 ]
-"45
-[v BH1750_read_word@hb hb `uc  1 a 1 53 ]
-"57
+"37
+[v BH1750_read_word@value value `ul  1 a 4 57 ]
+"39
+[v BH1750_read_word@hb hb `uc  1 a 1 56 ]
+"38
+[v BH1750_read_word@lb lb `uc  1 a 1 55 ]
+"51
 } 0
 "103 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_recibe_datoACK i2c_recibe_datoACK `(uc  1 e 1 0 ]
@@ -463,18 +463,18 @@
 [v ___aldiv@divisor divisor `l  1 p 4 4 ]
 "41
 } 0
-"30 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+"24 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
 [v _BH1750_init BH1750_init `(v  1 e 1 0 ]
 {
-"33
+"27
 } 0
-"35
+"29
 [v _BH1750_write BH1750_write `(v  1 e 1 0 ]
 {
 [v BH1750_write@cmd cmd `uc  1 a 1 wreg ]
 [v BH1750_write@cmd cmd `uc  1 a 1 wreg ]
 [v BH1750_write@cmd cmd `uc  1 a 1 2 ]
-"40
+"34
 } 0
 "37 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_inicia_com i2c_inicia_com `(v  1 e 1 0 ]

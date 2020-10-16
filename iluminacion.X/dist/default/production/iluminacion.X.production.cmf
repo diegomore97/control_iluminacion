@@ -11,42 +11,42 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+$C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production\iluminacion.X.production.o
-cinit CODE 0 1CC0 1CC0 16 1
-text0 CODE 0 193E 193E 90 1
-text1 CODE 0 1AFE 1AFE 52 1
-text2 CODE 0 1A3E 1A3E 62 1
+cinit CODE 0 1CDE 1CDE 16 1
+text0 CODE 0 195C 195C 90 1
+text1 CODE 0 1B1C 1B1C 52 1
+text2 CODE 0 1A5C 1A5C 62 1
 text3 CODE 0 EAA EAA 1B4 1
 text4 CODE 0 BC8 BC8 2E2 1
 text5 CODE 0 17DA 17DA C6 1
-text6 CODE 0 1C1E 1C1E 36 1
-text7 CODE 0 1B9A 1B9A 44 1
+text6 CODE 0 1C3C 1C3C 36 1
+text7 CODE 0 1BB8 1BB8 44 1
 text8 CODE 0 1710 1710 CA 1
-text9 CODE 0 1D34 1D34 2 1
-text10 CODE 0 1BDE 1BDE 40 1
+text9 CODE 0 1D52 1D52 2 1
+text10 CODE 0 1BFC 1BFC 40 1
 text11 CODE 0 139A 139A 164 1
 text12 CODE 0 1212 1212 188 1
-text13 CODE 0 1CD6 1CD6 16 1
-text14 CODE 0 1B50 1B50 4A 1
-text15 CODE 0 18A0 18A0 9E 1
-text16 CODE 0 1C54 1C54 2E 1
+text13 CODE 0 1CF4 1CF4 16 1
+text14 CODE 0 1B6E 1B6E 4A 1
+text15 CODE 0 18A0 18A0 BC 1
+text16 CODE 0 1C72 1C72 2E 1
 text17 CODE 0 105E 105E 1B4 1
 text18 CODE 0 160A 160A 106 1
 text19 CODE 0 82E 82E 39A 1
-text20 CODE 0 1AA0 1AA0 5E 1
-text21 CODE 0 1CEC 1CEC 16 1
-text22 CODE 0 19CE 19CE 70 1
+text20 CODE 0 1ABE 1ABE 5E 1
+text21 CODE 0 1D0A 1D0A 16 1
+text22 CODE 0 19EC 19EC 70 1
 text23 CODE 0 14FE 14FE 10C 1
-text24 CODE 0 1D02 1D02 16 1
-text25 CODE 0 1CA8 1CA8 18 1
-text26 CODE 0 1D24 1D24 8 1
-text27 CODE 0 1D18 1D18 C 1
-text28 CODE 0 1D2C 1D2C 8 1
-text29 CODE 0 1C82 1C82 26 1
+text24 CODE 0 1D20 1D20 16 1
+text25 CODE 0 1CC6 1CC6 18 1
+text26 CODE 0 1D42 1D42 8 1
+text27 CODE 0 1D36 1D36 C 1
+text28 CODE 0 1D4A 1D4A 8 1
+text29 CODE 0 1CA0 1CA0 26 1
 cstackCOMRAM COMRAM 1 1 1 5F 1
 cstackBANK0 BANK0 1 60 60 2E 1
 bssBANK0 BANK0 1 8E 8E 28 1
@@ -68,14 +68,14 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7FF 1
-CONST 1D36-7FFF 1
+CONST 1D54-7FFF 1
 STACK B6-7FF 1
-SMALLCONST 1D36-7FFF 1
+SMALLCONST 1D54-7FFF 1
 CODE 4-7FF 1
-CODE 1D36-7FFF 1
+CODE 1D54-7FFF 1
 BIGRAM B6-7FF 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 1D36-7FFF 1
+MEDIUMCONST 1D54-7FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -90,32 +90,32 @@ MEDIUMCONST 1D36-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\iluminacion.X.production.o
-1C82 text29 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C82 text29 CODE >30:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CA6 text29 CODE >31:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D2C text28 CODE >55:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D2C text28 CODE >56:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D30 text28 CODE >57:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D32 text28 CODE >58:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D18 text27 CODE >66:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D1A text27 CODE >67:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D1E text27 CODE >68:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D22 text27 CODE >69:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D22 text27 CODE >70:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D24 text26 CODE >37:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D24 text26 CODE >38:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D28 text26 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D2A text26 CODE >40:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CA8 text25 CODE >35:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CAA text25 CODE >36:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CAE text25 CODE >37:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CB4 text25 CODE >38:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CBA text25 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CBE text25 CODE >40:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D02 text24 CODE >30:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D02 text24 CODE >31:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D10 text24 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D16 text24 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CA0 text29 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CA0 text29 CODE >30:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CC4 text29 CODE >31:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D4A text28 CODE >55:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D4A text28 CODE >56:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D4E text28 CODE >57:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D50 text28 CODE >58:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D36 text27 CODE >66:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D38 text27 CODE >67:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D3C text27 CODE >68:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D40 text27 CODE >69:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D40 text27 CODE >70:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D42 text26 CODE >37:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D42 text26 CODE >38:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D46 text26 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D48 text26 CODE >40:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CC6 text25 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CC8 text25 CODE >30:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CCC text25 CODE >31:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CD2 text25 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CD8 text25 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CDC text25 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D20 text24 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D20 text24 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D2E text24 CODE >26:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D34 text24 CODE >27:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
 14FE text23 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
 14FE text23 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
 1502 text23 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
@@ -141,28 +141,28 @@ $dist/default/production\iluminacion.X.production.o
 15E8 text23 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
 15F8 text23 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
 1608 text23 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-19CE text22 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19CE text22 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19CE text22 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19D0 text22 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19D2 text22 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A2E text22 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A30 text22 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A32 text22 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A34 text22 CODE >28:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A36 text22 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A38 text22 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A3A text22 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A3C text22 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1CEC text21 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1CEE text21 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1CF2 text21 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1D00 text21 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1AA0 text20 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1AA0 text20 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1AA4 text20 CODE >49:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1ACC text20 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1AFC text20 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EC text22 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EC text22 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EC text22 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EE text22 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19F0 text22 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A4C text22 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A4E text22 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A50 text22 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A52 text22 CODE >28:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A54 text22 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A56 text22 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A58 text22 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A5A text22 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1D0A text21 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1D0C text21 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1D10 text21 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1D1E text21 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1ABE text20 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1ABE text20 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1AC2 text20 CODE >49:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1AEA text20 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1B1A text20 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
 82E text19 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
 82E text19 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
 834 text19 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
@@ -296,46 +296,46 @@ BC6 text19 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\
 11FE text17 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 1200 text17 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 1210 text17 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1C54 text16 CODE >103:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C56 text16 CODE >108:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C5A text16 CODE >109:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C5C text16 CODE >111:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C60 text16 CODE >112:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C64 text16 CODE >115:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C68 text16 CODE >117:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C7C text16 CODE >118:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C7E text16 CODE >120:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C80 text16 CODE >121:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-18A0 text15 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A0 text15 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A0 text15 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A4 text15 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A8 text15 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18AC text15 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18B2 text15 CODE >49:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18B8 text15 CODE >50:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18C0 text15 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18C4 text15 CODE >53:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18CE text15 CODE >54:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-192C text15 CODE >56:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-193C text15 CODE >57:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B50 text14 CODE >59:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B52 text14 CODE >60:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B52 text14 CODE >61:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B58 text14 CODE >62:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B5E text14 CODE >63:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B72 text14 CODE >64:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B82 text14 CODE >65:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B88 text14 CODE >67:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B98 text14 CODE >68:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CD6 text13 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CD6 text13 CODE >14:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CD8 text13 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CDA text13 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CDE text13 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CE2 text13 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CE6 text13 CODE >19:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CEA text13 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C72 text16 CODE >103:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C74 text16 CODE >108:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C78 text16 CODE >109:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C7A text16 CODE >111:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C7E text16 CODE >112:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C82 text16 CODE >115:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C86 text16 CODE >117:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C9A text16 CODE >118:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C9C text16 CODE >120:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C9E text16 CODE >121:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+18A0 text15 CODE >36:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A0 text15 CODE >37:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A0 text15 CODE >38:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A4 text15 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A8 text15 CODE >41:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18AC text15 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18B2 text15 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18BA text15 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18C2 text15 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18C6 text15 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18EC text15 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+194A text15 CODE >50:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+195A text15 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B6E text14 CODE >53:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B70 text14 CODE >54:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B70 text14 CODE >55:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B76 text14 CODE >56:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B7C text14 CODE >57:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B90 text14 CODE >58:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1BA0 text14 CODE >59:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1BA6 text14 CODE >61:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1BB6 text14 CODE >62:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CF4 text13 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CF4 text13 CODE >14:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CF6 text13 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CF8 text13 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1CFC text13 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D00 text13 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D04 text13 CODE >19:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D08 text13 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 1212 text12 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
 1212 text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
 1216 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
@@ -382,11 +382,11 @@ BC6 text19 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\
 14BC text11 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
 14DC text11 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
 14FC text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1BDE text10 CODE >1:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-1BDE text10 CODE >3:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-1C1C text10 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-1D34 text9 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
-1D34 text9 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+1BFC text10 CODE >1:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+1BFC text10 CODE >3:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+1C3A text10 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+1D52 text9 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+1D52 text9 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
 1710 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
 1710 text8 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
 1734 text8 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
@@ -395,20 +395,20 @@ BC6 text19 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\
 1792 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
 17C6 text8 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
 17D8 text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-1B9A text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1B9A text7 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BA2 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BA6 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BB8 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BBC text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BDC text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1C1E text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C1E text6 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C26 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C2A text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C2E text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C46 text6 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C52 text6 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1BB8 text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BB8 text7 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BC0 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BC4 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BD6 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BDA text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BFA text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1C3C text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C3C text6 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C44 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C48 text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C4C text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C64 text6 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C70 text6 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
 17DA text5 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
 17DA text5 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
 17EA text5 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
@@ -465,46 +465,46 @@ FEC text3 CODE >1352:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\
 1026 text3 CODE >1362:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
 104A text3 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
 105C text3 CODE >1365:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A3E text2 CODE >1368:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A3E text2 CODE >1373:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A46 text2 CODE >1374:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A50 text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A54 text2 CODE >1376:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A7A text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A96 text2 CODE >1378:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A9E text2 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1AFE text1 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1AFE text1 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B08 text1 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B10 text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B18 text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B20 text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B3C text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B4E text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-193E text0 CODE >10:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-193E text0 CODE >12:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-193E text0 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-1952 text0 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-195E text0 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-1962 text0 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-1966 text0 CODE >22:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-197C text0 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-19A0 text0 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-19AC text0 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-1CC0 cinit CODE >661:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC0 cinit CODE >663:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC0 cinit CODE >666:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC0 cinit CODE >685:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC4 cinit CODE >686:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC6 cinit CODE >687:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC6 cinit CODE >688:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CC8 cinit CODE >689:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CCA cinit CODE >690:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CCC cinit CODE >696:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CCC cinit CODE >699:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CCE cinit CODE >700:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CD0 cinit CODE >701:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
-1CD2 cinit CODE >702:C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.s
+1A5C text2 CODE >1368:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A5C text2 CODE >1373:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A64 text2 CODE >1374:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A6E text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A72 text2 CODE >1376:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A98 text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1AB4 text2 CODE >1378:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1ABC text2 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1B1C text1 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B1C text1 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B26 text1 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B2E text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B36 text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B3E text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B5A text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B6C text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+195C text0 CODE >10:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+195C text0 CODE >12:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+195C text0 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+1970 text0 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+197C text0 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+1980 text0 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+1984 text0 CODE >22:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+199A text0 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+19BE text0 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+19CA text0 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+1CDE cinit CODE >661:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CDE cinit CODE >663:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CDE cinit CODE >666:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CDE cinit CODE >685:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CE2 cinit CODE >686:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CE4 cinit CODE >687:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CE4 cinit CODE >688:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CE6 cinit CODE >689:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CE8 cinit CODE >690:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CEA cinit CODE >696:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CEA cinit CODE >699:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CEC cinit CODE >700:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CEE cinit CODE >701:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CF0 cinit CODE >702:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -523,27 +523,27 @@ __Hspace_1 B6 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\iluminacion.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\iluminacion.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-?_get_lux_value 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+?_get_lux_value 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?_abs 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_BH1750_write 1CA8 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
+_BH1750_write 1CC6 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
 ?_vfprintf 50 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\iluminacion.X.production.o
 _RCIF 7CF5 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+___sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 _dbuf 96 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 _dtoa BC8 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
-_main 193E 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
+_main 195C 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
 _nout 8E 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 _prec 92 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 abs@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-start 0 0 CODE 0 init C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+start 0 0 CODE 0 init C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 i2c_envia_dato@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___aomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -557,33 +557,33 @@ pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.producti
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\iluminacion.X.production.o
 __end_of_vfpfcnvrt 105E 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
 __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-intlevel0 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-intlevel1 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-intlevel2 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-intlevel3 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+__accesstop 60 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+intlevel0 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+intlevel1 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+intlevel2 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+intlevel3 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 __CFG_USBDIV$1 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_i2c_detener 1D34 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
+__end_of_i2c_detener 1D52 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
 ___aldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\iluminacion.X.production.o
 __size_of_i2c_espera 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-BH1750_read_word@value 38 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+BH1750_read_word@value 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_BH1750_write 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_BH1750_init 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\iluminacion.X.production.o
-_UART_write 1CEC 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
+_UART_write 1D0A 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
 ___aldiv@sign A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\iluminacion.X.production.o
 _vfpfcnvrt EAA 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
 dtoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-__end_of_BH1750_write 1CC0 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+__end_of_BH1750_write 1CDE 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\iluminacion.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\iluminacion.X.production.o
 UART_printf@cadena 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -600,7 +600,7 @@ __end_of___aomod 14FE 0 CODE 0 text11 dist/default/production\iluminacion.X.prod
 __end_of___fldiv BC8 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
 __end_of___fltol 1710 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
 ___aodiv@quotient 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_UART_printf 1AA0 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
+_UART_printf 1ABE 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
 ?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 main@luzMedida 8A 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
 ___aomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -609,16 +609,16 @@ __size_of_fputc 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_fputs 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 ___fldiv@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fldiv@b F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_UART_write 1D02 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
+__end_of_UART_write 1D20 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
 __size_of_putch 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 UART_write@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\iluminacion.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 ___aomod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_get_lux_value 1B50 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
-start_initialization 1CC0 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
+_get_lux_value 1B6E 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
+start_initialization 1CDE 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\iluminacion.X.production.o
-_i2c_iniciar 1CD6 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+_i2c_iniciar 1CF4 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
 __size_of_i2c_inicia_com 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_i2c_recibe_datoACK 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _TRISBbits F93 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -645,7 +645,7 @@ __Hbank6 0 0 ABS 0 bank6 dist/default/production\iluminacion.X.production.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\iluminacion.X.production.o
 __Hcinit 0 0 ABS 0 cinit dist/default/production\iluminacion.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\iluminacion.X.production.o
-__end_of_strlen 1C54 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
+__end_of_strlen 1C72 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\iluminacion.X.production.o
 __Hidloc 200008 0 IDLOC 0 idloc dist/default/production\iluminacion.X.production.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\iluminacion.X.production.o
@@ -666,12 +666,12 @@ __size_of_i2c_detener 0 0 ABS 0 - dist/default/production\iluminacion.X.producti
 __size_of___xxtofl 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\iluminacion.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\iluminacion.X.production.o
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 ___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_sprintf 1B50 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
-__end_of_BH1750_read_word 193E 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
+__end_of_sprintf 1B6E 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
+__end_of_BH1750_read_word 195C 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\iluminacion.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\iluminacion.X.production.o
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -685,7 +685,7 @@ __Lbank6 0 0 ABS 0 bank6 dist/default/production\iluminacion.X.production.o
 __Lbank7 0 0 ABS 0 bank7 dist/default/production\iluminacion.X.production.o
 __Lcinit 0 0 ABS 0 cinit dist/default/production\iluminacion.X.production.o
 __Lconst 0 0 CONST 0 const dist/default/production\iluminacion.X.production.o
-_i2c_envia_dato 1D18 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
+_i2c_envia_dato 1D36 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
 __Lidata 0 0 CODE 0 idata dist/default/production\iluminacion.X.production.o
 __Lidloc 200000 0 IDLOC 0 idloc dist/default/production\iluminacion.X.production.o
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\iluminacion.X.production.o
@@ -726,11 +726,11 @@ __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\iluminacion.X.produ
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\iluminacion.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\iluminacion.X.production.o
-_BH1750_init 1D02 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
+_BH1750_init 1D20 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
 __S0 30000E 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __S1 B6 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-_abs 1BDE 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
+_abs 1BFC 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
 _pad 17DA 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
 __CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_PLLDIV$1 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -741,11 +741,11 @@ __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\iluminacion.X.production
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\iluminacion.X.production.o
 sprintf@fmt 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___xxtofl 105E 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
-__end_of_abs 1C1E 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
+__end_of_abs 1C3C 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
 __end_of_pad 18A0 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\iluminacion.X.production.o
-get_lux_value@lux_value 42 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_i2c_envia_dato 1D24 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
+get_lux_value@lux_value 44 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__end_of_i2c_envia_dato 1D42 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/production\iluminacion.X.production.o
 strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -775,32 +775,32 @@ __Htext27 0 0 ABS 0 text27 dist/default/production\iluminacion.X.production.o
 __Htext28 0 0 ABS 0 text28 dist/default/production\iluminacion.X.production.o
 __Htext29 0 0 ABS 0 text29 dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@fmt 42 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_get_lux_value 1B9A 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
+__end_of_get_lux_value 1BB8 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
 i2c_recibe_datoACK@datoleido 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _RCSTAbits FAB 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 i2c_recibe_datoACK@a 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __size_of_UART_write 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__ptext10 1BDE 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
+__ptext10 1BFC 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
 __ptext11 139A 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
 __ptext12 1212 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
-__ptext13 1CD6 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
-__ptext14 1B50 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
+__ptext13 1CF4 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+__ptext14 1B6E 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
 __ptext15 18A0 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
-__ptext16 1C54 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+__ptext16 1C72 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
 __ptext17 105E 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
 __ptext18 160A 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
 __ptext19 82E 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
-__ptext20 1AA0 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
-__ptext21 1CEC 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
-__ptext22 19CE 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
+__ptext20 1ABE 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
+__ptext21 1D0A 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
+__ptext22 19EC 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
 __ptext23 14FE 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
-__ptext24 1D02 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
-__ptext25 1CA8 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
-__ptext26 1D24 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
-__ptext27 1D18 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
-__ptext28 1D2C 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
-__ptext29 1C82 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
+__ptext24 1D20 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
+__ptext25 1CC6 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
+__ptext26 1D42 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
+__ptext27 1D36 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
+__ptext28 1D4A 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
+__ptext29 1CA0 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
 ___aldiv 14FE 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
 ___aodiv 1212 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
 ___aomod 139A 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
@@ -816,14 +816,14 @@ __Lconfig 300000 0 CONFIG 0 config dist/default/production\iluminacion.X.product
 ___fldiv@grs 22 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fldiv@rem 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\iluminacion.X.production.o
-_strlen 1C1E 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
+_strlen 1C3C 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\iluminacion.X.production.o
 ___fldiv@new_exp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_UART_printf 1AFE 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
+__end_of_UART_printf 1B1C 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-stackhi 7FF 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
-stacklo B6 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+stackhi 7FF 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+stacklo B6 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\iluminacion.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\iluminacion.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\iluminacion.X.production.o
@@ -831,7 +831,7 @@ __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 main@buffer 6C 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
 ?_vfpfcnvrt 40 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_i2c_espera 1C82 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
+_i2c_espera 1CA0 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -839,18 +839,18 @@ __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\iluminacion.X.produ
 ___aodiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___aodiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-get_lux_value@mode 41 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+get_lux_value@mode 43 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fltol@exp1 31 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_i2c_iniciar 1CEC 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+__end_of_i2c_iniciar 1D0A 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
 __CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-end_of_initialization 1CCC 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
+end_of_initialization 1CEA 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\iluminacion.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\iluminacion.X.production.o
 fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_i2c_detener 1D2C 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
+_i2c_detener 1D4A 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
 ?___aldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?___aodiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?___aomod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -863,25 +863,25 @@ UART_init@BAUD F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.p
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\iluminacion.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production\iluminacion.X.production.o
 __size_of_strlen 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_UART_init 1A3E 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
+__end_of_UART_init 1A5C 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\iluminacion.X.production.o
-__pcinit 1CC0 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
+__pcinit 1CDE 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 _SSPCON2bits FC5 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@ap 44 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@fp 40 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@ll 48 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __size_of_UART_init 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__ptext0 193E 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
-__ptext1 1AFE 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
-__ptext2 1A3E 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
+__ptext0 195C 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
+__ptext1 1B1C 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
+__ptext2 1A5C 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
 __ptext3 EAA 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
 __ptext4 BC8 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
 __ptext5 17DA 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
-__ptext6 1C1E 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
-__ptext7 1B9A 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
+__ptext6 1C3C 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
+__ptext7 1BB8 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
 __ptext8 1710 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
-__ptext9 1D34 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
-_i2c_inicia_com 1D24 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
+__ptext9 1D52 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
+_i2c_inicia_com 1D42 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\iluminacion.X.production.o
 vfprintf@ap 54 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 vfprintf@fp 50 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -906,27 +906,27 @@ __Ltext26 0 0 ABS 0 text26 dist/default/production\iluminacion.X.production.o
 __Ltext27 0 0 ABS 0 text27 dist/default/production\iluminacion.X.production.o
 __Ltext28 0 0 ABS 0 text28 dist/default/production\iluminacion.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\iluminacion.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\DIEGOM~1\AppData\Local\Temp\s4n8.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
 ___aldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_sprintf 1AFE 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
-_vfprintf 1A3E 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
+_sprintf 1B1C 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
+_vfprintf 1A5C 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\iluminacion.X.production.o
 ?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\iluminacion.X.production.o
 sprintf@ap 62 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
-BH1750_read_word@hb 36 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-BH1750_read_word@lb 37 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+BH1750_read_word@hb 39 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+BH1750_read_word@lb 38 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fltol@sign1 30 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\iluminacion.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\iluminacion.X.production.o
-_UART_init 19CE 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
-__end_of_vfprintf 1AA0 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
+_UART_init 19EC 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
+__end_of_vfprintf 1ABE 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
 ___fltol@f1 28 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_i2c_espera 1CA8 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
+__end_of_i2c_espera 1CC6 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\iluminacion.X.production.o
-__end_of__initialization 1CCC 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
+__end_of__initialization 1CEA 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -939,28 +939,28 @@ BH1750_write@cmd 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\iluminacion.X.production.o
 __CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_BH1750_init 1D18 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
-__end_of_i2c_recibe_datoACK 1C82 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+__end_of_BH1750_init 1D36 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
+__end_of_i2c_recibe_datoACK 1CA0 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
 _TXSTAbits FAC 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _UART_init$1077 17 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _SSPCON1 FC6 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _SSPCON2 FC5 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _SSPSTAT FC7 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_i2c_inicia_com 1D2C 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
+__end_of_i2c_inicia_com 1D4A 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
 ___aldiv@counter 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 sprintf@f 64 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
 sprintf@s 58 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __end_of_dtoa EAA 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
-__end_of_main 19CE 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
+__end_of_main 19EC 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
 _ACKDT 7E2D 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _ACKEN 7E2C 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __end_of_fputc 17DA 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
-__end_of_fputs 1BDE 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
+__end_of_fputs 1BFC 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
 ?_sprintf 58 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _RCREG FAE 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _SPBRG FAF 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _TXREG FAD 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_putch 1D36 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
+__end_of_putch 1D54 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -975,19 +975,19 @@ __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _flags 94 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 _fputc 1710 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
-_fputs 1B9A 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
+_fputs 1BB8 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
 __CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-_putch 1D34 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
+_putch 1D52 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _width 90 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 __size_of_UART_printf 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_abs 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_pad 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__initialization 1CC0 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
+__initialization 1CDE 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 ___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __pbssBANK0 8E 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\iluminacion.X.production.o
-_i2c_recibe_datoACK 1C54 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+_i2c_recibe_datoACK 1C72 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
 __Hsmallconst 82E 0 SMALLCONST 0 smallconst dist/default/production\iluminacion.X.production.o
 dtoa@d 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 dtoa@i 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -1025,7 +1025,7 @@ __size_of_i2c_envia_dato 0 0 ABS 0 - dist/default/production\iluminacion.X.produ
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text19 0 82E 82E 1508 1
+text19 0 82E 82E 1526 1
 cstackCOMRAM 1 1 1 5F 1
 cstackBANK0 1 60 60 56 1
 reset_vec 0 0 0 4 1
