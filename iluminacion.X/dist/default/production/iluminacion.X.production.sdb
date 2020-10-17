@@ -3,14 +3,14 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"24 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-[v _BH1750_init BH1750_init `(v  1 e 1 0 ]
-"29
-[v _BH1750_write BH1750_write `(v  1 e 1 0 ]
-"36
-[v _BH1750_read_word BH1750_read_word `(ul  1 e 4 0 ]
-"53
-[v _get_lux_value get_lux_value `(ul  1 e 4 0 ]
+"27 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+[v _bh1750_iniciar bh1750_iniciar `(v  1 e 1 0 ]
+"32
+[v _bh1750_escribir bh1750_escribir `(v  1 e 1 0 ]
+"39
+[v _bh1750_leer bh1750_leer `(ul  1 e 4 0 ]
+"56
+[v _dameValorLux dameValorLux `(ul  1 e 4 0 ]
 "13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_iniciar i2c_iniciar `(v  1 e 1 0 ]
 "29
@@ -24,11 +24,11 @@
 "103
 [v _i2c_recibe_datoACK i2c_recibe_datoACK `(uc  1 e 1 0 ]
 "13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-[v _UART_init UART_init `(v  1 e 1 0 ]
+[v _uart_iniciar uart_iniciar `(v  1 e 1 0 ]
 "42
-[v _UART_write UART_write `(v  1 e 1 0 ]
+[v _uart_escribir uart_escribir `(v  1 e 1 0 ]
 "47
-[v _UART_printf UART_printf `(v  1 e 1 0 ]
+[v _uart_printf uart_printf `(v  1 e 1 0 ]
 "1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
 "7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
@@ -215,6 +215,39 @@
 [v main@luzMedida luzMedida `ul  1 a 4 42 ]
 "30
 } 0
+"47 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+[v _uart_printf uart_printf `(v  1 e 1 0 ]
+{
+[v uart_printf@cadena cadena `*.35uc  1 p 2 1 ]
+"51
+} 0
+"42
+[v _uart_escribir uart_escribir `(v  1 e 1 0 ]
+{
+[v uart_escribir@dato dato `uc  1 a 1 wreg ]
+[v uart_escribir@dato dato `uc  1 a 1 wreg ]
+[v uart_escribir@dato dato `uc  1 a 1 0 ]
+"45
+} 0
+"13
+[v _uart_iniciar uart_iniciar `(v  1 e 1 0 ]
+{
+[v uart_iniciar@BAUD BAUD `l  1 p 4 14 ]
+"34
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 0 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+"41
+} 0
 "9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
@@ -351,27 +384,27 @@
 {
 "20
 } 0
-"53 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-[v _get_lux_value get_lux_value `(ul  1 e 4 0 ]
+"56 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+[v _dameValorLux dameValorLux `(ul  1 e 4 0 ]
 {
-[v get_lux_value@mode mode `uc  1 a 1 wreg ]
-"54
-[v get_lux_value@lux_value lux_value `ul  1 a 4 67 ]
-"53
-[v get_lux_value@mode mode `uc  1 a 1 wreg ]
-[v get_lux_value@mode mode `uc  1 a 1 66 ]
-"62
+[v dameValorLux@modo modo `uc  1 a 1 wreg ]
+"57
+[v dameValorLux@valorLux valorLux `ul  1 a 4 67 ]
+"56
+[v dameValorLux@modo modo `uc  1 a 1 wreg ]
+[v dameValorLux@modo modo `uc  1 a 1 66 ]
+"65
 } 0
-"36
-[v _BH1750_read_word BH1750_read_word `(ul  1 e 4 0 ]
-{
-"37
-[v BH1750_read_word@value value `ul  1 a 4 57 ]
 "39
-[v BH1750_read_word@hb hb `uc  1 a 1 56 ]
-"38
-[v BH1750_read_word@lb lb `uc  1 a 1 55 ]
-"51
+[v _bh1750_leer bh1750_leer `(ul  1 e 4 0 ]
+{
+"40
+[v bh1750_leer@valor valor `ul  1 a 4 57 ]
+"42
+[v bh1750_leer@hb hb `uc  1 a 1 56 ]
+"41
+[v bh1750_leer@lb lb `uc  1 a 1 55 ]
+"54
 } 0
 "103 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_recibe_datoACK i2c_recibe_datoACK `(uc  1 e 1 0 ]
@@ -430,51 +463,18 @@
 [v ___fldiv@a a `d  1 p 4 18 ]
 "185
 } 0
-"47 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-[v _UART_printf UART_printf `(v  1 e 1 0 ]
+"27 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+[v _bh1750_iniciar bh1750_iniciar `(v  1 e 1 0 ]
 {
-[v UART_printf@cadena cadena `*.35uc  1 p 2 1 ]
-"51
+"30
 } 0
-"42
-[v _UART_write UART_write `(v  1 e 1 0 ]
+"32
+[v _bh1750_escribir bh1750_escribir `(v  1 e 1 0 ]
 {
-[v UART_write@dato dato `uc  1 a 1 wreg ]
-[v UART_write@dato dato `uc  1 a 1 wreg ]
-[v UART_write@dato dato `uc  1 a 1 0 ]
-"45
-} 0
-"13
-[v _UART_init UART_init `(v  1 e 1 0 ]
-{
-[v UART_init@BAUD BAUD `l  1 p 4 14 ]
-"34
-} 0
-"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-[v ___aldiv __aldiv `(l  1 e 4 0 ]
-{
-"10
-[v ___aldiv@quotient quotient `l  1 a 4 10 ]
-"11
-[v ___aldiv@sign sign `uc  1 a 1 9 ]
-[v ___aldiv@counter counter `uc  1 a 1 8 ]
-"7
-[v ___aldiv@dividend dividend `l  1 p 4 0 ]
-[v ___aldiv@divisor divisor `l  1 p 4 4 ]
-"41
-} 0
-"24 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-[v _BH1750_init BH1750_init `(v  1 e 1 0 ]
-{
-"27
-} 0
-"29
-[v _BH1750_write BH1750_write `(v  1 e 1 0 ]
-{
-[v BH1750_write@cmd cmd `uc  1 a 1 wreg ]
-[v BH1750_write@cmd cmd `uc  1 a 1 wreg ]
-[v BH1750_write@cmd cmd `uc  1 a 1 2 ]
-"34
+[v bh1750_escribir@comando comando `uc  1 a 1 wreg ]
+[v bh1750_escribir@comando comando `uc  1 a 1 wreg ]
+[v bh1750_escribir@comando comando `uc  1 a 1 2 ]
+"37
 } 0
 "37 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_inicia_com i2c_inicia_com `(v  1 e 1 0 ]

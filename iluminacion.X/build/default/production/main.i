@@ -5850,13 +5850,13 @@ typedef float T_FLOAT;
 
 
 
-void UART_init(T_LONG BAUD);
-T_UBYTE UART_read(void);
-void UART_write(T_BYTE dato);
-void UART_printf(T_BYTE* cadena);
+void uart_iniciar(T_LONG BAUD);
+T_UBYTE uart_leer(void);
+void uart_escribir(T_BYTE dato);
+void uart_printf(T_BYTE* cadena);
 
 
-void UART_init(T_LONG BAUD) {
+void uart_iniciar(T_LONG BAUD) {
 
     T_LONG frecuenciaCristal = 4000000;
     TRISC6 = 0;
@@ -5879,20 +5879,20 @@ void UART_init(T_LONG BAUD) {
     RCSTAbits.CREN = 1;
 }
 
-T_UBYTE UART_read(void) {
+T_UBYTE uart_leer(void) {
     while (!RCIF);
     RCIF = 0;
     return RCREG;
 }
 
-void UART_write(T_BYTE dato) {
+void uart_escribir(T_BYTE dato) {
     TXREG = dato;
     while (!TXSTAbits.TRMT);
 }
 
-void UART_printf(T_BYTE* cadena) {
+void uart_printf(T_BYTE* cadena) {
     while (*cadena) {
-        UART_write(*cadena++);
+        uart_escribir(*cadena++);
     }
 }
 # 4 "main.c" 2
@@ -6015,27 +6015,27 @@ T_UBYTE i2c_recibe_datoACK(T_UBYTE a) {
 # 5 "main.c" 2
 
 # 1 "./bh1750.h" 1
-# 18 "./bh1750.h"
-void BH1750_init(void);
-void BH1750_write(T_UBYTE cmd);
-T_ULONG BH1750_read_word();
-T_ULONG get_lux_value(T_UBYTE mode);
+# 21 "./bh1750.h"
+void bh1750_iniciar(void);
+void bh1750_escribir(T_UBYTE comando);
+T_ULONG bh1750_leer();
+T_ULONG dameValorLux(T_UBYTE modo);
 
 
-void BH1750_init(void) {
+void bh1750_iniciar(void) {
     _delay((unsigned long)((100)*(4000000/4000.0)));
-    BH1750_write(0x00);
+    bh1750_escribir(0x00);
 }
 
-void BH1750_write(T_UBYTE cmd) {
+void bh1750_escribir(T_UBYTE comando) {
     i2c_inicia_com();
     i2c_envia_dato(0x46);
-    i2c_envia_dato(cmd);
+    i2c_envia_dato(comando);
     i2c_detener();
 }
 
-T_ULONG BH1750_read_word() {
-    register T_ULONG value = 0;
+T_ULONG bh1750_leer() {
+    register T_ULONG valor = 0;
     T_UBYTE lb = 0;
     T_UBYTE hb = 0;
 
@@ -6045,21 +6045,21 @@ T_ULONG BH1750_read_word() {
     lb = i2c_recibe_datoACK(0);
     i2c_detener();
 
-    value = (hb <<8 ) + lb;
-    value /= 1.2;
+    valor = (hb <<8 ) + lb;
+    valor /= 1.2;
 
-    return value;
+    return valor;
 }
 
-T_ULONG get_lux_value(T_UBYTE mode) {
-    register T_ULONG lux_value = 0;
-    BH1750_write(0x01);
-    BH1750_write(mode);
-    lux_value = BH1750_read_word();
+T_ULONG dameValorLux(T_UBYTE modo) {
+    register T_ULONG valorLux = 0;
+    bh1750_escribir(0x01);
+    bh1750_escribir(modo);
+    valorLux = bh1750_leer();
     _delay((unsigned long)((180)*(4000000/4000.0)));
-    BH1750_write(0x00);
+    bh1750_escribir(0x00);
 
-    return lux_value;
+    return valorLux;
 }
 # 6 "main.c" 2
 
@@ -6071,16 +6071,16 @@ void main(void) {
     T_ULONG luzMedida = 0;
     T_BYTE buffer[30];
 
-    UART_init(9600);
-    UART_printf("\r\nSistema Iniciado\n\r");
+    uart_iniciar(9600);
     i2c_iniciar();
-    BH1750_init();
+    bh1750_iniciar();
+    uart_printf("\r\nSistema Iniciado\n\r");
 
     while(1)
     {
-        luzMedida = get_lux_value(0x10);
+        luzMedida = dameValorLux(0x10);
         sprintf(buffer, "\rLuz medida: %d luxs\n\r",luzMedida);
-        UART_printf(buffer);
+        uart_printf(buffer);
         _delay((unsigned long)((500)*(4000000/4000.0)));
 
     }

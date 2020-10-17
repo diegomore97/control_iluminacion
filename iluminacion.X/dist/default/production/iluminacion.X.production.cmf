@@ -11,36 +11,36 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+$C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production\iluminacion.X.production.o
 cinit CODE 0 1CDE 1CDE 16 1
 text0 CODE 0 195C 195C 90 1
-text1 CODE 0 1B1C 1B1C 52 1
-text2 CODE 0 1A5C 1A5C 62 1
-text3 CODE 0 EAA EAA 1B4 1
-text4 CODE 0 BC8 BC8 2E2 1
-text5 CODE 0 17DA 17DA C6 1
-text6 CODE 0 1C3C 1C3C 36 1
-text7 CODE 0 1BB8 1BB8 44 1
-text8 CODE 0 1710 1710 CA 1
-text9 CODE 0 1D52 1D52 2 1
-text10 CODE 0 1BFC 1BFC 40 1
-text11 CODE 0 139A 139A 164 1
-text12 CODE 0 1212 1212 188 1
-text13 CODE 0 1CF4 1CF4 16 1
-text14 CODE 0 1B6E 1B6E 4A 1
-text15 CODE 0 18A0 18A0 BC 1
-text16 CODE 0 1C72 1C72 2E 1
-text17 CODE 0 105E 105E 1B4 1
-text18 CODE 0 160A 160A 106 1
-text19 CODE 0 82E 82E 39A 1
-text20 CODE 0 1ABE 1ABE 5E 1
-text21 CODE 0 1D0A 1D0A 16 1
-text22 CODE 0 19EC 19EC 70 1
-text23 CODE 0 14FE 14FE 10C 1
+text1 CODE 0 1ABE 1ABE 5E 1
+text2 CODE 0 1CF4 1CF4 16 1
+text3 CODE 0 19EC 19EC 70 1
+text4 CODE 0 14FE 14FE 10C 1
+text5 CODE 0 1B1C 1B1C 52 1
+text6 CODE 0 1A5C 1A5C 62 1
+text7 CODE 0 EAA EAA 1B4 1
+text8 CODE 0 BC8 BC8 2E2 1
+text9 CODE 0 17DA 17DA C6 1
+text10 CODE 0 1C3C 1C3C 36 1
+text11 CODE 0 1BB8 1BB8 44 1
+text12 CODE 0 1710 1710 CA 1
+text13 CODE 0 1D52 1D52 2 1
+text14 CODE 0 1BFC 1BFC 40 1
+text15 CODE 0 139A 139A 164 1
+text16 CODE 0 1212 1212 188 1
+text17 CODE 0 1D0A 1D0A 16 1
+text18 CODE 0 1B6E 1B6E 4A 1
+text19 CODE 0 18A0 18A0 BC 1
+text20 CODE 0 1C72 1C72 2E 1
+text21 CODE 0 105E 105E 1B4 1
+text22 CODE 0 160A 160A 106 1
+text23 CODE 0 82E 82E 39A 1
 text24 CODE 0 1D20 1D20 16 1
 text25 CODE 0 1CC6 1CC6 18 1
 text26 CODE 0 1D42 1D42 8 1
@@ -106,405 +106,405 @@ $dist/default/production\iluminacion.X.production.o
 1D42 text26 CODE >38:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 1D46 text26 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 1D48 text26 CODE >40:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CC6 text25 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CC8 text25 CODE >30:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CCC text25 CODE >31:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CD2 text25 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CD8 text25 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CDC text25 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D20 text24 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D20 text24 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D2E text24 CODE >26:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1D34 text24 CODE >27:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-14FE text23 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-14FE text23 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1502 text23 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1510 text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1520 text23 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1524 text23 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1532 text23 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1542 text23 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1546 text23 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1556 text23 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-156C text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1570 text23 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1574 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-157E text23 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1580 text23 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-158E text23 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1598 text23 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15B6 text23 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15C6 text23 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15C8 text23 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15D2 text23 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15D8 text23 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15E8 text23 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-15F8 text23 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-1608 text23 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
-19EC text22 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19EC text22 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19EC text22 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19EE text22 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-19F0 text22 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A4C text22 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A4E text22 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A50 text22 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A52 text22 CODE >28:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A54 text22 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A56 text22 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A58 text22 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1A5A text22 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1D0A text21 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1D0C text21 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1D10 text21 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1D1E text21 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1ABE text20 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1ABE text20 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1AC2 text20 CODE >49:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1AEA text20 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-1B1A text20 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
-82E text19 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-82E text19 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-834 text19 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-83A text19 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-848 text19 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-84A text19 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-85A text19 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-86A text19 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-87A text19 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-87C text19 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-880 text19 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-884 text19 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-894 text19 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-89A text19 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8A0 text19 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8AE text19 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8B0 text19 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8C0 text19 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8D0 text19 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8E0 text19 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8E2 text19 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8E6 text19 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8EA text19 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-8FA text19 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-910 text19 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-920 text19 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-928 text19 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-92C text19 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-940 text19 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-950 text19 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-950 text19 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-964 text19 CODE >89:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-97E text19 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-98E text19 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-99E text19 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9AE text19 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9B2 text19 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9B6 text19 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9C6 text19 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9D0 text19 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9DA text19 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9E8 text19 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9EA text19 CODE >105:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9EA text19 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-9F4 text19 CODE >112:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A12 text19 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A14 text19 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A24 text19 CODE >118:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A26 text19 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A26 text19 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A36 text19 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A4C text19 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A52 text19 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A5C text19 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A6A text19 CODE >130:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A6C text19 CODE >131:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A6C text19 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A76 text19 CODE >133:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A7C text19 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A8A text19 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A8E text19 CODE >140:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-A9C text19 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-ACA text19 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-ACE text19 CODE >143:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-AD2 text19 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-AD2 text19 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-AE4 text19 CODE >149:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-AE4 text19 CODE >150:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-AF4 text19 CODE >151:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B00 text19 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B0E text19 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B38 text19 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B3C text19 CODE >159:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B56 text19 CODE >160:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B5C text19 CODE >161:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B6C text19 CODE >165:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B86 text19 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B8E text19 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-B9E text19 CODE >169:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BA2 text19 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BA6 text19 CODE >175:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BB4 text19 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BB6 text19 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BBA text19 CODE >180:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BBC text19 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-BC6 text19 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
-160A text18 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-160A text18 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-1620 text18 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-1634 text18 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-165E text18 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-1660 text18 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-1670 text18 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-1674 text18 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-1682 text18 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-169A text18 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16AE text18 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16C2 text18 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16CC text18 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16CE text18 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16DE text18 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16EE text18 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-16FE text18 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-170E text18 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
-105E text17 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1060 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-107E text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10B0 text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10B4 text17 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10B4 text17 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10C4 text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10DA text17 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10EE text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10F2 text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10F6 text17 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-10F8 text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1102 text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1134 text17 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1136 text17 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1142 text17 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-114C text17 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-114C text17 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-117E text17 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1180 text17 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-118A text17 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-11A8 text17 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-11B6 text17 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-11B8 text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-11BC text17 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-11E0 text17 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-11FE text17 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1200 text17 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1210 text17 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
-1C72 text16 CODE >103:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C74 text16 CODE >108:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C78 text16 CODE >109:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C7A text16 CODE >111:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C7E text16 CODE >112:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C82 text16 CODE >115:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C86 text16 CODE >117:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C9A text16 CODE >118:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C9C text16 CODE >120:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1C9E text16 CODE >121:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-18A0 text15 CODE >36:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A0 text15 CODE >37:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A0 text15 CODE >38:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A4 text15 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18A8 text15 CODE >41:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18AC text15 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18B2 text15 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18BA text15 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18C2 text15 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18C6 text15 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-18EC text15 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-194A text15 CODE >50:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-195A text15 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B6E text14 CODE >53:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B70 text14 CODE >54:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B70 text14 CODE >55:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B76 text14 CODE >56:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B7C text14 CODE >57:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1B90 text14 CODE >58:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1BA0 text14 CODE >59:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1BA6 text14 CODE >61:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1BB6 text14 CODE >62:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-1CF4 text13 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CF4 text13 CODE >14:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CF6 text13 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CF8 text13 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1CFC text13 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D00 text13 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D04 text13 CODE >19:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1D08 text13 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-1212 text12 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1212 text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1216 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1224 text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1244 text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1248 text12 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1256 text12 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1276 text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-127A text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1286 text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12A4 text12 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12A8 text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12AC text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12BE text12 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12C0 text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12CE text12 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-12E0 text12 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-130E text12 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-132E text12 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1330 text12 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1342 text12 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1348 text12 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1358 text12 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1378 text12 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-1398 text12 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
-139A text11 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-139A text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-139E text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-13AC text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-13CC text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-13D0 text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-13DE text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-13FE text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-141C text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1420 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1424 text11 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1436 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1438 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1446 text11 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1474 text11 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1494 text11 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-14A6 text11 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-14AC text11 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-14BC text11 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-14DC text11 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-14FC text11 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
-1BFC text10 CODE >1:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-1BFC text10 CODE >3:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-1C3A text10 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-1D52 text9 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
-1D52 text9 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
-1710 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-1710 text8 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-1734 text8 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-173A text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-173E text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-1792 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-17C6 text8 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-17D8 text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
-1BB8 text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BB8 text7 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BC0 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BC4 text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BD6 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BDA text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1BFA text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
-1C3C text6 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C3C text6 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C44 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C48 text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C4C text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C64 text6 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-1C70 text6 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
-17DA text5 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-17DA text5 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-17EA text5 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-17FE text5 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1820 text5 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1828 text5 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-182C text5 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1840 text5 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1844 text5 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1862 text5 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1872 text5 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1886 text5 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-189E text5 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-BC8 text4 CODE >274:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-BC8 text4 CODE >280:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-BE8 text4 CODE >281:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-BFE text4 CODE >282:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C10 text4 CODE >283:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C30 text4 CODE >287:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C40 text4 CODE >288:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C42 text4 CODE >290:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C70 text4 CODE >291:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C78 text4 CODE >292:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C98 text4 CODE >293:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-C9E text4 CODE >297:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-CA6 text4 CODE >298:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-CAA text4 CODE >299:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-CAE text4 CODE >300:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-CB4 text4 CODE >301:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-D36 text4 CODE >302:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-D3C text4 CODE >303:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-D42 text4 CODE >304:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-DA6 text4 CODE >299:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-E22 text4 CODE >308:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-E44 text4 CODE >309:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-E4A text4 CODE >310:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-E80 text4 CODE >314:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-EA8 text4 CODE >315:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-EAA text3 CODE >670:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-EAA text3 CODE >680:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-ECE text3 CODE >681:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-EDC text3 CODE >683:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-EEE text3 CODE >684:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-EF2 text3 CODE >825:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-F3A text3 CODE >827:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-F48 text3 CODE >828:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-F82 text3 CODE >830:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-FBA text3 CODE >1350:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-FDE text3 CODE >1351:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-FEC text3 CODE >1352:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1000 text3 CODE >1353:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-100C text3 CODE >1357:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-101A text3 CODE >1358:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1026 text3 CODE >1362:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-104A text3 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-105C text3 CODE >1365:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A5C text2 CODE >1368:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A5C text2 CODE >1373:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A64 text2 CODE >1374:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A6E text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A72 text2 CODE >1376:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1A98 text2 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1AB4 text2 CODE >1378:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1ABC text2 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
-1B1C text1 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B1C text1 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B26 text1 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B2E text1 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B36 text1 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B3E text1 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B5A text1 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
-1B6C text1 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1CC6 text25 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CC8 text25 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CCC text25 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CD2 text25 CODE >35:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CD8 text25 CODE >36:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1CDC text25 CODE >37:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D20 text24 CODE >27:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D20 text24 CODE >28:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D2E text24 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D34 text24 CODE >30:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+82E text23 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+82E text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+834 text23 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+83A text23 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+848 text23 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+84A text23 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+85A text23 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+86A text23 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+87A text23 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+87C text23 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+880 text23 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+884 text23 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+894 text23 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+89A text23 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8A0 text23 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8AE text23 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8B0 text23 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8C0 text23 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8D0 text23 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8E0 text23 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8E2 text23 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8E6 text23 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8EA text23 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+8FA text23 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+910 text23 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+920 text23 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+928 text23 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+92C text23 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+940 text23 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+950 text23 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+950 text23 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+964 text23 CODE >89:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+97E text23 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+98E text23 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+99E text23 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9AE text23 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9B2 text23 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9B6 text23 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9C6 text23 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9D0 text23 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9DA text23 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9E8 text23 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9EA text23 CODE >105:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9EA text23 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+9F4 text23 CODE >112:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A12 text23 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A14 text23 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A24 text23 CODE >118:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A26 text23 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A26 text23 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A36 text23 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A4C text23 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A52 text23 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A5C text23 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A6A text23 CODE >130:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A6C text23 CODE >131:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A6C text23 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A76 text23 CODE >133:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A7C text23 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A8A text23 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A8E text23 CODE >140:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+A9C text23 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+ACA text23 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+ACE text23 CODE >143:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+AD2 text23 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+AD2 text23 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+AE4 text23 CODE >149:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+AE4 text23 CODE >150:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+AF4 text23 CODE >151:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B00 text23 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B0E text23 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B38 text23 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B3C text23 CODE >159:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B56 text23 CODE >160:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B5C text23 CODE >161:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B6C text23 CODE >165:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B86 text23 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B8E text23 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+B9E text23 CODE >169:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BA2 text23 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BA6 text23 CODE >175:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BB4 text23 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BB6 text23 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BBA text23 CODE >180:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BBC text23 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+BC6 text23 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+160A text22 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+160A text22 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1620 text22 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1634 text22 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+165E text22 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1660 text22 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1670 text22 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1674 text22 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+1682 text22 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+169A text22 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16AE text22 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16C2 text22 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16CC text22 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16CE text22 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16DE text22 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16EE text22 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+16FE text22 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+170E text22 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fltol.c
+105E text21 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1060 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+107E text21 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10B0 text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10B4 text21 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10B4 text21 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10C4 text21 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10DA text21 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10EE text21 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10F2 text21 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10F6 text21 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+10F8 text21 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1102 text21 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1134 text21 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1136 text21 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1142 text21 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+114C text21 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+114C text21 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+117E text21 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1180 text21 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+118A text21 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+11A8 text21 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+11B6 text21 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+11B8 text21 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+11BC text21 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+11E0 text21 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+11FE text21 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1200 text21 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1210 text21 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
+1C72 text20 CODE >103:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C74 text20 CODE >108:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C78 text20 CODE >109:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C7A text20 CODE >111:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C7E text20 CODE >112:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C82 text20 CODE >115:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C86 text20 CODE >117:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C9A text20 CODE >118:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C9C text20 CODE >120:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1C9E text20 CODE >121:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+18A0 text19 CODE >39:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A0 text19 CODE >40:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A0 text19 CODE >41:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A4 text19 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18A8 text19 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18AC text19 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18B2 text19 CODE >46:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18BA text19 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18C2 text19 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18C6 text19 CODE >50:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+18EC text19 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+194A text19 CODE >53:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+195A text19 CODE >54:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B6E text18 CODE >56:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B70 text18 CODE >57:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B70 text18 CODE >58:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B76 text18 CODE >59:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B7C text18 CODE >60:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1B90 text18 CODE >61:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1BA0 text18 CODE >62:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1BA6 text18 CODE >64:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1BB6 text18 CODE >65:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+1D0A text17 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D0A text17 CODE >14:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D0C text17 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D0E text17 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D12 text17 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D16 text17 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D1A text17 CODE >19:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1D1E text17 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+1212 text16 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1212 text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1216 text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1224 text16 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1244 text16 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1248 text16 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1256 text16 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1276 text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+127A text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1286 text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12A4 text16 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12A8 text16 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12AC text16 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12BE text16 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12C0 text16 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12CE text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+12E0 text16 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+130E text16 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+132E text16 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1330 text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1342 text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1348 text16 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1358 text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1378 text16 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+1398 text16 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aodiv.c
+139A text15 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+139A text15 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+139E text15 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+13AC text15 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+13CC text15 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+13D0 text15 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+13DE text15 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+13FE text15 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+141C text15 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1420 text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1424 text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1436 text15 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1438 text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1446 text15 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1474 text15 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1494 text15 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+14A6 text15 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+14AC text15 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+14BC text15 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+14DC text15 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+14FC text15 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
+1BFC text14 CODE >1:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+1BFC text14 CODE >3:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+1C3A text14 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+1D52 text13 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+1D52 text13 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
+1710 text12 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+1710 text12 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+1734 text12 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+173A text12 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+173E text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+1792 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+17C6 text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+17D8 text12 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
+1BB8 text11 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BB8 text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BC0 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BC4 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BD6 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BDA text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1BFA text11 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputs.c
+1C3C text10 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C3C text10 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C44 text10 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C48 text10 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C4C text10 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C64 text10 CODE >11:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+1C70 text10 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\strlen.c
+17DA text9 CODE >72:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+17DA text9 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+17EA text9 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+17FE text9 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1820 text9 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1828 text9 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+182C text9 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1840 text9 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1844 text9 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1862 text9 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1872 text9 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1886 text9 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+189E text9 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+BC8 text8 CODE >274:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+BC8 text8 CODE >280:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+BE8 text8 CODE >281:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+BFE text8 CODE >282:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C10 text8 CODE >283:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C30 text8 CODE >287:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C40 text8 CODE >288:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C42 text8 CODE >290:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C70 text8 CODE >291:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C78 text8 CODE >292:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C98 text8 CODE >293:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+C9E text8 CODE >297:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+CA6 text8 CODE >298:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+CAA text8 CODE >299:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+CAE text8 CODE >300:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+CB4 text8 CODE >301:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+D36 text8 CODE >302:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+D3C text8 CODE >303:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+D42 text8 CODE >304:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+DA6 text8 CODE >299:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+E22 text8 CODE >308:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+E44 text8 CODE >309:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+E4A text8 CODE >310:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+E80 text8 CODE >314:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+EA8 text8 CODE >315:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+EAA text7 CODE >670:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+EAA text7 CODE >680:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+ECE text7 CODE >681:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+EDC text7 CODE >683:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+EEE text7 CODE >684:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+EF2 text7 CODE >825:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+F3A text7 CODE >827:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+F48 text7 CODE >828:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+F82 text7 CODE >830:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+FBA text7 CODE >1350:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+FDE text7 CODE >1351:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+FEC text7 CODE >1352:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1000 text7 CODE >1353:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+100C text7 CODE >1357:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+101A text7 CODE >1358:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1026 text7 CODE >1362:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+104A text7 CODE >1363:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+105C text7 CODE >1365:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A5C text6 CODE >1368:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A5C text6 CODE >1373:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A64 text6 CODE >1374:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A6E text6 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A72 text6 CODE >1376:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1A98 text6 CODE >1375:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1AB4 text6 CODE >1378:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1ABC text6 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\doprnt.c
+1B1C text5 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B1C text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B26 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B2E text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B36 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B3E text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B5A text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+1B6C text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
+14FE text4 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+14FE text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1502 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1510 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1520 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1524 text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1532 text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1542 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1546 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1556 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+156C text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1570 text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1574 text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+157E text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1580 text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+158E text4 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1598 text4 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15B6 text4 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15C6 text4 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15C8 text4 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15D2 text4 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15D8 text4 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15E8 text4 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+15F8 text4 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+1608 text4 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+19EC text3 CODE >13:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EC text3 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EC text3 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19EE text3 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+19F0 text3 CODE >20:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A4C text3 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A4E text3 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A50 text3 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A52 text3 CODE >28:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A54 text3 CODE >29:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A56 text3 CODE >32:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A58 text3 CODE >33:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1A5A text3 CODE >34:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1CF4 text2 CODE >42:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1CF6 text2 CODE >43:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1CFA text2 CODE >44:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1D08 text2 CODE >45:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1ABE text1 CODE >47:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1ABE text1 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1AC2 text1 CODE >49:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1AEA text1 CODE >48:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
+1B1A text1 CODE >51:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
 195C text0 CODE >10:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 195C text0 CODE >12:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 195C text0 CODE >15:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 1970 text0 CODE >16:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-197C text0 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-1980 text0 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+1974 text0 CODE >17:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+1978 text0 CODE >18:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 1984 text0 CODE >22:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 199A text0 CODE >23:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 19BE text0 CODE >24:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 19CA text0 CODE >25:C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
-1CDE cinit CODE >661:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CDE cinit CODE >663:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CDE cinit CODE >666:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CDE cinit CODE >685:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CE2 cinit CODE >686:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CE4 cinit CODE >687:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CE4 cinit CODE >688:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CE6 cinit CODE >689:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CE8 cinit CODE >690:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CEA cinit CODE >696:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CEA cinit CODE >699:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CEC cinit CODE >700:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CEE cinit CODE >701:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
-1CF0 cinit CODE >702:C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.s
+1CDE cinit CODE >661:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CDE cinit CODE >663:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CDE cinit CODE >666:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CDE cinit CODE >685:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CE2 cinit CODE >686:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CE4 cinit CODE >687:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CE4 cinit CODE >688:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CE6 cinit CODE >689:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CE8 cinit CODE >690:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CEA cinit CODE >696:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CEA cinit CODE >699:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CEC cinit CODE >700:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CEE cinit CODE >701:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
+1CF0 cinit CODE >702:C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -523,27 +523,28 @@ __Hspace_1 B6 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\iluminacion.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+_uart_escribir 1CF4 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\iluminacion.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-?_get_lux_value 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?_abs 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?_pad 11 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_BH1750_write 1CC6 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
 ?_vfprintf 50 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\iluminacion.X.production.o
 _RCIF 7CF5 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+___sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
 _dbuf 96 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
-_dtoa BC8 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
+_dtoa BC8 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
 _main 195C 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
 _nout 8E 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 _prec 92 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
 abs@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__end_of_bh1750_leer 195C 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
 pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-start 0 0 CODE 0 init C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+start 0 0 CODE 0 init C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+__size_of_bh1750_escribir 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 i2c_envia_dato@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___aomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -554,14 +555,16 @@ __size_of___fltol 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_dtoa 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+dameValorLux@valorLux 44 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+_bh1750_iniciar 1D20 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\iluminacion.X.production.o
-__end_of_vfpfcnvrt 105E 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
+__end_of_vfpfcnvrt 105E 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
 __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-intlevel0 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-intlevel1 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-intlevel2 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-intlevel3 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+__accesstop 60 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+intlevel0 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+intlevel1 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+intlevel2 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+intlevel3 0 0 CODE 0 text C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
 __CFG_USBDIV$1 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __end_of_i2c_detener 1D52 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
 ___aldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -570,56 +573,52 @@ __size_of_i2c_espera 0 0 ABS 0 - dist/default/production\iluminacion.X.productio
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-BH1750_read_word@value 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__size_of_BH1750_write 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__size_of_BH1750_init 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\iluminacion.X.production.o
-_UART_write 1D0A 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
 ___aldiv@sign A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\iluminacion.X.production.o
-_vfpfcnvrt EAA 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
+_vfpfcnvrt EAA 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
 dtoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-__end_of_BH1750_write 1CDE 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+__size_of_uart_printf 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
+__end_of_bh1750_iniciar 1D36 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\iluminacion.X.production.o
+__size_of_uart_escribir 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\iluminacion.X.production.o
-UART_printf@cadena 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __size_of_sprintf 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 ___fldiv@aexp 27 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fldiv@bexp 26 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fldiv@sign 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\iluminacion.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\iluminacion.X.production.o
-_BH1750_read_word 18A0 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
-__end_of___aldiv 160A 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
-__end_of___aodiv 139A 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
-__end_of___aomod 14FE 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
-__end_of___fldiv BC8 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
-__end_of___fltol 1710 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
+__end_of___aldiv 160A 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
+__end_of___aodiv 139A 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+__end_of___aomod 14FE 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
+__end_of___fldiv BC8 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
+__end_of___fltol 1710 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
 ___aodiv@quotient 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_UART_printf 1ABE 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
 ?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+?_bh1750_leer 32 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 main@luzMedida 8A 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
 ___aomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+uart_printf@cadena 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __CFG_FOSC$XT_XT 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_fputc 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_fputs 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 ___fldiv@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fldiv@b F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_UART_write 1D20 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
 __size_of_putch 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-UART_write@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__end_of_uart_escribir 1D0A 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\iluminacion.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 ___aomod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_get_lux_value 1B6E 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
 start_initialization 1CDE 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\iluminacion.X.production.o
-_i2c_iniciar 1CF4 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+_i2c_iniciar 1D0A 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
 __size_of_i2c_inicia_com 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
+__size_of_bh1750_leer 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_i2c_recibe_datoACK 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _TRISBbits F93 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _ACKSTAT 7E2E 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -645,7 +644,7 @@ __Hbank6 0 0 ABS 0 bank6 dist/default/production\iluminacion.X.production.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\iluminacion.X.production.o
 __Hcinit 0 0 ABS 0 cinit dist/default/production\iluminacion.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\iluminacion.X.production.o
-__end_of_strlen 1C72 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
+__end_of_strlen 1C72 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\iluminacion.X.production.o
 __Hidloc 200008 0 IDLOC 0 idloc dist/default/production\iluminacion.X.production.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\iluminacion.X.production.o
@@ -666,15 +665,15 @@ __size_of_i2c_detener 0 0 ABS 0 - dist/default/production\iluminacion.X.producti
 __size_of___xxtofl 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\iluminacion.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\iluminacion.X.production.o
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
 ___xxtofl@arg B 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___xxtofl@exp A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___xxtofl@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_sprintf 1B6E 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
-__end_of_BH1750_read_word 195C 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
+__end_of_sprintf 1B6E 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\iluminacion.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\iluminacion.X.production.o
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
+uart_iniciar@BAUD F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\iluminacion.X.production.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\iluminacion.X.production.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\iluminacion.X.production.o
@@ -702,7 +701,6 @@ __Ltext6 0 0 ABS 0 text6 dist/default/production\iluminacion.X.production.o
 __Ltext7 0 0 ABS 0 text7 dist/default/production\iluminacion.X.production.o
 __Ltext8 0 0 ABS 0 text8 dist/default/production\iluminacion.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\iluminacion.X.production.o
-__size_of_BH1750_read_word 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\iluminacion.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\iluminacion.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\iluminacion.X.production.o
@@ -726,31 +724,31 @@ __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\iluminacion.X.produ
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\iluminacion.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\iluminacion.X.production.o
-_BH1750_init 1D20 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
 __S0 30000E 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __S1 B6 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-_abs 1BFC 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
-_pad 17DA 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
+_abs 1BFC 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
+_pad 17DA 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
 __CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
+bh1750_leer@valor 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+bh1750_escribir@comando 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __CFG_PLLDIV$1 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__size_of_get_lux_value 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 ___aodiv@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\iluminacion.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\iluminacion.X.production.o
 sprintf@fmt 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-___xxtofl 105E 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
-__end_of_abs 1C3C 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
-__end_of_pad 18A0 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
+_uart_printf 1ABE 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
+___xxtofl 105E 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
+__end_of_abs 1C3C 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
+__end_of_pad 18A0 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\iluminacion.X.production.o
-get_lux_value@lux_value 44 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __end_of_i2c_envia_dato 1D42 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/production\iluminacion.X.production.o
 strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\iluminacion.X.production.o
-__end_of___xxtofl 1212 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
+__end_of___xxtofl 1212 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
 __activetblptr 2 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\iluminacion.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\iluminacion.X.production.o
@@ -775,37 +773,35 @@ __Htext27 0 0 ABS 0 text27 dist/default/production\iluminacion.X.production.o
 __Htext28 0 0 ABS 0 text28 dist/default/production\iluminacion.X.production.o
 __Htext29 0 0 ABS 0 text29 dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@fmt 42 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_get_lux_value 1BB8 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
 i2c_recibe_datoACK@datoleido 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _RCSTAbits FAB 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 i2c_recibe_datoACK@a 2 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__size_of_UART_write 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__ptext10 1BFC 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
-__ptext11 139A 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
-__ptext12 1212 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
-__ptext13 1CF4 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
-__ptext14 1B6E 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
-__ptext15 18A0 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
-__ptext16 1C72 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
-__ptext17 105E 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
-__ptext18 160A 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
-__ptext19 82E 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
-__ptext20 1ABE 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
-__ptext21 1D0A 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
-__ptext22 19EC 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
-__ptext23 14FE 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
+__ptext10 1C3C 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
+__ptext11 1BB8 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
+__ptext12 1710 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
+__ptext13 1D52 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+__ptext14 1BFC 0 CODE 0 text14 dist/default/production\iluminacion.X.production.o
+__ptext15 139A 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
+__ptext16 1212 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+__ptext17 1D0A 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
+__ptext18 1B6E 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
+__ptext19 18A0 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
+__ptext20 1C72 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
+__ptext21 105E 0 CODE 0 text21 dist/default/production\iluminacion.X.production.o
+__ptext22 160A 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
+__ptext23 82E 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
 __ptext24 1D20 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
 __ptext25 1CC6 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
 __ptext26 1D42 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
 __ptext27 1D36 0 CODE 0 text27 dist/default/production\iluminacion.X.production.o
 __ptext28 1D4A 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
 __ptext29 1CA0 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
-___aldiv 14FE 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
-___aodiv 1212 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
-___aomod 139A 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
-___fldiv 82E 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
-___fltol 160A 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
+___aldiv 14FE 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
+___aodiv 1212 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+___aomod 139A 0 CODE 0 text15 dist/default/production\iluminacion.X.production.o
+___fldiv 82E 0 CODE 0 text23 dist/default/production\iluminacion.X.production.o
+___fltol 160A 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\iluminacion.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\iluminacion.X.production.o
 __CFG_BOR$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -815,15 +811,18 @@ __Lcomram 0 0 ABS 0 comram dist/default/production\iluminacion.X.production.o
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\iluminacion.X.production.o
 ___fldiv@grs 22 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fldiv@rem 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+_uart_iniciar 19EC 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
+__size_of_bh1750_iniciar 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\iluminacion.X.production.o
-_strlen 1C3C 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
+_strlen 1C3C 0 CODE 0 text10 dist/default/production\iluminacion.X.production.o
+_bh1750_leer 18A0 0 CODE 0 text19 dist/default/production\iluminacion.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\iluminacion.X.production.o
 ___fldiv@new_exp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_UART_printf 1B1C 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-stackhi 7FF 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
-stacklo B6 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+stackhi 7FF 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+stacklo B6 0 ABS 0 - C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
+_uart_iniciar$1077 17 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\iluminacion.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\iluminacion.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\iluminacion.X.production.o
@@ -839,9 +838,8 @@ __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\iluminacion.X.produ
 ___aodiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___aodiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-get_lux_value@mode 43 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ___fltol@exp1 31 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_i2c_iniciar 1D0A 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+__end_of_i2c_iniciar 1D20 0 CODE 0 text17 dist/default/production\iluminacion.X.production.o
 __CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 end_of_initialization 1CEA 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\iluminacion.X.production.o
@@ -850,37 +848,39 @@ fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.producti
 fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__size_of_uart_iniciar 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _i2c_detener 1D4A 0 CODE 0 text28 dist/default/production\iluminacion.X.production.o
 ?___aldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?___aodiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?___aomod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?___fldiv F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 ?___fltol 28 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-?_BH1750_read_word 32 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 vfprintf@fmt 52 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\iluminacion.X.production.o
-UART_init@BAUD F 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\iluminacion.X.production.o
+__end_of_bh1750_escribir 1CDE 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
+_dameValorLux 1B6E 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
+uart_escribir@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production\iluminacion.X.production.o
 __size_of_strlen 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_UART_init 1A5C 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\iluminacion.X.production.o
 __pcinit 1CDE 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
+bh1750_leer@hb 39 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+bh1750_leer@lb 38 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _SSPCON2bits FC5 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@ap 44 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@fp 40 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 vfpfcnvrt@ll 48 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__size_of_UART_init 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __ptext0 195C 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
-__ptext1 1B1C 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
-__ptext2 1A5C 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
-__ptext3 EAA 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
-__ptext4 BC8 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
-__ptext5 17DA 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
-__ptext6 1C3C 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
-__ptext7 1BB8 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
-__ptext8 1710 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
-__ptext9 1D52 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
+__ptext1 1ABE 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
+__ptext2 1CF4 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
+__ptext3 19EC 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
+__ptext4 14FE 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
+__ptext5 1B1C 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
+__ptext6 1A5C 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
+__ptext7 EAA 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
+__ptext8 BC8 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
+__ptext9 17DA 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
 _i2c_inicia_com 1D42 0 CODE 0 text26 dist/default/production\iluminacion.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\iluminacion.X.production.o
 vfprintf@ap 54 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -906,21 +906,19 @@ __Ltext26 0 0 ABS 0 text26 dist/default/production\iluminacion.X.production.o
 __Ltext27 0 0 ABS 0 text27 dist/default/production\iluminacion.X.production.o
 __Ltext28 0 0 ABS 0 text28 dist/default/production\iluminacion.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\iluminacion.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\DIEGOM~1\AppData\Local\Temp\s7c8.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\DIEGOM~1\AppData\Local\Temp\sb6s.o
 ___aldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-_sprintf 1B1C 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
-_vfprintf 1A5C 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
+_sprintf 1B1C 0 CODE 0 text5 dist/default/production\iluminacion.X.production.o
+_vfprintf 1A5C 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\iluminacion.X.production.o
 ?___xxtofl 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\iluminacion.X.production.o
 sprintf@ap 62 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
-BH1750_read_word@hb 39 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-BH1750_read_word@lb 38 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__end_of_uart_iniciar 1A5C 0 CODE 0 text3 dist/default/production\iluminacion.X.production.o
 ___fltol@sign1 30 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\iluminacion.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\iluminacion.X.production.o
-_UART_init 19EC 0 CODE 0 text22 dist/default/production\iluminacion.X.production.o
-__end_of_vfprintf 1ABE 0 CODE 0 text2 dist/default/production\iluminacion.X.production.o
+__end_of_vfprintf 1ABE 0 CODE 0 text6 dist/default/production\iluminacion.X.production.o
 ___fltol@f1 28 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __end_of_i2c_espera 1CC6 0 CODE 0 text29 dist/default/production\iluminacion.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -935,14 +933,14 @@ __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\iluminacion.X.production.o
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-BH1750_write@cmd 3 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__size_of_dameValorLux 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\iluminacion.X.production.o
+_bh1750_escribir 1CC6 0 CODE 0 text25 dist/default/production\iluminacion.X.production.o
 __CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_BH1750_init 1D36 0 CODE 0 text24 dist/default/production\iluminacion.X.production.o
-__end_of_i2c_recibe_datoACK 1CA0 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+dameValorLux@modo 43 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
+__end_of_i2c_recibe_datoACK 1CA0 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
 _TXSTAbits FAC 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-_UART_init$1077 17 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _SSPCON1 FC6 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _SSPCON2 FC5 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _SSPSTAT FC7 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -950,17 +948,18 @@ __end_of_i2c_inicia_com 1D4A 0 CODE 0 text26 dist/default/production\iluminacion
 ___aldiv@counter 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 sprintf@f 64 0 BANK0 1 cstackBANK0 dist/default/production\iluminacion.X.production.o
 sprintf@s 58 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
-__end_of_dtoa EAA 0 CODE 0 text4 dist/default/production\iluminacion.X.production.o
+__end_of_dtoa EAA 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
 __end_of_main 19EC 0 CODE 0 text0 dist/default/production\iluminacion.X.production.o
 _ACKDT 7E2D 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _ACKEN 7E2C 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_fputc 17DA 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
-__end_of_fputs 1BFC 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
+__end_of_fputc 17DA 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
+__end_of_fputs 1BFC 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
 ?_sprintf 58 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 _RCREG FAE 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _SPBRG FAF 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _TXREG FAD 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-__end_of_putch 1D54 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
+__end_of_putch 1D54 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
+__end_of_dameValorLux 1BB8 0 CODE 0 text18 dist/default/production\iluminacion.X.production.o
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
@@ -974,20 +973,21 @@ __Lsfr 0 0 ABS 0 sfr dist/default/production\iluminacion.X.production.o
 __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _flags 94 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
-_fputc 1710 0 CODE 0 text8 dist/default/production\iluminacion.X.production.o
-_fputs 1BB8 0 CODE 0 text7 dist/default/production\iluminacion.X.production.o
+_fputc 1710 0 CODE 0 text12 dist/default/production\iluminacion.X.production.o
+_fputs 1BB8 0 CODE 0 text11 dist/default/production\iluminacion.X.production.o
 __CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
-_putch 1D52 0 CODE 0 text9 dist/default/production\iluminacion.X.production.o
+_putch 1D52 0 CODE 0 text13 dist/default/production\iluminacion.X.production.o
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 _width 90 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
-__size_of_UART_printf 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
+__end_of_uart_printf 1B1C 0 CODE 0 text1 dist/default/production\iluminacion.X.production.o
 __size_of_abs 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __size_of_pad 0 0 ABS 0 - dist/default/production\iluminacion.X.production.o
 __initialization 1CDE 0 CODE 0 cinit dist/default/production\iluminacion.X.production.o
 ___xxtofl@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __pbssBANK0 8E 0 BANK0 1 bssBANK0 dist/default/production\iluminacion.X.production.o
+?_dameValorLux 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\iluminacion.X.production.o
-_i2c_recibe_datoACK 1C72 0 CODE 0 text16 dist/default/production\iluminacion.X.production.o
+_i2c_recibe_datoACK 1C72 0 CODE 0 text20 dist/default/production\iluminacion.X.production.o
 __Hsmallconst 82E 0 SMALLCONST 0 smallconst dist/default/production\iluminacion.X.production.o
 dtoa@d 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
 dtoa@i 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\iluminacion.X.production.o
@@ -1025,7 +1025,7 @@ __size_of_i2c_envia_dato 0 0 ABS 0 - dist/default/production\iluminacion.X.produ
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text19 0 82E 82E 1526 1
+text23 0 82E 82E 1526 1
 cstackCOMRAM 1 1 1 5F 1
 cstackBANK0 1 60 60 56 1
 reset_vec 0 0 0 4 1

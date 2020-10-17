@@ -4,13 +4,13 @@
 #define RX TRISC7
 #define TX TRISC6
 
-void UART_init(T_LONG BAUD);
-T_UBYTE UART_read(void);
-void UART_write(T_BYTE dato);
-void UART_printf(T_BYTE* cadena);
+void uart_iniciar(T_LONG BAUD);
+T_UBYTE uart_leer(void);
+void uart_escribir(T_BYTE dato);
+void uart_printf(T_BYTE* cadena);
 
 
-void UART_init(T_LONG BAUD) {
+void uart_iniciar(T_LONG BAUD) {
     
     T_LONG frecuenciaCristal = _XTAL_FREQ;
     TX = 0; //TX OUTPUT
@@ -33,20 +33,20 @@ void UART_init(T_LONG BAUD) {
     RCSTAbits.CREN = 1; //Activamos recepción
 }
 
-T_UBYTE UART_read(void) {
+T_UBYTE uart_leer(void) {
     while (!RCIF);
     RCIF = 0;
     return RCREG;
 }
 
-void UART_write(T_BYTE dato) {
+void uart_escribir(T_BYTE dato) {
     TXREG = dato;
     while (!TXSTAbits.TRMT);
 }
 
-void UART_printf(T_BYTE* cadena) {
+void uart_printf(T_BYTE* cadena) {
     while (*cadena) {
-        UART_write(*cadena++);
+        uart_escribir(*cadena++);
     }
 }
 

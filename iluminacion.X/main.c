@@ -12,16 +12,16 @@ void main(void) {
     T_ULONG luzMedida = 0;
     T_BYTE buffer[TAMANO_CADENA];
     
-    UART_init(9600);
-    UART_printf("\r\nSistema Iniciado\n\r");
+    uart_iniciar(9600);
     i2c_iniciar();
-    BH1750_init();
+    bh1750_iniciar();
+    uart_printf("\r\nSistema Iniciado\n\r");
     
     while(1)
     {
-        luzMedida = get_lux_value(cont_H_res_mode1);
+        luzMedida = dameValorLux(cont_H_res_mode1);
         sprintf(buffer, "\rLuz medida: %d luxs\n\r",luzMedida);
-        UART_printf(buffer);
+        uart_printf(buffer);
         __delay_ms(500);
         
     }

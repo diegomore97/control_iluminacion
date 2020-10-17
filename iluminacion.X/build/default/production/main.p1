@@ -125,9 +125,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "187 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18.h
 [v __delay `JF3470 ~T0 @X0 0 e ]
 [p i __delay ]
-"19 ./bh1750.h
-[; ;./bh1750.h: 19: void BH1750_write(T_UBYTE cmd);
-[v _BH1750_write `(v ~T0 @X0 0 ef1`uc ]
+"22 ./bh1750.h
+[; ;./bh1750.h: 22: void bh1750_escribir(T_UBYTE comando);
+[v _bh1750_escribir `(v ~T0 @X0 0 ef1`uc ]
 [p mainexit ]
 "113 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
@@ -721,10 +721,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 "13 ./UART.h
-[; ;./UART.h: 13: void UART_init(T_LONG BAUD) {
-[v _UART_init `(v ~T0 @X0 1 ef1`l ]
+[; ;./UART.h: 13: void uart_iniciar(T_LONG BAUD) {
+[v _uart_iniciar `(v ~T0 @X0 1 ef1`l ]
 {
-[e :U _UART_init ]
+[e :U _uart_iniciar ]
 [v _BAUD `l ~T0 @X0 1 r1 ]
 [f ]
 "15
@@ -766,10 +766,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 369 ]
 }
 "36
-[; ;./UART.h: 36: T_UBYTE UART_read(void) {
-[v _UART_read `(uc ~T0 @X0 1 ef ]
+[; ;./UART.h: 36: T_UBYTE uart_leer(void) {
+[v _uart_leer `(uc ~T0 @X0 1 ef ]
 {
-[e :U _UART_read ]
+[e :U _uart_leer ]
 [f ]
 "37
 [; ;./UART.h: 37:     while (!RCIF);
@@ -790,10 +790,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 370 ]
 }
 "42
-[; ;./UART.h: 42: void UART_write(T_BYTE dato) {
-[v _UART_write `(v ~T0 @X0 1 ef1`uc ]
+[; ;./UART.h: 42: void uart_escribir(T_BYTE dato) {
+[v _uart_escribir `(v ~T0 @X0 1 ef1`uc ]
 {
-[e :U _UART_write ]
+[e :U _uart_escribir ]
 [v _dato `uc ~T0 @X0 1 r1 ]
 [f ]
 "43
@@ -811,10 +811,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 374 ]
 }
 "47
-[; ;./UART.h: 47: void UART_printf(T_BYTE* cadena) {
-[v _UART_printf `(v ~T0 @X0 1 ef1`*uc ]
+[; ;./UART.h: 47: void uart_printf(T_BYTE* cadena) {
+[v _uart_printf `(v ~T0 @X0 1 ef1`*uc ]
 {
-[e :U _UART_printf ]
+[e :U _uart_printf ]
 [v _cadena `*uc ~T0 @X0 1 r1 ]
 [f ]
 "48
@@ -823,8 +823,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 380 ]
 {
 "49
-[; ;./UART.h: 49:         UART_write(*cadena++);
-[e ( _UART_write (1 *U ++ _cadena * -> -> 1 `i `x -> -> # *U _cadena `i `x ]
+[; ;./UART.h: 49:         uart_escribir(*cadena++);
+[e ( _uart_escribir (1 *U ++ _cadena * -> -> 1 `i `x -> -> # *U _cadena `i `x ]
 "50
 [; ;./UART.h: 50:     }
 }
@@ -1028,124 +1028,124 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./I2C.h: 121: }
 [e :UE 392 ]
 }
-"24 ./bh1750.h
-[; ;./bh1750.h: 24: void BH1750_init(void) {
-[v _BH1750_init `(v ~T0 @X0 1 ef ]
+"27 ./bh1750.h
+[; ;./bh1750.h: 27: void bh1750_iniciar(void) {
+[v _bh1750_iniciar `(v ~T0 @X0 1 ef ]
 {
-[e :U _BH1750_init ]
+[e :U _bh1750_iniciar ]
 [f ]
-"25
-[; ;./bh1750.h: 25:     _delay((unsigned long)((100)*(4000000/4000.0)));
+"28
+[; ;./bh1750.h: 28:     _delay((unsigned long)((100)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"26
-[; ;./bh1750.h: 26:     BH1750_write(0x00);
-[e ( _BH1750_write (1 -> -> 0 `i `uc ]
-"27
-[; ;./bh1750.h: 27: }
+"29
+[; ;./bh1750.h: 29:     bh1750_escribir(0x00);
+[e ( _bh1750_escribir (1 -> -> 0 `i `uc ]
+"30
+[; ;./bh1750.h: 30: }
 [e :UE 393 ]
 }
-"29
-[; ;./bh1750.h: 29: void BH1750_write(T_UBYTE cmd) {
-[v _BH1750_write `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _BH1750_write ]
-[v _cmd `uc ~T0 @X0 1 r1 ]
-[f ]
-"30
-[; ;./bh1750.h: 30:     i2c_inicia_com();
-[e ( _i2c_inicia_com ..  ]
-"31
-[; ;./bh1750.h: 31:     i2c_envia_dato(0x46);
-[e ( _i2c_envia_dato (1 -> -> 70 `i `uc ]
 "32
-[; ;./bh1750.h: 32:     i2c_envia_dato(cmd);
-[e ( _i2c_envia_dato (1 _cmd ]
+[; ;./bh1750.h: 32: void bh1750_escribir(T_UBYTE comando) {
+[v _bh1750_escribir `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _bh1750_escribir ]
+[v _comando `uc ~T0 @X0 1 r1 ]
+[f ]
 "33
-[; ;./bh1750.h: 33:     i2c_detener();
-[e ( _i2c_detener ..  ]
+[; ;./bh1750.h: 33:     i2c_inicia_com();
+[e ( _i2c_inicia_com ..  ]
 "34
-[; ;./bh1750.h: 34: }
+[; ;./bh1750.h: 34:     i2c_envia_dato(0x46);
+[e ( _i2c_envia_dato (1 -> -> 70 `i `uc ]
+"35
+[; ;./bh1750.h: 35:     i2c_envia_dato(comando);
+[e ( _i2c_envia_dato (1 _comando ]
+"36
+[; ;./bh1750.h: 36:     i2c_detener();
+[e ( _i2c_detener ..  ]
+"37
+[; ;./bh1750.h: 37: }
 [e :UE 394 ]
 }
-"36
-[; ;./bh1750.h: 36: T_ULONG BH1750_read_word() {
-[v _BH1750_read_word `(ul ~T0 @X0 1 ef ]
+"39
+[; ;./bh1750.h: 39: T_ULONG bh1750_leer() {
+[v _bh1750_leer `(ul ~T0 @X0 1 ef ]
 {
-[e :U _BH1750_read_word ]
+[e :U _bh1750_leer ]
 [f ]
-"37
-[; ;./bh1750.h: 37:     register T_ULONG value = 0;
-[v _value `ul ~T0 @X0 1 A ]
-[e = _value -> -> -> 0 `i `l `ul ]
-"38
-[; ;./bh1750.h: 38:     T_UBYTE lb = 0;
+"40
+[; ;./bh1750.h: 40:     register T_ULONG valor = 0;
+[v _valor `ul ~T0 @X0 1 A ]
+[e = _valor -> -> -> 0 `i `l `ul ]
+"41
+[; ;./bh1750.h: 41:     T_UBYTE lb = 0;
 [v _lb `uc ~T0 @X0 1 a ]
 [e = _lb -> -> 0 `i `uc ]
-"39
-[; ;./bh1750.h: 39:     T_UBYTE hb = 0;
+"42
+[; ;./bh1750.h: 42:     T_UBYTE hb = 0;
 [v _hb `uc ~T0 @X0 1 a ]
 [e = _hb -> -> 0 `i `uc ]
-"41
-[; ;./bh1750.h: 41:     i2c_inicia_com();
-[e ( _i2c_inicia_com ..  ]
-"42
-[; ;./bh1750.h: 42:     i2c_envia_dato(0x47);
-[e ( _i2c_envia_dato (1 -> -> 71 `i `uc ]
-"43
-[; ;./bh1750.h: 43:     hb = i2c_recibe_datoACK(1);
-[e = _hb ( _i2c_recibe_datoACK (1 -> -> 1 `i `uc ]
 "44
-[; ;./bh1750.h: 44:     lb = i2c_recibe_datoACK(0);
-[e = _lb ( _i2c_recibe_datoACK (1 -> -> 0 `i `uc ]
+[; ;./bh1750.h: 44:     i2c_inicia_com();
+[e ( _i2c_inicia_com ..  ]
 "45
-[; ;./bh1750.h: 45:     i2c_detener();
-[e ( _i2c_detener ..  ]
+[; ;./bh1750.h: 45:     i2c_envia_dato(0x47);
+[e ( _i2c_envia_dato (1 -> -> 71 `i `uc ]
+"46
+[; ;./bh1750.h: 46:     hb = i2c_recibe_datoACK(1);
+[e = _hb ( _i2c_recibe_datoACK (1 -> -> 1 `i `uc ]
 "47
-[; ;./bh1750.h: 47:     value = (hb <<8 ) + lb;
-[e = _value -> -> + << -> _hb `i -> 8 `i -> _lb `i `l `ul ]
+[; ;./bh1750.h: 47:     lb = i2c_recibe_datoACK(0);
+[e = _lb ( _i2c_recibe_datoACK (1 -> -> 0 `i `uc ]
 "48
-[; ;./bh1750.h: 48:     value /= 1.2;
-[e =/ _value .1.2 ]
+[; ;./bh1750.h: 48:     i2c_detener();
+[e ( _i2c_detener ..  ]
 "50
-[; ;./bh1750.h: 50:     return value;
-[e ) _value ]
-[e $UE 395  ]
+[; ;./bh1750.h: 50:     valor = (hb <<8 ) + lb;
+[e = _valor -> -> + << -> _hb `i -> 8 `i -> _lb `i `l `ul ]
 "51
-[; ;./bh1750.h: 51: }
+[; ;./bh1750.h: 51:     valor /= 1.2;
+[e =/ _valor .1.2 ]
+"53
+[; ;./bh1750.h: 53:     return valor;
+[e ) _valor ]
+[e $UE 395  ]
+"54
+[; ;./bh1750.h: 54: }
 [e :UE 395 ]
 }
-"53
-[; ;./bh1750.h: 53: T_ULONG get_lux_value(T_UBYTE mode) {
-[v _get_lux_value `(ul ~T0 @X0 1 ef1`uc ]
-{
-[e :U _get_lux_value ]
-[v _mode `uc ~T0 @X0 1 r1 ]
-[f ]
-"54
-[; ;./bh1750.h: 54:     register T_ULONG lux_value = 0;
-[v _lux_value `ul ~T0 @X0 1 A ]
-[e = _lux_value -> -> -> 0 `i `l `ul ]
-"55
-[; ;./bh1750.h: 55:     BH1750_write(0x01);
-[e ( _BH1750_write (1 -> -> 1 `i `uc ]
 "56
-[; ;./bh1750.h: 56:     BH1750_write(mode);
-[e ( _BH1750_write (1 _mode ]
+[; ;./bh1750.h: 56: T_ULONG dameValorLux(T_UBYTE modo) {
+[v _dameValorLux `(ul ~T0 @X0 1 ef1`uc ]
+{
+[e :U _dameValorLux ]
+[v _modo `uc ~T0 @X0 1 r1 ]
+[f ]
 "57
-[; ;./bh1750.h: 57:     lux_value = BH1750_read_word();
-[e = _lux_value ( _BH1750_read_word ..  ]
+[; ;./bh1750.h: 57:     register T_ULONG valorLux = 0;
+[v _valorLux `ul ~T0 @X0 1 A ]
+[e = _valorLux -> -> -> 0 `i `l `ul ]
 "58
-[; ;./bh1750.h: 58:     _delay((unsigned long)((180)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 180 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;./bh1750.h: 58:     bh1750_escribir(0x01);
+[e ( _bh1750_escribir (1 -> -> 1 `i `uc ]
 "59
-[; ;./bh1750.h: 59:     BH1750_write(0x00);
-[e ( _BH1750_write (1 -> -> 0 `i `uc ]
+[; ;./bh1750.h: 59:     bh1750_escribir(modo);
+[e ( _bh1750_escribir (1 _modo ]
+"60
+[; ;./bh1750.h: 60:     valorLux = bh1750_leer();
+[e = _valorLux ( _bh1750_leer ..  ]
 "61
-[; ;./bh1750.h: 61:     return lux_value;
-[e ) _lux_value ]
-[e $UE 396  ]
+[; ;./bh1750.h: 61:     _delay((unsigned long)((180)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 180 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "62
-[; ;./bh1750.h: 62: }
+[; ;./bh1750.h: 62:     bh1750_escribir(0x00);
+[e ( _bh1750_escribir (1 -> -> 0 `i `uc ]
+"64
+[; ;./bh1750.h: 64:     return valorLux;
+[e ) _valorLux ]
+[e $UE 396  ]
+"65
+[; ;./bh1750.h: 65: }
 [e :UE 396 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
@@ -1163,17 +1163,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 13:     T_BYTE buffer[30];
 [v _buffer `uc ~T0 @X0 -> 30 `i a ]
 "15
-[; ;main.c: 15:     UART_init(9600);
-[e ( _UART_init (1 -> -> 9600 `i `l ]
+[; ;main.c: 15:     uart_iniciar(9600);
+[e ( _uart_iniciar (1 -> -> 9600 `i `l ]
 "16
-[; ;main.c: 16:     UART_printf("\r\nSistema Iniciado\n\r");
-[e ( _UART_printf (1 :s 1C ]
-"17
-[; ;main.c: 17:     i2c_iniciar();
+[; ;main.c: 16:     i2c_iniciar();
 [e ( _i2c_iniciar ..  ]
+"17
+[; ;main.c: 17:     bh1750_iniciar();
+[e ( _bh1750_iniciar ..  ]
 "18
-[; ;main.c: 18:     BH1750_init();
-[e ( _BH1750_init ..  ]
+[; ;main.c: 18:     uart_printf("\r\nSistema Iniciado\n\r");
+[e ( _uart_printf (1 :s 1C ]
 "20
 [; ;main.c: 20:     while(1)
 [e :U 399 ]
@@ -1181,14 +1181,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 21:     {
 {
 "22
-[; ;main.c: 22:         luzMedida = get_lux_value(0x10);
-[e = _luzMedida ( _get_lux_value (1 -> -> 16 `i `uc ]
+[; ;main.c: 22:         luzMedida = dameValorLux(0x10);
+[e = _luzMedida ( _dameValorLux (1 -> -> 16 `i `uc ]
 "23
 [; ;main.c: 23:         sprintf(buffer, "\rLuz medida: %d luxs\n\r",luzMedida);
 [e ( _sprintf (1 , (. , &U _buffer :s 2C _luzMedida ]
 "24
-[; ;main.c: 24:         UART_printf(buffer);
-[e ( _UART_printf (1 &U _buffer ]
+[; ;main.c: 24:         uart_printf(buffer);
+[e ( _uart_printf (1 &U _buffer ]
 "25
 [; ;main.c: 25:         _delay((unsigned long)((500)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
