@@ -6330,6 +6330,7 @@ T_UBYTE overflowTimer = 0;
 T_UBYTE tempHora = 0;
 T_UBYTE flagIluminado;
 T_BYTE buffer[50];
+T_BYTE buffer2[50];
 
 T_INT VALOR_TIMER0 = 26473;
 T_INT contInterrupciones = 0;
@@ -6521,6 +6522,7 @@ void setRtcDefault(void) {
 
     escribe_rtc(0x01, 0);
     escribe_rtc(0x00, 0);
+    UART_printf("\r\nRTC DEFAULT\n\r");
 }
 
 void fijaHoraRtc(void) {
@@ -6693,6 +6695,10 @@ void sistemaPrincipal(T_UBYTE opcion) {
             leeHorariosMemoria();
             break;
 
+        case 9:
+            setRtcDefault();
+            break;
+
 
         default:
 
@@ -6761,33 +6767,33 @@ void dameDatosSistema(void) {
     sprintf(buffer, "\r\nSetpoint = %d | ", setPoint);
     UART_printf(buffer);
 
-        switch (diaActual) {
+    switch (diaActual) {
         case 1:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = DOMINGO\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = DOMINGO\r\n", hora, minutos);
             break;
 
         case 2:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = LUNES\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = LUNES\r\n", hora, minutos);
             break;
 
         case 3:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = MARTES\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = MARTES\r\n", hora, minutos);
             break;
 
         case 4:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = MIERCOLES\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = MIERCOLES\r\n", hora, minutos);
             break;
 
         case 5:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = JUEVES\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = JUEVES\r\n", hora, minutos);
             break;
 
         case 6:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = VIERNES\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = VIERNES\r\n", hora, minutos);
             break;
 
         case 7:
-            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = SABADO\r\n", hora, minutos);
+            sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = SABADO\r\n", hora, minutos);
             break;
 
         default:
@@ -6795,7 +6801,7 @@ void dameDatosSistema(void) {
     }
 
 
-    UART_printf(buffer);
+    UART_printf(buffer2);
 
     UART_printf("\r\nH = HORA\r\n");
     UART_printf("\r\nR = ILUMINAR( 1 SI | 0 NO)\r\n");
@@ -7042,9 +7048,9 @@ void limpiarBuffer(void) {
 
 void asignarSetPoint(void) {
 
-    T_ULONG setPointTemp;
+    T_ULONG setPointTemp = 0;
 
-    setPointTemp = getValue(5);
+    setPointTemp = getValue(4);
 
     if (setPointTemp != '@') {
 
@@ -7092,7 +7098,6 @@ void main(void) {
     bh1750_iniciar();
     configPwm(1);
     inicializarObjetos();
-
 
 
     INTCONbits.GIE = 1;

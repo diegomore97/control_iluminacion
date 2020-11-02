@@ -47,7 +47,6 @@ void main(void) {
     configPwm(CANAL_1);
     inicializarObjetos();
     //configBluetoothHC_06(); //Configurar el modulo Bluetooth | comentar una vez configurado
-    //setRtcDefault(); //Comentar despues de programar el chip por primera vez y volver a programar
 
     INTCONbits.GIE = 1; //GLOBALS INTERRUPTIONS ENABLED
     INTCONbits.PEIE = 1; // PERIPHERAL INTERRUPTIONS ENABLED
