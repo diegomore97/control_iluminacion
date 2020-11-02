@@ -6337,6 +6337,7 @@ T_INT contInterrupciones = 0;
 T_UWORD minutosIluminar = 0;
 T_UWORD minutosTranscurridos = 0;
 T_UBYTE iluminando = 0;
+T_UBYTE setPointIntro;
 T_UBYTE peticionLecturaSensores = 0;
 
 void inicializarObjetos(void);
@@ -6404,12 +6405,18 @@ void dameDiaActual(void) {
 
 void fijaDiaRtc(void) {
 
+    if (!setPointIntro) {
 
 
-    if (setRtc(0x03)) {
 
-        UART_write('E');
-    }
+        if (setRtc(0x03)) {
+
+            UART_write('E');
+        }
+
+    } else
+        setPointIntro = 0;
+
 
 }
 
@@ -7050,7 +7057,11 @@ void asignarSetPoint(void) {
 
     T_ULONG setPointTemp = 0;
 
-    setPointTemp = getValue(4);
+    setPointIntro = 0;
+
+    setPointTemp = getValue(1) * 1000;
+    setPointTemp = getValue(1) * 100;
+    setPointTemp += getValue(2);
 
     if (setPointTemp != '@') {
 
@@ -7058,6 +7069,8 @@ void asignarSetPoint(void) {
         UART_write('E');
 
     }
+
+    setPointIntro = 1;
 }
 # 11 "main.c" 2
 
@@ -7093,7 +7106,6 @@ void __attribute__((picinterrupt(("")))) desbordamiento(void) {
 
 void main(void) {
 
-    UART_init(9600);
     i2c_iniciar();
     bh1750_iniciar();
     configPwm(1);
@@ -7117,6 +7129,7 @@ void main(void) {
 
 
 
+    UART_init(9600);
     UART_printf("\r\nSistema Iniciado\n\r");
 
     while (1) {
@@ -7126,6 +7139,7 @@ void main(void) {
             datoRecibido = 0;
             byteUart -= 48;
             sistemaPrincipal(byteUart);
+
 
         }
 

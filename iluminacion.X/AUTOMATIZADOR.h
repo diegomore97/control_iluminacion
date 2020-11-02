@@ -42,6 +42,7 @@ T_INT contInterrupciones = 0;
 T_UWORD minutosIluminar = 0;
 T_UWORD minutosTranscurridos = 0;
 T_UBYTE iluminando = 0;
+T_UBYTE setPointIntro;
 T_UBYTE peticionLecturaSensores = 0; //Flag para saber si se recibio la lectura
 
 void inicializarObjetos(void);
@@ -109,12 +110,18 @@ void dameDiaActual(void) {
 
 void fijaDiaRtc(void) {
 
-    //UART_printf("\r\n Envie el dia de la semana Ej: 01 = DOMINGO ... 07 = SABADO \r\n"); //comentar
+    if (!setPointIntro) {
 
-    if (setRtc(0x03)) {
-        //UART_printf("\r\n DIA ESTABLECIDO CORRECTAMENTE \r\n"); //comentar
-        UART_write(SETEO_EXITOSO);
-    }
+        //UART_printf("\r\n Envie el dia de la semana Ej: 01 = DOMINGO ... 07 = SABADO \r\n"); //comentar
+
+        if (setRtc(0x03)) {
+            //UART_printf("\r\n DIA ESTABLECIDO CORRECTAMENTE \r\n"); //comentar
+            UART_write(SETEO_EXITOSO);
+        }
+
+    } else
+        setPointIntro = 0;
+
 
 }
 
@@ -755,7 +762,11 @@ void asignarSetPoint(void) {
 
     T_ULONG setPointTemp = 0;
 
-    setPointTemp = getValue(4);
+    setPointIntro = 0;
+
+    setPointTemp = getValue(1) * 1000;
+    setPointTemp = getValue(1) * 100;
+    setPointTemp += getValue(2);
 
     if (setPointTemp != SETEO_DENEGADO) {
 
@@ -763,6 +774,8 @@ void asignarSetPoint(void) {
         UART_write(SETEO_EXITOSO);
 
     }
+
+    setPointIntro = 1;
 }
 
 

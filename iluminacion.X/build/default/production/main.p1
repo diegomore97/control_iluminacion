@@ -198,11 +198,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./AUTOMATIZADOR.h: 22: typedef struct {
 [s S422 `uc 1 `uc -> 8 `i `uc 1 `uc 1 `uc 1 ]
 [n S422 . hora dias iluminar iluminado tiempoIluminar ]
-"52
-[; ;./AUTOMATIZADOR.h: 52: T_UBYTE setRtc(T_UBYTE direccion);
+"53
+[; ;./AUTOMATIZADOR.h: 53: T_UBYTE setRtc(T_UBYTE direccion);
 [v _setRtc `(uc ~T0 @X0 0 ef1`uc ]
-"66
-[; ;./AUTOMATIZADOR.h: 66: T_ULONG getValue(T_WORD numCharacters);
+"67
+[; ;./AUTOMATIZADOR.h: 67: T_ULONG getValue(T_WORD numCharacters);
 [v _getValue `(ul ~T0 @X0 0 ef1`s ]
 "4390 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4390:     struct {
@@ -219,19 +219,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4408
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h: 4408: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
 [v _PIE1bits `VS176 ~T0 @X0 0 e@3997 ]
-"64 ./AUTOMATIZADOR.h
-[; ;./AUTOMATIZADOR.h: 64: void dameDatosSistema(void);
+"65 ./AUTOMATIZADOR.h
+[; ;./AUTOMATIZADOR.h: 65: void dameDatosSistema(void);
 [v _dameDatosSistema `(v ~T0 @X0 0 ef ]
-"65
-[; ;./AUTOMATIZADOR.h: 65: void mostrarDatosSensores(void);
+"66
+[; ;./AUTOMATIZADOR.h: 66: void mostrarDatosSensores(void);
 [v _mostrarDatosSensores `(v ~T0 @X0 0 ef ]
-"69
-[; ;./AUTOMATIZADOR.h: 69: void asignarSetPoint(void);
+"70
+[; ;./AUTOMATIZADOR.h: 70: void asignarSetPoint(void);
 [v _asignarSetPoint `(v ~T0 @X0 0 ef ]
 "113 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\c99\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"68 ./AUTOMATIZADOR.h
-[; ;./AUTOMATIZADOR.h: 68: void limpiarBuffer(void);
+"69 ./AUTOMATIZADOR.h
+[; ;./AUTOMATIZADOR.h: 69: void limpiarBuffer(void);
 [v _limpiarBuffer `(v ~T0 @X0 0 ef ]
 [t ~ __interrupt . k ]
 [t T36 __interrupt ]
@@ -1803,33 +1803,36 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 "45
-[; ;./AUTOMATIZADOR.h: 45: T_UBYTE peticionLecturaSensores = 0;
+[; ;./AUTOMATIZADOR.h: 45: T_UBYTE setPointIntro;
+[v _setPointIntro `uc ~T0 @X0 1 e ]
+"46
+[; ;./AUTOMATIZADOR.h: 46: T_UBYTE peticionLecturaSensores = 0;
 [v _peticionLecturaSensores `uc ~T0 @X0 1 e ]
 [i _peticionLecturaSensores
 -> -> 0 `i `uc
 ]
-"71
-[; ;./AUTOMATIZADOR.h: 71: T_INT horaIluminar() {
+"72
+[; ;./AUTOMATIZADOR.h: 72: T_INT horaIluminar() {
 [v _horaIluminar `(i ~T0 @X0 1 ef ]
 {
 [e :U _horaIluminar ]
 [f ]
-"73
-[; ;./AUTOMATIZADOR.h: 73:     return (horarios[hora].iluminar) && (!horarios[hora].iluminado) &&
+"74
+[; ;./AUTOMATIZADOR.h: 74:     return (horarios[hora].iluminar) && (!horarios[hora].iluminado) &&
 [e ) -> && && != -> . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 2 `i -> 0 `i ! != -> . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 3 `i -> 0 `i == -> *U + &U . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> - -> _diaActual `i -> 1 `i `ui `ux -> -> # *U &U . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux `ui -> 49 `ui `i ]
 [e $UE 423  ]
-"75
-[; ;./AUTOMATIZADOR.h: 75: }
+"76
+[; ;./AUTOMATIZADOR.h: 76: }
 [e :UE 423 ]
 }
-"77
-[; ;./AUTOMATIZADOR.h: 77: void inicializarObjetos() {
+"78
+[; ;./AUTOMATIZADOR.h: 78: void inicializarObjetos() {
 [v _inicializarObjetos `(v ~T0 @X0 1 ef ]
 {
 [e :U _inicializarObjetos ]
 [f ]
-"79
-[; ;./AUTOMATIZADOR.h: 79:     for (T_INT i = 0; i < 24; i++) {
+"80
+[; ;./AUTOMATIZADOR.h: 80:     for (T_INT i = 0; i < 24; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -1837,27 +1840,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 426  ]
 [e :U 425 ]
 {
-"80
-[; ;./AUTOMATIZADOR.h: 80:         horarios[i].hora = i;
-[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 0 -> _i `uc ]
 "81
-[; ;./AUTOMATIZADOR.h: 81:         horarios[i].iluminar = 0;
-[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 -> -> 0 `i `uc ]
+[; ;./AUTOMATIZADOR.h: 81:         horarios[i].hora = i;
+[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 0 -> _i `uc ]
 "82
-[; ;./AUTOMATIZADOR.h: 82:         horarios[i].iluminado = 0;
-[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 3 -> -> 0 `i `uc ]
+[; ;./AUTOMATIZADOR.h: 82:         horarios[i].iluminar = 0;
+[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 -> -> 0 `i `uc ]
 "83
-[; ;./AUTOMATIZADOR.h: 83:         horarios[i].tiempoIluminar = 1;
-[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 4 -> -> 1 `i `uc ]
+[; ;./AUTOMATIZADOR.h: 83:         horarios[i].iluminado = 0;
+[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 3 -> -> 0 `i `uc ]
 "84
-[; ;./AUTOMATIZADOR.h: 84:     }
+[; ;./AUTOMATIZADOR.h: 84:         horarios[i].tiempoIluminar = 1;
+[e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 4 -> -> 1 `i `uc ]
+"85
+[; ;./AUTOMATIZADOR.h: 85:     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 24 `i 425  ]
 [e :U 426 ]
 }
-"86
-[; ;./AUTOMATIZADOR.h: 86:     for (T_INT i = 0; i < 24; i++) {
+"87
+[; ;./AUTOMATIZADOR.h: 87:     for (T_INT i = 0; i < 24; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -1865,1663 +1868,1688 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 429  ]
 [e :U 428 ]
 {
-"88
-[; ;./AUTOMATIZADOR.h: 88:         for (T_INT j = 0; j < 7; j++)
+"89
+[; ;./AUTOMATIZADOR.h: 89:         for (T_INT j = 0; j < 7; j++)
 {
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 0 `i ]
 [e $ < _j -> 7 `i 431  ]
 [e $U 432  ]
 [e :U 431 ]
-"89
-[; ;./AUTOMATIZADOR.h: 89:             horarios[i].dias[j] = 0;
+"90
+[; ;./AUTOMATIZADOR.h: 90:             horarios[i].dias[j] = 0;
 [e = *U + &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> _j `ui `ux -> -> # *U &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux -> -> 0 `i `uc ]
 [e ++ _j -> 1 `i ]
 [e $ < _j -> 7 `i 431  ]
 [e :U 432 ]
 }
-"91
-[; ;./AUTOMATIZADOR.h: 91:         horarios[i].dias[7 - 1] = '\0';
-[e = *U + &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> - -> 7 `i -> 1 `i `ui `ux -> -> # *U &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux -> -> 0 `ui `uc ]
 "92
-[; ;./AUTOMATIZADOR.h: 92:     }
+[; ;./AUTOMATIZADOR.h: 92:         horarios[i].dias[7 - 1] = '\0';
+[e = *U + &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> - -> 7 `i -> 1 `i `ui `ux -> -> # *U &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux -> -> 0 `ui `uc ]
+"93
+[; ;./AUTOMATIZADOR.h: 93:     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 24 `i 428  ]
 [e :U 429 ]
 }
-"94
-[; ;./AUTOMATIZADOR.h: 94:     pwmDuty(0, 1);
+"95
+[; ;./AUTOMATIZADOR.h: 95:     pwmDuty(0, 1);
 [e ( _pwmDuty (2 , -> -> 0 `i `ui -> -> 1 `i `uc ]
-"96
-[; ;./AUTOMATIZADOR.h: 96: }
+"97
+[; ;./AUTOMATIZADOR.h: 97: }
 [e :UE 424 ]
 }
-"98
-[; ;./AUTOMATIZADOR.h: 98: void dameHoraActual() {
+"99
+[; ;./AUTOMATIZADOR.h: 99: void dameHoraActual() {
 [v _dameHoraActual `(v ~T0 @X0 1 ef ]
 {
 [e :U _dameHoraActual ]
 [f ]
-"100
-[; ;./AUTOMATIZADOR.h: 100:     segundos = convertirDato(leer_rtc(0x00));
-[e = _segundos ( _convertirDato (1 ( _leer_rtc (1 -> -> 0 `i `uc ]
 "101
-[; ;./AUTOMATIZADOR.h: 101:     minutos = convertirDato(leer_rtc(0x01));
-[e = _minutos ( _convertirDato (1 ( _leer_rtc (1 -> -> 1 `i `uc ]
+[; ;./AUTOMATIZADOR.h: 101:     segundos = convertirDato(leer_rtc(0x00));
+[e = _segundos ( _convertirDato (1 ( _leer_rtc (1 -> -> 0 `i `uc ]
 "102
-[; ;./AUTOMATIZADOR.h: 102:     hora = convertirDato(leer_rtc(0x02));
-[e = _hora ( _convertirDato (1 ( _leer_rtc (1 -> -> 2 `i `uc ]
+[; ;./AUTOMATIZADOR.h: 102:     minutos = convertirDato(leer_rtc(0x01));
+[e = _minutos ( _convertirDato (1 ( _leer_rtc (1 -> -> 1 `i `uc ]
 "103
-[; ;./AUTOMATIZADOR.h: 103: }
+[; ;./AUTOMATIZADOR.h: 103:     hora = convertirDato(leer_rtc(0x02));
+[e = _hora ( _convertirDato (1 ( _leer_rtc (1 -> -> 2 `i `uc ]
+"104
+[; ;./AUTOMATIZADOR.h: 104: }
 [e :UE 434 ]
 }
-"105
-[; ;./AUTOMATIZADOR.h: 105: void dameDiaActual(void) {
+"106
+[; ;./AUTOMATIZADOR.h: 106: void dameDiaActual(void) {
 [v _dameDiaActual `(v ~T0 @X0 1 ef ]
 {
 [e :U _dameDiaActual ]
 [f ]
-"107
-[; ;./AUTOMATIZADOR.h: 107:     diaActual = convertirDato(leer_rtc(0x03));
-[e = _diaActual ( _convertirDato (1 ( _leer_rtc (1 -> -> 3 `i `uc ]
 "108
-[; ;./AUTOMATIZADOR.h: 108: }
+[; ;./AUTOMATIZADOR.h: 108:     diaActual = convertirDato(leer_rtc(0x03));
+[e = _diaActual ( _convertirDato (1 ( _leer_rtc (1 -> -> 3 `i `uc ]
+"109
+[; ;./AUTOMATIZADOR.h: 109: }
 [e :UE 435 ]
 }
-"110
-[; ;./AUTOMATIZADOR.h: 110: void fijaDiaRtc(void) {
+"111
+[; ;./AUTOMATIZADOR.h: 111: void fijaDiaRtc(void) {
 [v _fijaDiaRtc `(v ~T0 @X0 1 ef ]
 {
 [e :U _fijaDiaRtc ]
 [f ]
-"114
-[; ;./AUTOMATIZADOR.h: 114:     if (setRtc(0x03)) {
-[e $ ! != -> ( _setRtc (1 -> -> 3 `i `uc `i -> 0 `i 437  ]
+"113
+[; ;./AUTOMATIZADOR.h: 113:     if (!setPointIntro) {
+[e $ ! ! != -> _setPointIntro `i -> 0 `i 437  ]
 {
-"116
-[; ;./AUTOMATIZADOR.h: 116:         UART_write('E');
-[e ( _UART_write (1 -> -> 69 `ui `uc ]
 "117
-[; ;./AUTOMATIZADOR.h: 117:     }
-}
-[e :U 437 ]
+[; ;./AUTOMATIZADOR.h: 117:         if (setRtc(0x03)) {
+[e $ ! != -> ( _setRtc (1 -> -> 3 `i `uc `i -> 0 `i 438  ]
+{
 "119
-[; ;./AUTOMATIZADOR.h: 119: }
+[; ;./AUTOMATIZADOR.h: 119:             UART_write('E');
+[e ( _UART_write (1 -> -> 69 `ui `uc ]
+"120
+[; ;./AUTOMATIZADOR.h: 120:         }
+}
+[e :U 438 ]
+"122
+[; ;./AUTOMATIZADOR.h: 122:     } else
+}
+[e $U 439  ]
+[e :U 437 ]
+"123
+[; ;./AUTOMATIZADOR.h: 123:         setPointIntro = 0;
+[e = _setPointIntro -> -> 0 `i `uc ]
+[e :U 439 ]
+"126
+[; ;./AUTOMATIZADOR.h: 126: }
 [e :UE 436 ]
 }
-"121
-[; ;./AUTOMATIZADOR.h: 121: T_UBYTE setRtc(T_UBYTE direccion) {
+"128
+[; ;./AUTOMATIZADOR.h: 128: T_UBYTE setRtc(T_UBYTE direccion) {
 [v _setRtc `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _setRtc ]
 [v _direccion `uc ~T0 @X0 1 r1 ]
 [f ]
-"123
-[; ;./AUTOMATIZADOR.h: 123:     T_UBYTE dato = 0;
+"130
+[; ;./AUTOMATIZADOR.h: 130:     T_UBYTE dato = 0;
 [v _dato `uc ~T0 @X0 1 a ]
 [e = _dato -> -> 0 `i `uc ]
-"124
-[; ;./AUTOMATIZADOR.h: 124:     T_UBYTE seteado = 0;
+"131
+[; ;./AUTOMATIZADOR.h: 131:     T_UBYTE seteado = 0;
 [v _seteado `uc ~T0 @X0 1 a ]
 [e = _seteado -> -> 0 `i `uc ]
-"125
-[; ;./AUTOMATIZADOR.h: 125:     T_UBYTE datoRtc = 0;
+"132
+[; ;./AUTOMATIZADOR.h: 132:     T_UBYTE datoRtc = 0;
 [v _datoRtc `uc ~T0 @X0 1 a ]
 [e = _datoRtc -> -> 0 `i `uc ]
-"127
-[; ;./AUTOMATIZADOR.h: 127:     dato = getValue(2);
-[e = _dato -> ( _getValue (1 -> -> 2 `i `s `uc ]
-"129
-[; ;./AUTOMATIZADOR.h: 129:     if (dato != '@') {
-[e $ ! != -> _dato `ui -> 64 `ui 439  ]
-{
-"131
-[; ;./AUTOMATIZADOR.h: 131:         datoRtc = ((dato / 10) & 0x0F) << 4;
-[e = _datoRtc -> << & / -> _dato `i -> 10 `i -> 15 `i -> 4 `i `uc ]
-"132
-[; ;./AUTOMATIZADOR.h: 132:         datoRtc |= (dato % 10) & 0x0F;
-[e =| _datoRtc -> & % -> _dato `i -> 10 `i -> 15 `i `uc ]
-"133
-[; ;./AUTOMATIZADOR.h: 133:         escribe_rtc(direccion, datoRtc);
-[e ( _escribe_rtc (2 , _direccion _datoRtc ]
 "134
-[; ;./AUTOMATIZADOR.h: 134:         seteado = 1;
-[e = _seteado -> -> 1 `i `uc ]
-"135
-[; ;./AUTOMATIZADOR.h: 135:     }
-}
-[e :U 439 ]
-"137
-[; ;./AUTOMATIZADOR.h: 137:     return seteado;
-[e ) _seteado ]
-[e $UE 438  ]
+[; ;./AUTOMATIZADOR.h: 134:     dato = getValue(2);
+[e = _dato -> ( _getValue (1 -> -> 2 `i `s `uc ]
+"136
+[; ;./AUTOMATIZADOR.h: 136:     if (dato != '@') {
+[e $ ! != -> _dato `ui -> 64 `ui 441  ]
+{
 "138
-[; ;./AUTOMATIZADOR.h: 138: }
-[e :UE 438 ]
-}
+[; ;./AUTOMATIZADOR.h: 138:         datoRtc = ((dato / 10) & 0x0F) << 4;
+[e = _datoRtc -> << & / -> _dato `i -> 10 `i -> 15 `i -> 4 `i `uc ]
+"139
+[; ;./AUTOMATIZADOR.h: 139:         datoRtc |= (dato % 10) & 0x0F;
+[e =| _datoRtc -> & % -> _dato `i -> 10 `i -> 15 `i `uc ]
 "140
-[; ;./AUTOMATIZADOR.h: 140: void escribe_eeprom(uint16_t direccion, T_UBYTE dato) {
+[; ;./AUTOMATIZADOR.h: 140:         escribe_rtc(direccion, datoRtc);
+[e ( _escribe_rtc (2 , _direccion _datoRtc ]
+"141
+[; ;./AUTOMATIZADOR.h: 141:         seteado = 1;
+[e = _seteado -> -> 1 `i `uc ]
+"142
+[; ;./AUTOMATIZADOR.h: 142:     }
+}
+[e :U 441 ]
+"144
+[; ;./AUTOMATIZADOR.h: 144:     return seteado;
+[e ) _seteado ]
+[e $UE 440  ]
+"145
+[; ;./AUTOMATIZADOR.h: 145: }
+[e :UE 440 ]
+}
+"147
+[; ;./AUTOMATIZADOR.h: 147: void escribe_eeprom(uint16_t direccion, T_UBYTE dato) {
 [v _escribe_eeprom `(v ~T0 @X0 1 ef2`us`uc ]
 {
 [e :U _escribe_eeprom ]
 [v _direccion `us ~T0 @X0 1 r1 ]
 [v _dato `uc ~T0 @X0 1 r2 ]
 [f ]
-"141
-[; ;./AUTOMATIZADOR.h: 141:     i2c_inicia_com();
-[e ( _i2c_inicia_com ..  ]
-"142
-[; ;./AUTOMATIZADOR.h: 142:     i2c_envia_dato(0xAE);
-[e ( _i2c_envia_dato (1 -> -> 174 `i `uc ]
-"143
-[; ;./AUTOMATIZADOR.h: 143:     i2c_envia_dato(direccion >> 8);
-[e ( _i2c_envia_dato (1 -> >> -> _direccion `ui -> 8 `i `uc ]
-"145
-[; ;./AUTOMATIZADOR.h: 145:     i2c_envia_dato(direccion);
-[e ( _i2c_envia_dato (1 -> _direccion `uc ]
-"147
-[; ;./AUTOMATIZADOR.h: 147:     i2c_envia_dato(dato);
-[e ( _i2c_envia_dato (1 _dato ]
 "148
-[; ;./AUTOMATIZADOR.h: 148:     i2c_detener();
-[e ( _i2c_detener ..  ]
+[; ;./AUTOMATIZADOR.h: 148:     i2c_inicia_com();
+[e ( _i2c_inicia_com ..  ]
 "149
-[; ;./AUTOMATIZADOR.h: 149:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;./AUTOMATIZADOR.h: 149:     i2c_envia_dato(0xAE);
+[e ( _i2c_envia_dato (1 -> -> 174 `i `uc ]
 "150
-[; ;./AUTOMATIZADOR.h: 150: }
-[e :UE 440 ]
-}
+[; ;./AUTOMATIZADOR.h: 150:     i2c_envia_dato(direccion >> 8);
+[e ( _i2c_envia_dato (1 -> >> -> _direccion `ui -> 8 `i `uc ]
 "152
-[; ;./AUTOMATIZADOR.h: 152: T_UBYTE leer_eeprom(uint16_t direccion) {
+[; ;./AUTOMATIZADOR.h: 152:     i2c_envia_dato(direccion);
+[e ( _i2c_envia_dato (1 -> _direccion `uc ]
+"154
+[; ;./AUTOMATIZADOR.h: 154:     i2c_envia_dato(dato);
+[e ( _i2c_envia_dato (1 _dato ]
+"155
+[; ;./AUTOMATIZADOR.h: 155:     i2c_detener();
+[e ( _i2c_detener ..  ]
+"156
+[; ;./AUTOMATIZADOR.h: 156:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"157
+[; ;./AUTOMATIZADOR.h: 157: }
+[e :UE 442 ]
+}
+"159
+[; ;./AUTOMATIZADOR.h: 159: T_UBYTE leer_eeprom(uint16_t direccion) {
 [v _leer_eeprom `(uc ~T0 @X0 1 ef1`us ]
 {
 [e :U _leer_eeprom ]
 [v _direccion `us ~T0 @X0 1 r1 ]
 [f ]
-"154
-[; ;./AUTOMATIZADOR.h: 154:     T_UBYTE dato;
-[v _dato `uc ~T0 @X0 1 a ]
-"156
-[; ;./AUTOMATIZADOR.h: 156:     i2c_inicia_com();
-[e ( _i2c_inicia_com ..  ]
-"157
-[; ;./AUTOMATIZADOR.h: 157:     i2c_envia_dato(0xAE);
-[e ( _i2c_envia_dato (1 -> -> 174 `i `uc ]
-"158
-[; ;./AUTOMATIZADOR.h: 158:     i2c_envia_dato(direccion >> 8);
-[e ( _i2c_envia_dato (1 -> >> -> _direccion `ui -> 8 `i `uc ]
-"159
-[; ;./AUTOMATIZADOR.h: 159:     i2c_envia_dato(direccion);
-[e ( _i2c_envia_dato (1 -> _direccion `uc ]
-"160
-[; ;./AUTOMATIZADOR.h: 160:     i2c_reinicia_com();
-[e ( _i2c_reinicia_com ..  ]
 "161
-[; ;./AUTOMATIZADOR.h: 161:     i2c_envia_dato(0xAF);
-[e ( _i2c_envia_dato (1 -> -> 175 `i `uc ]
-"162
-[; ;./AUTOMATIZADOR.h: 162:     dato = i2c_recibe_dato();
-[e = _dato ( _i2c_recibe_dato ..  ]
+[; ;./AUTOMATIZADOR.h: 161:     T_UBYTE dato;
+[v _dato `uc ~T0 @X0 1 a ]
 "163
-[; ;./AUTOMATIZADOR.h: 163:     i2c_detener();
-[e ( _i2c_detener ..  ]
+[; ;./AUTOMATIZADOR.h: 163:     i2c_inicia_com();
+[e ( _i2c_inicia_com ..  ]
 "164
-[; ;./AUTOMATIZADOR.h: 164:     _delay((unsigned long)((10)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;./AUTOMATIZADOR.h: 164:     i2c_envia_dato(0xAE);
+[e ( _i2c_envia_dato (1 -> -> 174 `i `uc ]
+"165
+[; ;./AUTOMATIZADOR.h: 165:     i2c_envia_dato(direccion >> 8);
+[e ( _i2c_envia_dato (1 -> >> -> _direccion `ui -> 8 `i `uc ]
 "166
-[; ;./AUTOMATIZADOR.h: 166:     return dato;
-[e ) _dato ]
-[e $UE 441  ]
+[; ;./AUTOMATIZADOR.h: 166:     i2c_envia_dato(direccion);
+[e ( _i2c_envia_dato (1 -> _direccion `uc ]
 "167
-[; ;./AUTOMATIZADOR.h: 167: }
-[e :UE 441 ]
-}
+[; ;./AUTOMATIZADOR.h: 167:     i2c_reinicia_com();
+[e ( _i2c_reinicia_com ..  ]
+"168
+[; ;./AUTOMATIZADOR.h: 168:     i2c_envia_dato(0xAF);
+[e ( _i2c_envia_dato (1 -> -> 175 `i `uc ]
 "169
-[; ;./AUTOMATIZADOR.h: 169: void escribeHorariosMemoria() {
+[; ;./AUTOMATIZADOR.h: 169:     dato = i2c_recibe_dato();
+[e = _dato ( _i2c_recibe_dato ..  ]
+"170
+[; ;./AUTOMATIZADOR.h: 170:     i2c_detener();
+[e ( _i2c_detener ..  ]
+"171
+[; ;./AUTOMATIZADOR.h: 171:     _delay((unsigned long)((10)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"173
+[; ;./AUTOMATIZADOR.h: 173:     return dato;
+[e ) _dato ]
+[e $UE 443  ]
+"174
+[; ;./AUTOMATIZADOR.h: 174: }
+[e :UE 443 ]
+}
+"176
+[; ;./AUTOMATIZADOR.h: 176: void escribeHorariosMemoria() {
 [v _escribeHorariosMemoria `(v ~T0 @X0 1 ef ]
 {
 [e :U _escribeHorariosMemoria ]
 [f ]
-"171
-[; ;./AUTOMATIZADOR.h: 171:     T_INT contMemoria = 0;
+"178
+[; ;./AUTOMATIZADOR.h: 178:     T_INT contMemoria = 0;
 [v _contMemoria `i ~T0 @X0 1 a ]
 [e = _contMemoria -> 0 `i ]
-"173
-[; ;./AUTOMATIZADOR.h: 173:     escribe_eeprom(contMemoria++, 'T');
+"180
+[; ;./AUTOMATIZADOR.h: 180:     escribe_eeprom(contMemoria++, 'T');
 [e ( _escribe_eeprom (2 , -> ++ _contMemoria -> 1 `i `us -> -> 84 `ui `uc ]
-"176
-[; ;./AUTOMATIZADOR.h: 176:     for (T_INT i = 0; i < 24; i++) {
+"183
+[; ;./AUTOMATIZADOR.h: 183:     for (T_INT i = 0; i < 24; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 24 `i 443  ]
-[e $U 444  ]
-[e :U 443 ]
+[e $ < _i -> 24 `i 445  ]
+[e $U 446  ]
+[e :U 445 ]
 {
-"177
-[; ;./AUTOMATIZADOR.h: 177:         escribe_eeprom(contMemoria++, horarios[i].hora);
+"184
+[; ;./AUTOMATIZADOR.h: 184:         escribe_eeprom(contMemoria++, horarios[i].hora);
 [e ( _escribe_eeprom (2 , -> ++ _contMemoria -> 1 `i `us . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 0 ]
-"179
-[; ;./AUTOMATIZADOR.h: 179:         for (T_INT j = 0; j < 7; j++) {
+"186
+[; ;./AUTOMATIZADOR.h: 186:         for (T_INT j = 0; j < 7; j++) {
 {
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 0 `i ]
-[e $ < _j -> 7 `i 446  ]
-[e $U 447  ]
-[e :U 446 ]
+[e $ < _j -> 7 `i 448  ]
+[e $U 449  ]
+[e :U 448 ]
 {
-"180
-[; ;./AUTOMATIZADOR.h: 180:             escribe_eeprom(contMemoria++, horarios[i].dias[j]);
+"187
+[; ;./AUTOMATIZADOR.h: 187:             escribe_eeprom(contMemoria++, horarios[i].dias[j]);
 [e ( _escribe_eeprom (2 , -> ++ _contMemoria -> 1 `i `us -> *U + &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> _j `ui `ux -> -> # *U &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux `uc ]
-"181
-[; ;./AUTOMATIZADOR.h: 181:         }
+"188
+[; ;./AUTOMATIZADOR.h: 188:         }
 }
 [e ++ _j -> 1 `i ]
-[e $ < _j -> 7 `i 446  ]
-[e :U 447 ]
+[e $ < _j -> 7 `i 448  ]
+[e :U 449 ]
 }
-"183
-[; ;./AUTOMATIZADOR.h: 183:         escribe_eeprom(contMemoria++, horarios[i].iluminar);
+"190
+[; ;./AUTOMATIZADOR.h: 190:         escribe_eeprom(contMemoria++, horarios[i].iluminar);
 [e ( _escribe_eeprom (2 , -> ++ _contMemoria -> 1 `i `us . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 ]
-"184
-[; ;./AUTOMATIZADOR.h: 184:         escribe_eeprom(contMemoria++, horarios[i].tiempoIluminar);
+"191
+[; ;./AUTOMATIZADOR.h: 191:         escribe_eeprom(contMemoria++, horarios[i].tiempoIluminar);
 [e ( _escribe_eeprom (2 , -> ++ _contMemoria -> 1 `i `us . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 4 ]
-"185
-[; ;./AUTOMATIZADOR.h: 185:     }
+"192
+[; ;./AUTOMATIZADOR.h: 192:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 24 `i 443  ]
-[e :U 444 ]
+[e $ < _i -> 24 `i 445  ]
+[e :U 446 ]
 }
-"186
-[; ;./AUTOMATIZADOR.h: 186: }
-[e :UE 442 ]
+"193
+[; ;./AUTOMATIZADOR.h: 193: }
+[e :UE 444 ]
 }
-"188
-[; ;./AUTOMATIZADOR.h: 188: void leeHorariosMemoria() {
+"195
+[; ;./AUTOMATIZADOR.h: 195: void leeHorariosMemoria() {
 [v _leeHorariosMemoria `(v ~T0 @X0 1 ef ]
 {
 [e :U _leeHorariosMemoria ]
 [f ]
-"190
-[; ;./AUTOMATIZADOR.h: 190:     T_INT contMemoria = 0;
+"197
+[; ;./AUTOMATIZADOR.h: 197:     T_INT contMemoria = 0;
 [v _contMemoria `i ~T0 @X0 1 a ]
 [e = _contMemoria -> 0 `i ]
-"191
-[; ;./AUTOMATIZADOR.h: 191:     T_UBYTE caracterLeido;
+"198
+[; ;./AUTOMATIZADOR.h: 198:     T_UBYTE caracterLeido;
 [v _caracterLeido `uc ~T0 @X0 1 a ]
-"193
-[; ;./AUTOMATIZADOR.h: 193:     caracterLeido = leer_eeprom(contMemoria++);
+"200
+[; ;./AUTOMATIZADOR.h: 200:     caracterLeido = leer_eeprom(contMemoria++);
 [e = _caracterLeido ( _leer_eeprom (1 -> ++ _contMemoria -> 1 `i `us ]
-"195
-[; ;./AUTOMATIZADOR.h: 195:     if (caracterLeido == 'T') {
-[e $ ! == -> _caracterLeido `ui -> 84 `ui 450  ]
+"202
+[; ;./AUTOMATIZADOR.h: 202:     if (caracterLeido == 'T') {
+[e $ ! == -> _caracterLeido `ui -> 84 `ui 452  ]
 {
-"197
-[; ;./AUTOMATIZADOR.h: 197:         for (T_INT i = 0; i < 24; i++) {
+"204
+[; ;./AUTOMATIZADOR.h: 204:         for (T_INT i = 0; i < 24; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 24 `i 451  ]
-[e $U 452  ]
-[e :U 451 ]
+[e $ < _i -> 24 `i 453  ]
+[e $U 454  ]
+[e :U 453 ]
 {
-"198
-[; ;./AUTOMATIZADOR.h: 198:             horarios[i].hora = leer_eeprom(contMemoria++);
+"205
+[; ;./AUTOMATIZADOR.h: 205:             horarios[i].hora = leer_eeprom(contMemoria++);
 [e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 0 ( _leer_eeprom (1 -> ++ _contMemoria -> 1 `i `us ]
-"200
-[; ;./AUTOMATIZADOR.h: 200:             for (T_INT j = 0; j < 7; j++) {
+"207
+[; ;./AUTOMATIZADOR.h: 207:             for (T_INT j = 0; j < 7; j++) {
 {
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 0 `i ]
-[e $ < _j -> 7 `i 454  ]
-[e $U 455  ]
-[e :U 454 ]
+[e $ < _j -> 7 `i 456  ]
+[e $U 457  ]
+[e :U 456 ]
 {
-"201
-[; ;./AUTOMATIZADOR.h: 201:                 horarios[i].dias[j] = leer_eeprom(contMemoria++);
+"208
+[; ;./AUTOMATIZADOR.h: 208:                 horarios[i].dias[j] = leer_eeprom(contMemoria++);
 [e = *U + &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> _j `ui `ux -> -> # *U &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux -> ( _leer_eeprom (1 -> ++ _contMemoria -> 1 `i `us `uc ]
-"202
-[; ;./AUTOMATIZADOR.h: 202:             }
+"209
+[; ;./AUTOMATIZADOR.h: 209:             }
 }
 [e ++ _j -> 1 `i ]
-[e $ < _j -> 7 `i 454  ]
-[e :U 455 ]
+[e $ < _j -> 7 `i 456  ]
+[e :U 457 ]
 }
-"204
-[; ;./AUTOMATIZADOR.h: 204:             horarios[i].iluminar = leer_eeprom(contMemoria++);
+"211
+[; ;./AUTOMATIZADOR.h: 211:             horarios[i].iluminar = leer_eeprom(contMemoria++);
 [e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 ( _leer_eeprom (1 -> ++ _contMemoria -> 1 `i `us ]
-"205
-[; ;./AUTOMATIZADOR.h: 205:             horarios[i].tiempoIluminar = leer_eeprom(contMemoria++);
+"212
+[; ;./AUTOMATIZADOR.h: 212:             horarios[i].tiempoIluminar = leer_eeprom(contMemoria++);
 [e = . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 4 ( _leer_eeprom (1 -> ++ _contMemoria -> 1 `i `us ]
-"206
-[; ;./AUTOMATIZADOR.h: 206:         }
+"213
+[; ;./AUTOMATIZADOR.h: 213:         }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 24 `i 451  ]
-[e :U 452 ]
+[e $ < _i -> 24 `i 453  ]
+[e :U 454 ]
 }
-"209
-[; ;./AUTOMATIZADOR.h: 209:         UART_write('E');
+"216
+[; ;./AUTOMATIZADOR.h: 216:         UART_write('E');
 [e ( _UART_write (1 -> -> 69 `ui `uc ]
-"211
-[; ;./AUTOMATIZADOR.h: 211:     } else {
+"218
+[; ;./AUTOMATIZADOR.h: 218:     } else {
 }
-[e $U 457  ]
-[e :U 450 ]
+[e $U 459  ]
+[e :U 452 ]
 {
-"213
-[; ;./AUTOMATIZADOR.h: 213:         UART_write('@');
+"220
+[; ;./AUTOMATIZADOR.h: 220:         UART_write('@');
 [e ( _UART_write (1 -> -> 64 `ui `uc ]
-"215
-[; ;./AUTOMATIZADOR.h: 215:     }
+"222
+[; ;./AUTOMATIZADOR.h: 222:     }
 }
-[e :U 457 ]
-"217
-[; ;./AUTOMATIZADOR.h: 217: }
-[e :UE 449 ]
+[e :U 459 ]
+"224
+[; ;./AUTOMATIZADOR.h: 224: }
+[e :UE 451 ]
 }
-"219
-[; ;./AUTOMATIZADOR.h: 219: void setRtcDefault(void) {
+"226
+[; ;./AUTOMATIZADOR.h: 226: void setRtcDefault(void) {
 [v _setRtcDefault `(v ~T0 @X0 1 ef ]
 {
 [e :U _setRtcDefault ]
 [f ]
-"220
-[; ;./AUTOMATIZADOR.h: 220:     T_UBYTE horaRtc;
+"227
+[; ;./AUTOMATIZADOR.h: 227:     T_UBYTE horaRtc;
 [v _horaRtc `uc ~T0 @X0 1 a ]
-"222
-[; ;./AUTOMATIZADOR.h: 222:     horaRtc = ((1) & 0x0F) << 4;
-[e = _horaRtc -> << & -> 1 `i -> 15 `i -> 4 `i `uc ]
-"224
-[; ;./AUTOMATIZADOR.h: 224:     horaRtc |= (2) & 0x0F;
-[e =| _horaRtc -> & -> 2 `i -> 15 `i `uc ]
-"226
-[; ;./AUTOMATIZADOR.h: 226:     escribe_rtc(0x02, horaRtc);
-[e ( _escribe_rtc (2 , -> -> 2 `i `uc _horaRtc ]
-"228
-[; ;./AUTOMATIZADOR.h: 228:     escribe_rtc(0x01, 0);
-[e ( _escribe_rtc (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "229
-[; ;./AUTOMATIZADOR.h: 229:     escribe_rtc(0x00, 0);
-[e ( _escribe_rtc (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"230
-[; ;./AUTOMATIZADOR.h: 230:     UART_printf("\r\nRTC DEFAULT\n\r");
-[e ( _UART_printf (1 :s 1C ]
+[; ;./AUTOMATIZADOR.h: 229:     horaRtc = ((1) & 0x0F) << 4;
+[e = _horaRtc -> << & -> 1 `i -> 15 `i -> 4 `i `uc ]
 "231
-[; ;./AUTOMATIZADOR.h: 231: }
-[e :UE 458 ]
-}
+[; ;./AUTOMATIZADOR.h: 231:     horaRtc |= (2) & 0x0F;
+[e =| _horaRtc -> & -> 2 `i -> 15 `i `uc ]
 "233
-[; ;./AUTOMATIZADOR.h: 233: void fijaHoraRtc(void) {
+[; ;./AUTOMATIZADOR.h: 233:     escribe_rtc(0x02, horaRtc);
+[e ( _escribe_rtc (2 , -> -> 2 `i `uc _horaRtc ]
+"235
+[; ;./AUTOMATIZADOR.h: 235:     escribe_rtc(0x01, 0);
+[e ( _escribe_rtc (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"236
+[; ;./AUTOMATIZADOR.h: 236:     escribe_rtc(0x00, 0);
+[e ( _escribe_rtc (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"237
+[; ;./AUTOMATIZADOR.h: 237:     UART_printf("\r\nRTC DEFAULT\n\r");
+[e ( _UART_printf (1 :s 1C ]
+"238
+[; ;./AUTOMATIZADOR.h: 238: }
+[e :UE 460 ]
+}
+"240
+[; ;./AUTOMATIZADOR.h: 240: void fijaHoraRtc(void) {
 [v _fijaHoraRtc `(v ~T0 @X0 1 ef ]
 {
 [e :U _fijaHoraRtc ]
 [f ]
-"241
-[; ;./AUTOMATIZADOR.h: 241:     if (setRtc(0x02)) {
-[e $ ! != -> ( _setRtc (1 -> -> 2 `i `uc `i -> 0 `i 460  ]
-{
-"243
-[; ;./AUTOMATIZADOR.h: 243:         if (setRtc(0x01)) {
-[e $ ! != -> ( _setRtc (1 -> -> 1 `i `uc `i -> 0 `i 461  ]
-{
-"245
-[; ;./AUTOMATIZADOR.h: 245:             escribe_rtc(0x00, 0);
-[e ( _escribe_rtc (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"246
-[; ;./AUTOMATIZADOR.h: 246:             UART_write('E');
-[e ( _UART_write (1 -> -> 69 `ui `uc ]
 "248
-[; ;./AUTOMATIZADOR.h: 248:         }
-}
-[e :U 461 ]
-"249
-[; ;./AUTOMATIZADOR.h: 249:     }
-}
-[e :U 460 ]
-"251
-[; ;./AUTOMATIZADOR.h: 251: }
-[e :UE 459 ]
-}
+[; ;./AUTOMATIZADOR.h: 248:     if (setRtc(0x02)) {
+[e $ ! != -> ( _setRtc (1 -> -> 2 `i `uc `i -> 0 `i 462  ]
+{
+"250
+[; ;./AUTOMATIZADOR.h: 250:         if (setRtc(0x01)) {
+[e $ ! != -> ( _setRtc (1 -> -> 1 `i `uc `i -> 0 `i 463  ]
+{
+"252
+[; ;./AUTOMATIZADOR.h: 252:             escribe_rtc(0x00, 0);
+[e ( _escribe_rtc (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "253
-[; ;./AUTOMATIZADOR.h: 253: void asignarHorarios()
+[; ;./AUTOMATIZADOR.h: 253:             UART_write('E');
+[e ( _UART_write (1 -> -> 69 `ui `uc ]
+"255
+[; ;./AUTOMATIZADOR.h: 255:         }
+}
+[e :U 463 ]
+"256
+[; ;./AUTOMATIZADOR.h: 256:     }
+}
+[e :U 462 ]
+"258
+[; ;./AUTOMATIZADOR.h: 258: }
+[e :UE 461 ]
+}
+"260
+[; ;./AUTOMATIZADOR.h: 260: void asignarHorarios()
 [v _asignarHorarios `(v ~T0 @X0 1 ef ]
-"254
-[; ;./AUTOMATIZADOR.h: 254: {
+"261
+[; ;./AUTOMATIZADOR.h: 261: {
 {
 [e :U _asignarHorarios ]
 [f ]
-"255
-[; ;./AUTOMATIZADOR.h: 255:     T_UBYTE hora;
-[v _hora `uc ~T0 @X0 1 a ]
-"256
-[; ;./AUTOMATIZADOR.h: 256:     T_UBYTE Rx;
-[v _Rx `uc ~T0 @X0 1 a ]
-"257
-[; ;./AUTOMATIZADOR.h: 257:     T_UBYTE diaIluminar;
-[v _diaIluminar `uc ~T0 @X0 1 a ]
 "262
-[; ;./AUTOMATIZADOR.h: 262:     hora = getValue(2);
-[e = _hora -> ( _getValue (1 -> -> 2 `i `s `uc ]
+[; ;./AUTOMATIZADOR.h: 262:     T_UBYTE hora;
+[v _hora `uc ~T0 @X0 1 a ]
+"263
+[; ;./AUTOMATIZADOR.h: 263:     T_UBYTE Rx;
+[v _Rx `uc ~T0 @X0 1 a ]
 "264
-[; ;./AUTOMATIZADOR.h: 264:     if (hora != '@') {
-[e $ ! != -> _hora `ui -> 64 `ui 463  ]
-{
-"268
-[; ;./AUTOMATIZADOR.h: 268:         Rx = getValue(1);
-[e = _Rx -> ( _getValue (1 -> -> 1 `i `s `uc ]
+[; ;./AUTOMATIZADOR.h: 264:     T_UBYTE diaIluminar;
+[v _diaIluminar `uc ~T0 @X0 1 a ]
+"269
+[; ;./AUTOMATIZADOR.h: 269:     hora = getValue(2);
+[e = _hora -> ( _getValue (1 -> -> 2 `i `s `uc ]
 "271
-[; ;./AUTOMATIZADOR.h: 271:         if (Rx == 1) {
-[e $ ! == -> _Rx `i -> 1 `i 464  ]
+[; ;./AUTOMATIZADOR.h: 271:     if (hora != '@') {
+[e $ ! != -> _hora `ui -> 64 `ui 465  ]
 {
-"276
-[; ;./AUTOMATIZADOR.h: 276:             for (T_INT i = 0; i < 7; i++) {
+"275
+[; ;./AUTOMATIZADOR.h: 275:         Rx = getValue(1);
+[e = _Rx -> ( _getValue (1 -> -> 1 `i `s `uc ]
+"278
+[; ;./AUTOMATIZADOR.h: 278:         if (Rx == 1) {
+[e $ ! == -> _Rx `i -> 1 `i 466  ]
+{
+"283
+[; ;./AUTOMATIZADOR.h: 283:             for (T_INT i = 0; i < 7; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 7 `i 465  ]
-[e $U 466  ]
-[e :U 465 ]
+[e $ < _i -> 7 `i 467  ]
+[e $U 468  ]
+[e :U 467 ]
 {
-"280
-[; ;./AUTOMATIZADOR.h: 280:                 diaIluminar = getValue(1);
-[e = _diaIluminar -> ( _getValue (1 -> -> 1 `i `s `uc ]
-"282
-[; ;./AUTOMATIZADOR.h: 282:                 if (diaIluminar != '@') {
-[e $ ! != -> _diaIluminar `ui -> 64 `ui 468  ]
-{
-"284
-[; ;./AUTOMATIZADOR.h: 284:                     switch (diaIluminar) {
-[e $U 470  ]
-{
-"285
-[; ;./AUTOMATIZADOR.h: 285:                         case 0:
-[e :U 471 ]
-"286
-[; ;./AUTOMATIZADOR.h: 286:                             diaIluminar = '0';
-[e = _diaIluminar -> -> 48 `ui `uc ]
 "287
-[; ;./AUTOMATIZADOR.h: 287:                             break;
-[e $U 469  ]
+[; ;./AUTOMATIZADOR.h: 287:                 diaIluminar = getValue(1);
+[e = _diaIluminar -> ( _getValue (1 -> -> 1 `i `s `uc ]
 "289
-[; ;./AUTOMATIZADOR.h: 289:                         case 1:
-[e :U 472 ]
-"290
-[; ;./AUTOMATIZADOR.h: 290:                             diaIluminar = '1';
-[e = _diaIluminar -> -> 49 `ui `uc ]
+[; ;./AUTOMATIZADOR.h: 289:                 if (diaIluminar != '@') {
+[e $ ! != -> _diaIluminar `ui -> 64 `ui 470  ]
+{
 "291
-[; ;./AUTOMATIZADOR.h: 291:                             break;
-[e $U 469  ]
+[; ;./AUTOMATIZADOR.h: 291:                     switch (diaIluminar) {
+[e $U 472  ]
+{
 "292
-[; ;./AUTOMATIZADOR.h: 292:                     }
-}
-[e $U 469  ]
-[e :U 470 ]
-[e [\ -> _diaIluminar `i , $ -> 0 `i 471
- , $ -> 1 `i 472
- 469 ]
-[e :U 469 ]
-"295
-[; ;./AUTOMATIZADOR.h: 295:                     horarios[hora].dias[i] = diaIluminar;
-[e = *U + &U . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> _i `ui `ux -> -> # *U &U . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux -> _diaIluminar `uc ]
+[; ;./AUTOMATIZADOR.h: 292:                         case 0:
+[e :U 473 ]
+"293
+[; ;./AUTOMATIZADOR.h: 293:                             diaIluminar = '0';
+[e = _diaIluminar -> -> 48 `ui `uc ]
+"294
+[; ;./AUTOMATIZADOR.h: 294:                             break;
+[e $U 471  ]
 "296
-[; ;./AUTOMATIZADOR.h: 296:                 }
-}
-[e :U 468 ]
+[; ;./AUTOMATIZADOR.h: 296:                         case 1:
+[e :U 474 ]
+"297
+[; ;./AUTOMATIZADOR.h: 297:                             diaIluminar = '1';
+[e = _diaIluminar -> -> 49 `ui `uc ]
 "298
-[; ;./AUTOMATIZADOR.h: 298:             }
+[; ;./AUTOMATIZADOR.h: 298:                             break;
+[e $U 471  ]
+"299
+[; ;./AUTOMATIZADOR.h: 299:                     }
+}
+[e $U 471  ]
+[e :U 472 ]
+[e [\ -> _diaIluminar `i , $ -> 0 `i 473
+ , $ -> 1 `i 474
+ 471 ]
+[e :U 471 ]
+"302
+[; ;./AUTOMATIZADOR.h: 302:                     horarios[hora].dias[i] = diaIluminar;
+[e = *U + &U . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 1 * -> -> _i `ui `ux -> -> # *U &U . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 1 `ui `ux -> _diaIluminar `uc ]
+"303
+[; ;./AUTOMATIZADOR.h: 303:                 }
+}
+[e :U 470 ]
+"305
+[; ;./AUTOMATIZADOR.h: 305:             }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 7 `i 465  ]
-[e :U 466 ]
+[e $ < _i -> 7 `i 467  ]
+[e :U 468 ]
 }
-"300
-[; ;./AUTOMATIZADOR.h: 300:             horarios[hora].iluminar = Rx;
+"307
+[; ;./AUTOMATIZADOR.h: 307:             horarios[hora].iluminar = Rx;
 [e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 2 _Rx ]
-"302
-[; ;./AUTOMATIZADOR.h: 302:             escribeHorariosMemoria();
-[e ( _escribeHorariosMemoria ..  ]
-"306
-[; ;./AUTOMATIZADOR.h: 306:             UART_write('E');
-[e ( _UART_write (1 -> -> 69 `ui `uc ]
-"308
-[; ;./AUTOMATIZADOR.h: 308:         } else if (Rx == 0) {
-}
-[e $U 473  ]
-[e :U 464 ]
-[e $ ! == -> _Rx `i -> 0 `i 474  ]
-{
 "309
-[; ;./AUTOMATIZADOR.h: 309:             horarios[hora].iluminar = Rx;
-[e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 2 _Rx ]
-"311
-[; ;./AUTOMATIZADOR.h: 311:             UART_write('E');
+[; ;./AUTOMATIZADOR.h: 309:             escribeHorariosMemoria();
+[e ( _escribeHorariosMemoria ..  ]
+"313
+[; ;./AUTOMATIZADOR.h: 313:             UART_write('E');
 [e ( _UART_write (1 -> -> 69 `ui `uc ]
-"312
-[; ;./AUTOMATIZADOR.h: 312:         }
+"315
+[; ;./AUTOMATIZADOR.h: 315:         } else if (Rx == 0) {
 }
-[e :U 474 ]
-[e :U 473 ]
-"314
-[; ;./AUTOMATIZADOR.h: 314:     }
-}
-[e :U 463 ]
+[e $U 475  ]
+[e :U 466 ]
+[e $ ! == -> _Rx `i -> 0 `i 476  ]
+{
 "316
-[; ;./AUTOMATIZADOR.h: 316: }
-[e :UE 462 ]
-}
+[; ;./AUTOMATIZADOR.h: 316:             horarios[hora].iluminar = Rx;
+[e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 2 _Rx ]
 "318
-[; ;./AUTOMATIZADOR.h: 318: void setTiempoIluminar() {
+[; ;./AUTOMATIZADOR.h: 318:             UART_write('E');
+[e ( _UART_write (1 -> -> 69 `ui `uc ]
+"319
+[; ;./AUTOMATIZADOR.h: 319:         }
+}
+[e :U 476 ]
+[e :U 475 ]
+"321
+[; ;./AUTOMATIZADOR.h: 321:     }
+}
+[e :U 465 ]
+"323
+[; ;./AUTOMATIZADOR.h: 323: }
+[e :UE 464 ]
+}
+"325
+[; ;./AUTOMATIZADOR.h: 325: void setTiempoIluminar() {
 [v _setTiempoIluminar `(v ~T0 @X0 1 ef ]
 {
 [e :U _setTiempoIluminar ]
 [f ]
-"320
-[; ;./AUTOMATIZADOR.h: 320:     T_UBYTE hora;
+"327
+[; ;./AUTOMATIZADOR.h: 327:     T_UBYTE hora;
 [v _hora `uc ~T0 @X0 1 a ]
-"321
-[; ;./AUTOMATIZADOR.h: 321:     T_UBYTE tiempoIluminar;
-[v _tiempoIluminar `uc ~T0 @X0 1 a ]
-"326
-[; ;./AUTOMATIZADOR.h: 326:     hora = getValue(2);
-[e = _hora -> ( _getValue (1 -> -> 2 `i `s `uc ]
 "328
-[; ;./AUTOMATIZADOR.h: 328:     if (hora != '@') {
-[e $ ! != -> _hora `ui -> 64 `ui 476  ]
-{
-"331
-[; ;./AUTOMATIZADOR.h: 331:         tiempoIluminar = getValue(2);
-[e = _tiempoIluminar -> ( _getValue (1 -> -> 2 `i `s `uc ]
+[; ;./AUTOMATIZADOR.h: 328:     T_UBYTE tiempoIluminar;
+[v _tiempoIluminar `uc ~T0 @X0 1 a ]
 "333
-[; ;./AUTOMATIZADOR.h: 333:         if (tiempoIluminar != '@') {
-[e $ ! != -> _tiempoIluminar `ui -> 64 `ui 477  ]
+[; ;./AUTOMATIZADOR.h: 333:     hora = getValue(2);
+[e = _hora -> ( _getValue (1 -> -> 2 `i `s `uc ]
+"335
+[; ;./AUTOMATIZADOR.h: 335:     if (hora != '@') {
+[e $ ! != -> _hora `ui -> 64 `ui 478  ]
 {
-"339
-[; ;./AUTOMATIZADOR.h: 339:             horarios[hora].tiempoIluminar = tiempoIluminar;
-[e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 4 _tiempoIluminar ]
+"338
+[; ;./AUTOMATIZADOR.h: 338:         tiempoIluminar = getValue(2);
+[e = _tiempoIluminar -> ( _getValue (1 -> -> 2 `i `s `uc ]
 "340
-[; ;./AUTOMATIZADOR.h: 340:             minutosIluminar = horarios[hora].tiempoIluminar;
-[e = _minutosIluminar -> . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 4 `us ]
-"342
-[; ;./AUTOMATIZADOR.h: 342:             escribeHorariosMemoria();
-[e ( _escribeHorariosMemoria ..  ]
-"344
-[; ;./AUTOMATIZADOR.h: 344:             UART_write('E');
-[e ( _UART_write (1 -> -> 69 `ui `uc ]
+[; ;./AUTOMATIZADOR.h: 340:         if (tiempoIluminar != '@') {
+[e $ ! != -> _tiempoIluminar `ui -> 64 `ui 479  ]
+{
 "346
-[; ;./AUTOMATIZADOR.h: 346:         }
-}
-[e :U 477 ]
+[; ;./AUTOMATIZADOR.h: 346:             horarios[hora].tiempoIluminar = tiempoIluminar;
+[e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 4 _tiempoIluminar ]
 "347
-[; ;./AUTOMATIZADOR.h: 347:     }
-}
-[e :U 476 ]
+[; ;./AUTOMATIZADOR.h: 347:             minutosIluminar = horarios[hora].tiempoIluminar;
+[e = _minutosIluminar -> . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 4 `us ]
 "349
-[; ;./AUTOMATIZADOR.h: 349: }
-[e :UE 475 ]
-}
+[; ;./AUTOMATIZADOR.h: 349:             escribeHorariosMemoria();
+[e ( _escribeHorariosMemoria ..  ]
 "351
-[; ;./AUTOMATIZADOR.h: 351: void mostrarMenu(void) {
+[; ;./AUTOMATIZADOR.h: 351:             UART_write('E');
+[e ( _UART_write (1 -> -> 69 `ui `uc ]
+"353
+[; ;./AUTOMATIZADOR.h: 353:         }
+}
+[e :U 479 ]
+"354
+[; ;./AUTOMATIZADOR.h: 354:     }
+}
+[e :U 478 ]
+"356
+[; ;./AUTOMATIZADOR.h: 356: }
+[e :UE 477 ]
+}
+"358
+[; ;./AUTOMATIZADOR.h: 358: void mostrarMenu(void) {
 [v _mostrarMenu `(v ~T0 @X0 1 ef ]
 {
 [e :U _mostrarMenu ]
 [f ]
-"353
-[; ;./AUTOMATIZADOR.h: 353:     UART_printf("\r\n Ingresa una opcion a Realizar: \r\n");
-[e ( _UART_printf (1 :s 2C ]
-"354
-[; ;./AUTOMATIZADOR.h: 354:     UART_printf("\r\n 1. Fijar Hora Actual \r\n");
-[e ( _UART_printf (1 :s 3C ]
-"355
-[; ;./AUTOMATIZADOR.h: 355:     UART_printf("\r\n 2. Asignar Horarios para Iluminar \r\n");
-[e ( _UART_printf (1 :s 4C ]
-"356
-[; ;./AUTOMATIZADOR.h: 356:     UART_printf("\r\n 3. Programar tiempo de Iluminacion en un horario \r\n");
-[e ( _UART_printf (1 :s 5C ]
-"357
-[; ;./AUTOMATIZADOR.h: 357:     UART_printf("\r\n 4. Dame datos del sistema \r\n");
-[e ( _UART_printf (1 :s 6C ]
-"358
-[; ;./AUTOMATIZADOR.h: 358:     UART_printf("\r\n 5. Mostrar valores sensores \r\n");
-[e ( _UART_printf (1 :s 7C ]
-"359
-[; ;./AUTOMATIZADOR.h: 359:     UART_printf("\r\n 6. Asignar Setpoint\r\n");
-[e ( _UART_printf (1 :s 8C ]
 "360
-[; ;./AUTOMATIZADOR.h: 360:     UART_printf("\r\n 7. Fijar Dia Actual \r\n");
-[e ( _UART_printf (1 :s 9C ]
+[; ;./AUTOMATIZADOR.h: 360:     UART_printf("\r\n Ingresa una opcion a Realizar: \r\n");
+[e ( _UART_printf (1 :s 2C ]
 "361
-[; ;./AUTOMATIZADOR.h: 361:     UART_printf("\r\n 8. Cargar datos de la memoria \r\n");
-[e ( _UART_printf (1 :s 10C ]
+[; ;./AUTOMATIZADOR.h: 361:     UART_printf("\r\n 1. Fijar Hora Actual \r\n");
+[e ( _UART_printf (1 :s 3C ]
 "362
-[; ;./AUTOMATIZADOR.h: 362:     UART_printf("\r\n Opcion:  \r");
-[e ( _UART_printf (1 :s 11C ]
+[; ;./AUTOMATIZADOR.h: 362:     UART_printf("\r\n 2. Asignar Horarios para Iluminar \r\n");
+[e ( _UART_printf (1 :s 4C ]
 "363
-[; ;./AUTOMATIZADOR.h: 363:     UART_printf("\r\n");
-[e ( _UART_printf (1 :s 12C ]
+[; ;./AUTOMATIZADOR.h: 363:     UART_printf("\r\n 3. Programar tiempo de Iluminacion en un horario \r\n");
+[e ( _UART_printf (1 :s 5C ]
 "364
-[; ;./AUTOMATIZADOR.h: 364: }
-[e :UE 478 ]
-}
+[; ;./AUTOMATIZADOR.h: 364:     UART_printf("\r\n 4. Dame datos del sistema \r\n");
+[e ( _UART_printf (1 :s 6C ]
+"365
+[; ;./AUTOMATIZADOR.h: 365:     UART_printf("\r\n 5. Mostrar valores sensores \r\n");
+[e ( _UART_printf (1 :s 7C ]
 "366
-[; ;./AUTOMATIZADOR.h: 366: void sistemaPrincipal(T_UBYTE opcion) {
+[; ;./AUTOMATIZADOR.h: 366:     UART_printf("\r\n 6. Asignar Setpoint\r\n");
+[e ( _UART_printf (1 :s 8C ]
+"367
+[; ;./AUTOMATIZADOR.h: 367:     UART_printf("\r\n 7. Fijar Dia Actual \r\n");
+[e ( _UART_printf (1 :s 9C ]
+"368
+[; ;./AUTOMATIZADOR.h: 368:     UART_printf("\r\n 8. Cargar datos de la memoria \r\n");
+[e ( _UART_printf (1 :s 10C ]
+"369
+[; ;./AUTOMATIZADOR.h: 369:     UART_printf("\r\n Opcion:  \r");
+[e ( _UART_printf (1 :s 11C ]
+"370
+[; ;./AUTOMATIZADOR.h: 370:     UART_printf("\r\n");
+[e ( _UART_printf (1 :s 12C ]
+"371
+[; ;./AUTOMATIZADOR.h: 371: }
+[e :UE 480 ]
+}
+"373
+[; ;./AUTOMATIZADOR.h: 373: void sistemaPrincipal(T_UBYTE opcion) {
 [v _sistemaPrincipal `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _sistemaPrincipal ]
 [v _opcion `uc ~T0 @X0 1 r1 ]
 [f ]
-"368
-[; ;./AUTOMATIZADOR.h: 368:     PIE1bits.RCIE = 0;
+"375
+[; ;./AUTOMATIZADOR.h: 375:     PIE1bits.RCIE = 0;
 [e = . . _PIE1bits 0 5 -> -> 0 `i `uc ]
-"370
-[; ;./AUTOMATIZADOR.h: 370:     switch (opcion) {
-[e $U 481  ]
-{
-"372
-[; ;./AUTOMATIZADOR.h: 372:         case 1:
-[e :U 482 ]
-"373
-[; ;./AUTOMATIZADOR.h: 373:             fijaHoraRtc();
-[e ( _fijaHoraRtc ..  ]
-"374
-[; ;./AUTOMATIZADOR.h: 374:             break;
-[e $U 480  ]
-"376
-[; ;./AUTOMATIZADOR.h: 376:         case 2:
-[e :U 483 ]
 "377
-[; ;./AUTOMATIZADOR.h: 377:             asignarHorarios();
-[e ( _asignarHorarios ..  ]
-"378
-[; ;./AUTOMATIZADOR.h: 378:             break;
-[e $U 480  ]
-"380
-[; ;./AUTOMATIZADOR.h: 380:         case 3:
+[; ;./AUTOMATIZADOR.h: 377:     switch (opcion) {
+[e $U 483  ]
+{
+"379
+[; ;./AUTOMATIZADOR.h: 379:         case 1:
 [e :U 484 ]
+"380
+[; ;./AUTOMATIZADOR.h: 380:             fijaHoraRtc();
+[e ( _fijaHoraRtc ..  ]
 "381
-[; ;./AUTOMATIZADOR.h: 381:             setTiempoIluminar();
-[e ( _setTiempoIluminar ..  ]
-"382
-[; ;./AUTOMATIZADOR.h: 382:             break;
-[e $U 480  ]
-"384
-[; ;./AUTOMATIZADOR.h: 384:         case 4:
+[; ;./AUTOMATIZADOR.h: 381:             break;
+[e $U 482  ]
+"383
+[; ;./AUTOMATIZADOR.h: 383:         case 2:
 [e :U 485 ]
+"384
+[; ;./AUTOMATIZADOR.h: 384:             asignarHorarios();
+[e ( _asignarHorarios ..  ]
 "385
-[; ;./AUTOMATIZADOR.h: 385:             dameDatosSistema();
-[e ( _dameDatosSistema ..  ]
-"386
-[; ;./AUTOMATIZADOR.h: 386:             break;
-[e $U 480  ]
-"388
-[; ;./AUTOMATIZADOR.h: 388:         case 5:
+[; ;./AUTOMATIZADOR.h: 385:             break;
+[e $U 482  ]
+"387
+[; ;./AUTOMATIZADOR.h: 387:         case 3:
 [e :U 486 ]
+"388
+[; ;./AUTOMATIZADOR.h: 388:             setTiempoIluminar();
+[e ( _setTiempoIluminar ..  ]
 "389
-[; ;./AUTOMATIZADOR.h: 389:             mostrarDatosSensores();
-[e ( _mostrarDatosSensores ..  ]
-"390
-[; ;./AUTOMATIZADOR.h: 390:             break;
-[e $U 480  ]
-"392
-[; ;./AUTOMATIZADOR.h: 392:         case 6:
+[; ;./AUTOMATIZADOR.h: 389:             break;
+[e $U 482  ]
+"391
+[; ;./AUTOMATIZADOR.h: 391:         case 4:
 [e :U 487 ]
+"392
+[; ;./AUTOMATIZADOR.h: 392:             dameDatosSistema();
+[e ( _dameDatosSistema ..  ]
 "393
-[; ;./AUTOMATIZADOR.h: 393:             asignarSetPoint();
-[e ( _asignarSetPoint ..  ]
+[; ;./AUTOMATIZADOR.h: 393:             break;
+[e $U 482  ]
 "395
-[; ;./AUTOMATIZADOR.h: 395:         case 7:
+[; ;./AUTOMATIZADOR.h: 395:         case 5:
 [e :U 488 ]
 "396
-[; ;./AUTOMATIZADOR.h: 396:             fijaDiaRtc();
-[e ( _fijaDiaRtc ..  ]
+[; ;./AUTOMATIZADOR.h: 396:             mostrarDatosSensores();
+[e ( _mostrarDatosSensores ..  ]
 "397
 [; ;./AUTOMATIZADOR.h: 397:             break;
-[e $U 480  ]
+[e $U 482  ]
 "399
-[; ;./AUTOMATIZADOR.h: 399:         case 8:
+[; ;./AUTOMATIZADOR.h: 399:         case 6:
 [e :U 489 ]
 "400
-[; ;./AUTOMATIZADOR.h: 400:             leeHorariosMemoria();
-[e ( _leeHorariosMemoria ..  ]
-"401
-[; ;./AUTOMATIZADOR.h: 401:             break;
-[e $U 480  ]
-"403
-[; ;./AUTOMATIZADOR.h: 403:         case 9:
+[; ;./AUTOMATIZADOR.h: 400:             asignarSetPoint();
+[e ( _asignarSetPoint ..  ]
+"402
+[; ;./AUTOMATIZADOR.h: 402:         case 7:
 [e :U 490 ]
+"403
+[; ;./AUTOMATIZADOR.h: 403:             fijaDiaRtc();
+[e ( _fijaDiaRtc ..  ]
 "404
-[; ;./AUTOMATIZADOR.h: 404:             setRtcDefault();
-[e ( _setRtcDefault ..  ]
-"405
-[; ;./AUTOMATIZADOR.h: 405:             break;
-[e $U 480  ]
-"408
-[; ;./AUTOMATIZADOR.h: 408:         default:
+[; ;./AUTOMATIZADOR.h: 404:             break;
+[e $U 482  ]
+"406
+[; ;./AUTOMATIZADOR.h: 406:         case 8:
 [e :U 491 ]
+"407
+[; ;./AUTOMATIZADOR.h: 407:             leeHorariosMemoria();
+[e ( _leeHorariosMemoria ..  ]
+"408
+[; ;./AUTOMATIZADOR.h: 408:             break;
+[e $U 482  ]
 "410
-[; ;./AUTOMATIZADOR.h: 410:             break;
-[e $U 480  ]
+[; ;./AUTOMATIZADOR.h: 410:         case 9:
+[e :U 492 ]
 "411
-[; ;./AUTOMATIZADOR.h: 411:     }
-}
-[e $U 480  ]
-[e :U 481 ]
-[e [\ -> _opcion `i , $ -> 1 `i 482
- , $ -> 2 `i 483
- , $ -> 3 `i 484
- , $ -> 4 `i 485
- , $ -> 5 `i 486
- , $ -> 6 `i 487
- , $ -> 7 `i 488
- , $ -> 8 `i 489
- , $ -> 9 `i 490
- 491 ]
-[e :U 480 ]
-"414
-[; ;./AUTOMATIZADOR.h: 414:     PIE1bits.RCIE = 1;
-[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-"416
-[; ;./AUTOMATIZADOR.h: 416: }
-[e :UE 479 ]
-}
+[; ;./AUTOMATIZADOR.h: 411:             setRtcDefault();
+[e ( _setRtcDefault ..  ]
+"412
+[; ;./AUTOMATIZADOR.h: 412:             break;
+[e $U 482  ]
+"415
+[; ;./AUTOMATIZADOR.h: 415:         default:
+[e :U 493 ]
+"417
+[; ;./AUTOMATIZADOR.h: 417:             break;
+[e $U 482  ]
 "418
-[; ;./AUTOMATIZADOR.h: 418: void sistemaIluminado(void) {
+[; ;./AUTOMATIZADOR.h: 418:     }
+}
+[e $U 482  ]
+[e :U 483 ]
+[e [\ -> _opcion `i , $ -> 1 `i 484
+ , $ -> 2 `i 485
+ , $ -> 3 `i 486
+ , $ -> 4 `i 487
+ , $ -> 5 `i 488
+ , $ -> 6 `i 489
+ , $ -> 7 `i 490
+ , $ -> 8 `i 491
+ , $ -> 9 `i 492
+ 493 ]
+[e :U 482 ]
+"421
+[; ;./AUTOMATIZADOR.h: 421:     PIE1bits.RCIE = 1;
+[e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
+"423
+[; ;./AUTOMATIZADOR.h: 423: }
+[e :UE 481 ]
+}
+"425
+[; ;./AUTOMATIZADOR.h: 425: void sistemaIluminado(void) {
 [v _sistemaIluminado `(v ~T0 @X0 1 ef ]
 {
 [e :U _sistemaIluminado ]
 [f ]
-"422
-[; ;./AUTOMATIZADOR.h: 422:     if (iluminando) {
-[e $ ! != -> _iluminando `i -> 0 `i 493  ]
-{
-"427
-[; ;./AUTOMATIZADOR.h: 427:         contInterrupciones++;
-[e ++ _contInterrupciones -> 1 `i ]
 "429
-[; ;./AUTOMATIZADOR.h: 429:         if (contInterrupciones == 6) {
-[e $ ! == _contInterrupciones -> 6 `i 494  ]
+[; ;./AUTOMATIZADOR.h: 429:     if (iluminando) {
+[e $ ! != -> _iluminando `i -> 0 `i 495  ]
 {
-"430
-[; ;./AUTOMATIZADOR.h: 430:             contInterrupciones = 0;
-[e = _contInterrupciones -> 0 `i ]
-"431
-[; ;./AUTOMATIZADOR.h: 431:             minutosTranscurridos++;
-[e ++ _minutosTranscurridos -> -> 1 `i `us ]
 "434
-[; ;./AUTOMATIZADOR.h: 434:             if (minutosTranscurridos >= minutosIluminar) {
-[e $ ! >= -> _minutosTranscurridos `ui -> _minutosIluminar `ui 495  ]
-{
+[; ;./AUTOMATIZADOR.h: 434:         contInterrupciones++;
+[e ++ _contInterrupciones -> 1 `i ]
 "436
-[; ;./AUTOMATIZADOR.h: 436:                 pwmDuty(0, 1);
-[e ( _pwmDuty (2 , -> -> 0 `i `ui -> -> 1 `i `uc ]
+[; ;./AUTOMATIZADOR.h: 436:         if (contInterrupciones == 6) {
+[e $ ! == _contInterrupciones -> 6 `i 496  ]
+{
 "437
-[; ;./AUTOMATIZADOR.h: 437:                 minutosTranscurridos = 0;
-[e = _minutosTranscurridos -> -> 0 `i `us ]
+[; ;./AUTOMATIZADOR.h: 437:             contInterrupciones = 0;
+[e = _contInterrupciones -> 0 `i ]
 "438
-[; ;./AUTOMATIZADOR.h: 438:                 iluminando = 0;
-[e = _iluminando -> -> 0 `i `uc ]
-"439
-[; ;./AUTOMATIZADOR.h: 439:                 horarios[hora].iluminado = 1;
-[e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 3 -> -> 1 `i `uc ]
-"440
-[; ;./AUTOMATIZADOR.h: 440:                 tempHora = hora;
-[e = _tempHora _hora ]
+[; ;./AUTOMATIZADOR.h: 438:             minutosTranscurridos++;
+[e ++ _minutosTranscurridos -> -> 1 `i `us ]
 "441
-[; ;./AUTOMATIZADOR.h: 441:                 flagIluminado = 0;
-[e = _flagIluminado -> -> 0 `i `uc ]
-"442
-[; ;./AUTOMATIZADOR.h: 442:             }
-}
-[e :U 495 ]
+[; ;./AUTOMATIZADOR.h: 441:             if (minutosTranscurridos >= minutosIluminar) {
+[e $ ! >= -> _minutosTranscurridos `ui -> _minutosIluminar `ui 497  ]
+{
 "443
-[; ;./AUTOMATIZADOR.h: 443:         }
-}
-[e :U 494 ]
+[; ;./AUTOMATIZADOR.h: 443:                 pwmDuty(0, 1);
+[e ( _pwmDuty (2 , -> -> 0 `i `ui -> -> 1 `i `uc ]
+"444
+[; ;./AUTOMATIZADOR.h: 444:                 minutosTranscurridos = 0;
+[e = _minutosTranscurridos -> -> 0 `i `us ]
 "445
-[; ;./AUTOMATIZADOR.h: 445:     } else {
-}
-[e $U 496  ]
-[e :U 493 ]
-{
+[; ;./AUTOMATIZADOR.h: 445:                 iluminando = 0;
+[e = _iluminando -> -> 0 `i `uc ]
+"446
+[; ;./AUTOMATIZADOR.h: 446:                 horarios[hora].iluminado = 1;
+[e = . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 3 -> -> 1 `i `uc ]
 "447
-[; ;./AUTOMATIZADOR.h: 447:         dameHoraActual();
-[e ( _dameHoraActual ..  ]
+[; ;./AUTOMATIZADOR.h: 447:                 tempHora = hora;
+[e = _tempHora _hora ]
 "448
-[; ;./AUTOMATIZADOR.h: 448:         dameDiaActual();
-[e ( _dameDiaActual ..  ]
-"450
-[; ;./AUTOMATIZADOR.h: 450:         if (hora != tempHora && !flagIluminado) {
-[e $ ! && != -> _hora `i -> _tempHora `i ! != -> _flagIluminado `i -> 0 `i 497  ]
-{
-"451
-[; ;./AUTOMATIZADOR.h: 451:             horarios[tempHora].iluminado = 0;
-[e = . *U + &U _horarios * -> _tempHora `ux -> -> # *U &U _horarios `ui `ux 3 -> -> 0 `i `uc ]
-"452
-[; ;./AUTOMATIZADOR.h: 452:             flagIluminado = 1;
-[e = _flagIluminado -> -> 1 `i `uc ]
-"453
-[; ;./AUTOMATIZADOR.h: 453:         }
+[; ;./AUTOMATIZADOR.h: 448:                 flagIluminado = 0;
+[e = _flagIluminado -> -> 0 `i `uc ]
+"449
+[; ;./AUTOMATIZADOR.h: 449:             }
 }
 [e :U 497 ]
-"455
-[; ;./AUTOMATIZADOR.h: 455:         if (horaIluminar()) {
-[e $ ! != ( _horaIluminar ..  -> 0 `i 498  ]
-{
-"458
-[; ;./AUTOMATIZADOR.h: 458:             minutosIluminar = (horarios[hora].tiempoIluminar) * 60;
-[e = _minutosIluminar -> * -> . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 4 `i -> 60 `i `us ]
-"459
-[; ;./AUTOMATIZADOR.h: 459:             pwmDuty(100, 1);
-[e ( _pwmDuty (2 , -> -> 100 `i `ui -> -> 1 `i `uc ]
-"461
-[; ;./AUTOMATIZADOR.h: 461:         }
-}
-[e :U 498 ]
-"462
-[; ;./AUTOMATIZADOR.h: 462:     }
+"450
+[; ;./AUTOMATIZADOR.h: 450:         }
 }
 [e :U 496 ]
-"464
-[; ;./AUTOMATIZADOR.h: 464: }
-[e :UE 492 ]
+"452
+[; ;./AUTOMATIZADOR.h: 452:     } else {
 }
+[e $U 498  ]
+[e :U 495 ]
+{
+"454
+[; ;./AUTOMATIZADOR.h: 454:         dameHoraActual();
+[e ( _dameHoraActual ..  ]
+"455
+[; ;./AUTOMATIZADOR.h: 455:         dameDiaActual();
+[e ( _dameDiaActual ..  ]
+"457
+[; ;./AUTOMATIZADOR.h: 457:         if (hora != tempHora && !flagIluminado) {
+[e $ ! && != -> _hora `i -> _tempHora `i ! != -> _flagIluminado `i -> 0 `i 499  ]
+{
+"458
+[; ;./AUTOMATIZADOR.h: 458:             horarios[tempHora].iluminado = 0;
+[e = . *U + &U _horarios * -> _tempHora `ux -> -> # *U &U _horarios `ui `ux 3 -> -> 0 `i `uc ]
+"459
+[; ;./AUTOMATIZADOR.h: 459:             flagIluminado = 1;
+[e = _flagIluminado -> -> 1 `i `uc ]
+"460
+[; ;./AUTOMATIZADOR.h: 460:         }
+}
+[e :U 499 ]
+"462
+[; ;./AUTOMATIZADOR.h: 462:         if (horaIluminar()) {
+[e $ ! != ( _horaIluminar ..  -> 0 `i 500  ]
+{
+"465
+[; ;./AUTOMATIZADOR.h: 465:             minutosIluminar = (horarios[hora].tiempoIluminar) * 60;
+[e = _minutosIluminar -> * -> . *U + &U _horarios * -> _hora `ux -> -> # *U &U _horarios `ui `ux 4 `i -> 60 `i `us ]
 "466
-[; ;./AUTOMATIZADOR.h: 466: void dameDatosSistema(void) {
+[; ;./AUTOMATIZADOR.h: 466:             pwmDuty(100, 1);
+[e ( _pwmDuty (2 , -> -> 100 `i `ui -> -> 1 `i `uc ]
+"468
+[; ;./AUTOMATIZADOR.h: 468:         }
+}
+[e :U 500 ]
+"469
+[; ;./AUTOMATIZADOR.h: 469:     }
+}
+[e :U 498 ]
+"471
+[; ;./AUTOMATIZADOR.h: 471: }
+[e :UE 494 ]
+}
+"473
+[; ;./AUTOMATIZADOR.h: 473: void dameDatosSistema(void) {
 [v _dameDatosSistema `(v ~T0 @X0 1 ef ]
 {
 [e :U _dameDatosSistema ]
 [f ]
-"468
-[; ;./AUTOMATIZADOR.h: 468:     T_BYTE bufferHorario[30];
-[v _bufferHorario `uc ~T0 @X0 -> 30 `i a ]
-"472
-[; ;./AUTOMATIZADOR.h: 472:     sprintf(buffer, "\r\nSetpoint = %d | ", setPoint);
-[e ( _sprintf (1 , (. , &U _buffer :s 13C _setPoint ]
-"473
-[; ;./AUTOMATIZADOR.h: 473:     UART_printf(buffer);
-[e ( _UART_printf (1 &U _buffer ]
 "475
-[; ;./AUTOMATIZADOR.h: 475:     switch (diaActual) {
-[e $U 501  ]
-{
-"476
-[; ;./AUTOMATIZADOR.h: 476:         case 1:
-[e :U 502 ]
-"477
-[; ;./AUTOMATIZADOR.h: 477:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = DOMINGO\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 14C -> _hora `i -> _minutos `i ]
-"478
-[; ;./AUTOMATIZADOR.h: 478:             break;
-[e $U 500  ]
+[; ;./AUTOMATIZADOR.h: 475:     T_BYTE bufferHorario[30];
+[v _bufferHorario `uc ~T0 @X0 -> 30 `i a ]
+"479
+[; ;./AUTOMATIZADOR.h: 479:     sprintf(buffer, "\r\nSetpoint = %d | ", setPoint);
+[e ( _sprintf (1 , (. , &U _buffer :s 13C _setPoint ]
 "480
-[; ;./AUTOMATIZADOR.h: 480:         case 2:
-[e :U 503 ]
-"481
-[; ;./AUTOMATIZADOR.h: 481:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = LUNES\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 15C -> _hora `i -> _minutos `i ]
+[; ;./AUTOMATIZADOR.h: 480:     UART_printf(buffer);
+[e ( _UART_printf (1 &U _buffer ]
 "482
-[; ;./AUTOMATIZADOR.h: 482:             break;
-[e $U 500  ]
-"484
-[; ;./AUTOMATIZADOR.h: 484:         case 3:
+[; ;./AUTOMATIZADOR.h: 482:     switch (diaActual) {
+[e $U 503  ]
+{
+"483
+[; ;./AUTOMATIZADOR.h: 483:         case 1:
 [e :U 504 ]
+"484
+[; ;./AUTOMATIZADOR.h: 484:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = DOMINGO\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 14C -> _hora `i -> _minutos `i ]
 "485
-[; ;./AUTOMATIZADOR.h: 485:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = MARTES\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 16C -> _hora `i -> _minutos `i ]
-"486
-[; ;./AUTOMATIZADOR.h: 486:             break;
-[e $U 500  ]
-"488
-[; ;./AUTOMATIZADOR.h: 488:         case 4:
+[; ;./AUTOMATIZADOR.h: 485:             break;
+[e $U 502  ]
+"487
+[; ;./AUTOMATIZADOR.h: 487:         case 2:
 [e :U 505 ]
+"488
+[; ;./AUTOMATIZADOR.h: 488:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = LUNES\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 15C -> _hora `i -> _minutos `i ]
 "489
-[; ;./AUTOMATIZADOR.h: 489:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = MIERCOLES\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 17C -> _hora `i -> _minutos `i ]
-"490
-[; ;./AUTOMATIZADOR.h: 490:             break;
-[e $U 500  ]
-"492
-[; ;./AUTOMATIZADOR.h: 492:         case 5:
+[; ;./AUTOMATIZADOR.h: 489:             break;
+[e $U 502  ]
+"491
+[; ;./AUTOMATIZADOR.h: 491:         case 3:
 [e :U 506 ]
+"492
+[; ;./AUTOMATIZADOR.h: 492:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = MARTES\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 16C -> _hora `i -> _minutos `i ]
 "493
-[; ;./AUTOMATIZADOR.h: 493:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = JUEVES\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 18C -> _hora `i -> _minutos `i ]
-"494
-[; ;./AUTOMATIZADOR.h: 494:             break;
-[e $U 500  ]
-"496
-[; ;./AUTOMATIZADOR.h: 496:         case 6:
+[; ;./AUTOMATIZADOR.h: 493:             break;
+[e $U 502  ]
+"495
+[; ;./AUTOMATIZADOR.h: 495:         case 4:
 [e :U 507 ]
+"496
+[; ;./AUTOMATIZADOR.h: 496:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = MIERCOLES\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 17C -> _hora `i -> _minutos `i ]
 "497
-[; ;./AUTOMATIZADOR.h: 497:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = VIERNES\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 19C -> _hora `i -> _minutos `i ]
-"498
-[; ;./AUTOMATIZADOR.h: 498:             break;
-[e $U 500  ]
-"500
-[; ;./AUTOMATIZADOR.h: 500:         case 7:
+[; ;./AUTOMATIZADOR.h: 497:             break;
+[e $U 502  ]
+"499
+[; ;./AUTOMATIZADOR.h: 499:         case 5:
 [e :U 508 ]
+"500
+[; ;./AUTOMATIZADOR.h: 500:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = JUEVES\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 18C -> _hora `i -> _minutos `i ]
 "501
-[; ;./AUTOMATIZADOR.h: 501:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = SABADO\r\n", hora, minutos);
-[e ( _sprintf (1 , , (. , &U _buffer2 :s 20C -> _hora `i -> _minutos `i ]
-"502
-[; ;./AUTOMATIZADOR.h: 502:             break;
-[e $U 500  ]
-"504
-[; ;./AUTOMATIZADOR.h: 504:         default:
+[; ;./AUTOMATIZADOR.h: 501:             break;
+[e $U 502  ]
+"503
+[; ;./AUTOMATIZADOR.h: 503:         case 6:
 [e :U 509 ]
+"504
+[; ;./AUTOMATIZADOR.h: 504:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = VIERNES\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 19C -> _hora `i -> _minutos `i ]
 "505
 [; ;./AUTOMATIZADOR.h: 505:             break;
-[e $U 500  ]
-"506
-[; ;./AUTOMATIZADOR.h: 506:     }
-}
-[e $U 500  ]
-[e :U 501 ]
-[e [\ -> _diaActual `i , $ -> 1 `i 502
- , $ -> 2 `i 503
- , $ -> 3 `i 504
- , $ -> 4 `i 505
- , $ -> 5 `i 506
- , $ -> 6 `i 507
- , $ -> 7 `i 508
- 509 ]
-[e :U 500 ]
+[e $U 502  ]
+"507
+[; ;./AUTOMATIZADOR.h: 507:         case 7:
+[e :U 510 ]
+"508
+[; ;./AUTOMATIZADOR.h: 508:             sprintf(buffer2, "HORA = %0.2d:%0.2d | DIA = SABADO\r\n", hora, minutos);
+[e ( _sprintf (1 , , (. , &U _buffer2 :s 20C -> _hora `i -> _minutos `i ]
 "509
-[; ;./AUTOMATIZADOR.h: 509:     UART_printf(buffer2);
-[e ( _UART_printf (1 &U _buffer2 ]
+[; ;./AUTOMATIZADOR.h: 509:             break;
+[e $U 502  ]
 "511
-[; ;./AUTOMATIZADOR.h: 511:     UART_printf("\r\nH = HORA\r\n");
-[e ( _UART_printf (1 :s 21C ]
+[; ;./AUTOMATIZADOR.h: 511:         default:
+[e :U 511 ]
 "512
-[; ;./AUTOMATIZADOR.h: 512:     UART_printf("\r\nR = ILUMINAR( 1 SI | 0 NO)\r\n");
-[e ( _UART_printf (1 :s 22C ]
+[; ;./AUTOMATIZADOR.h: 512:             break;
+[e $U 502  ]
 "513
-[; ;./AUTOMATIZADOR.h: 513:     UART_printf("\r\nT = MINUTOS QUE DURARA LA ILUMINACION\r\n");
-[e ( _UART_printf (1 :s 23C ]
-"514
-[; ;./AUTOMATIZADOR.h: 514:     UART_printf("\r\nD = DIAS QUE EN LOS QUE SE ILUMINARA\r\n");
-[e ( _UART_printf (1 :s 24C ]
+[; ;./AUTOMATIZADOR.h: 513:     }
+}
+[e $U 502  ]
+[e :U 503 ]
+[e [\ -> _diaActual `i , $ -> 1 `i 504
+ , $ -> 2 `i 505
+ , $ -> 3 `i 506
+ , $ -> 4 `i 507
+ , $ -> 5 `i 508
+ , $ -> 6 `i 509
+ , $ -> 7 `i 510
+ 511 ]
+[e :U 502 ]
 "516
-[; ;./AUTOMATIZADOR.h: 516:     UART_printf("                           DLMIJVS\r\n");
-[e ( _UART_printf (1 :s 25C ]
+[; ;./AUTOMATIZADOR.h: 516:     UART_printf(buffer2);
+[e ( _UART_printf (1 &U _buffer2 ]
+"518
+[; ;./AUTOMATIZADOR.h: 518:     UART_printf("\r\nH = HORA\r\n");
+[e ( _UART_printf (1 :s 21C ]
 "519
-[; ;./AUTOMATIZADOR.h: 519:     for (T_INT i = 0; i < 24; i++) {
+[; ;./AUTOMATIZADOR.h: 519:     UART_printf("\r\nR = ILUMINAR( 1 SI | 0 NO)\r\n");
+[e ( _UART_printf (1 :s 22C ]
+"520
+[; ;./AUTOMATIZADOR.h: 520:     UART_printf("\r\nT = MINUTOS QUE DURARA LA ILUMINACION\r\n");
+[e ( _UART_printf (1 :s 23C ]
+"521
+[; ;./AUTOMATIZADOR.h: 521:     UART_printf("\r\nD = DIAS QUE EN LOS QUE SE ILUMINARA\r\n");
+[e ( _UART_printf (1 :s 24C ]
+"523
+[; ;./AUTOMATIZADOR.h: 523:     UART_printf("                           DLMIJVS\r\n");
+[e ( _UART_printf (1 :s 25C ]
+"526
+[; ;./AUTOMATIZADOR.h: 526:     for (T_INT i = 0; i < 24; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 24 `i 510  ]
-[e $U 511  ]
-[e :U 510 ]
+[e $ < _i -> 24 `i 512  ]
+[e $U 513  ]
+[e :U 512 ]
 {
-"521
-[; ;./AUTOMATIZADOR.h: 521:         if (horarios[i].iluminar) {
-[e $ ! != -> . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 `i -> 0 `i 513  ]
+"528
+[; ;./AUTOMATIZADOR.h: 528:         if (horarios[i].iluminar) {
+[e $ ! != -> . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 `i -> 0 `i 515  ]
 {
-"523
-[; ;./AUTOMATIZADOR.h: 523:             sprintf(bufferHorario, "H:%2d|R:%d|T:%2d|D:%s\r\n",
+"530
+[; ;./AUTOMATIZADOR.h: 530:             sprintf(bufferHorario, "H:%2d|R:%d|T:%2d|D:%s\r\n",
 [e ( _sprintf (1 , , , , (. , &U _bufferHorario :s 26C -> . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 0 `i -> . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 2 `i -> . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 4 `i &U . *U + &U _horarios * -> -> _i `ui `ux -> -> # *U &U _horarios `ui `ux 1 ]
-"527
-[; ;./AUTOMATIZADOR.h: 527:             UART_printf(bufferHorario);
+"534
+[; ;./AUTOMATIZADOR.h: 534:             UART_printf(bufferHorario);
 [e ( _UART_printf (1 &U _bufferHorario ]
-"529
-[; ;./AUTOMATIZADOR.h: 529:         }
+"536
+[; ;./AUTOMATIZADOR.h: 536:         }
 }
-[e :U 513 ]
-"531
-[; ;./AUTOMATIZADOR.h: 531:     }
+[e :U 515 ]
+"538
+[; ;./AUTOMATIZADOR.h: 538:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 24 `i 510  ]
-[e :U 511 ]
+[e $ < _i -> 24 `i 512  ]
+[e :U 513 ]
 }
-"533
-[; ;./AUTOMATIZADOR.h: 533:     limpiarBuffer();
+"540
+[; ;./AUTOMATIZADOR.h: 540:     limpiarBuffer();
 [e ( _limpiarBuffer ..  ]
-"535
-[; ;./AUTOMATIZADOR.h: 535:     UART_write('&');
+"542
+[; ;./AUTOMATIZADOR.h: 542:     UART_write('&');
 [e ( _UART_write (1 -> -> 38 `ui `uc ]
-"537
-[; ;./AUTOMATIZADOR.h: 537: }
-[e :UE 499 ]
+"544
+[; ;./AUTOMATIZADOR.h: 544: }
+[e :UE 501 ]
 }
-"539
-[; ;./AUTOMATIZADOR.h: 539: void mostrarDatosSensores(void) {
+"546
+[; ;./AUTOMATIZADOR.h: 546: void mostrarDatosSensores(void) {
 [v _mostrarDatosSensores `(v ~T0 @X0 1 ef ]
 {
 [e :U _mostrarDatosSensores ]
 [f ]
-"541
-[; ;./AUTOMATIZADOR.h: 541:     luzMedida = dameValorLux(0x10);
+"548
+[; ;./AUTOMATIZADOR.h: 548:     luzMedida = dameValorLux(0x10);
 [e = _luzMedida ( _dameValorLux (1 -> -> 16 `i `uc ]
-"542
-[; ;./AUTOMATIZADOR.h: 542:     sprintf(buffer, "\rLuz medida: %d luxs\n\r", luzMedida);
-[e ( _sprintf (1 , (. , &U _buffer :s 27C _luzMedida ]
-"543
-[; ;./AUTOMATIZADOR.h: 543:     UART_printf(buffer);
-[e ( _UART_printf (1 &U _buffer ]
-"545
-[; ;./AUTOMATIZADOR.h: 545:     UART_write('&');
-[e ( _UART_write (1 -> -> 38 `ui `uc ]
-"547
-[; ;./AUTOMATIZADOR.h: 547: }
-[e :UE 514 ]
-}
 "549
-[; ;./AUTOMATIZADOR.h: 549: void configBluetoothHC_06(void) {
+[; ;./AUTOMATIZADOR.h: 549:     sprintf(buffer, "\rLuz medida: %d luxs\n\r", luzMedida);
+[e ( _sprintf (1 , (. , &U _buffer :s 27C _luzMedida ]
+"550
+[; ;./AUTOMATIZADOR.h: 550:     UART_printf(buffer);
+[e ( _UART_printf (1 &U _buffer ]
+"552
+[; ;./AUTOMATIZADOR.h: 552:     UART_write('&');
+[e ( _UART_write (1 -> -> 38 `ui `uc ]
+"554
+[; ;./AUTOMATIZADOR.h: 554: }
+[e :UE 516 ]
+}
+"556
+[; ;./AUTOMATIZADOR.h: 556: void configBluetoothHC_06(void) {
 [v _configBluetoothHC_06 `(v ~T0 @X0 1 ef ]
 {
 [e :U _configBluetoothHC_06 ]
 [f ]
-"550
-[; ;./AUTOMATIZADOR.h: 550:     _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"551
-[; ;./AUTOMATIZADOR.h: 551:     UART_printf("AT+NAMESMARTHOME");
-[e ( _UART_printf (1 :s 28C ]
-"552
-[; ;./AUTOMATIZADOR.h: 552:     _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"553
-[; ;./AUTOMATIZADOR.h: 553:     UART_printf("AT+BAUD4");
-[e ( _UART_printf (1 :s 29C ]
-"554
-[; ;./AUTOMATIZADOR.h: 554:     _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"555
-[; ;./AUTOMATIZADOR.h: 555:     UART_printf("AT+PIN2501");
-[e ( _UART_printf (1 :s 30C ]
-"556
-[; ;./AUTOMATIZADOR.h: 556:     _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "557
-[; ;./AUTOMATIZADOR.h: 557: }
-[e :UE 515 ]
-}
+[; ;./AUTOMATIZADOR.h: 557:     _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"558
+[; ;./AUTOMATIZADOR.h: 558:     UART_printf("AT+NAMESMARTHOME");
+[e ( _UART_printf (1 :s 28C ]
 "559
-[; ;./AUTOMATIZADOR.h: 559: T_ULONG getValue(T_WORD numCharacters) {
+[; ;./AUTOMATIZADOR.h: 559:     _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"560
+[; ;./AUTOMATIZADOR.h: 560:     UART_printf("AT+BAUD4");
+[e ( _UART_printf (1 :s 29C ]
+"561
+[; ;./AUTOMATIZADOR.h: 561:     _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"562
+[; ;./AUTOMATIZADOR.h: 562:     UART_printf("AT+PIN2501");
+[e ( _UART_printf (1 :s 30C ]
+"563
+[; ;./AUTOMATIZADOR.h: 563:     _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"564
+[; ;./AUTOMATIZADOR.h: 564: }
+[e :UE 517 ]
+}
+"566
+[; ;./AUTOMATIZADOR.h: 566: T_ULONG getValue(T_WORD numCharacters) {
 [v _getValue `(ul ~T0 @X0 1 ef1`s ]
 {
 [e :U _getValue ]
 [v _numCharacters `s ~T0 @X0 1 r1 ]
 [f ]
-"561
-[; ;./AUTOMATIZADOR.h: 561:     T_UBYTE Rx = 0;
+"568
+[; ;./AUTOMATIZADOR.h: 568:     T_UBYTE Rx = 0;
 [v _Rx `uc ~T0 @X0 1 a ]
 [e = _Rx -> -> 0 `i `uc ]
-"562
-[; ;./AUTOMATIZADOR.h: 562:     T_UBYTE datoIncorrecto = 0;
+"569
+[; ;./AUTOMATIZADOR.h: 569:     T_UBYTE datoIncorrecto = 0;
 [v _datoIncorrecto `uc ~T0 @X0 1 a ]
 [e = _datoIncorrecto -> -> 0 `i `uc ]
-"563
-[; ;./AUTOMATIZADOR.h: 563:     T_ULONG dato = 0;
+"570
+[; ;./AUTOMATIZADOR.h: 570:     T_ULONG dato = 0;
 [v _dato `ul ~T0 @X0 1 a ]
 [e = _dato -> -> -> 0 `i `l `ul ]
-"565
-[; ;./AUTOMATIZADOR.h: 565:     switch (numCharacters) {
-[e $U 518  ]
-{
-"567
-[; ;./AUTOMATIZADOR.h: 567:         case 1:
-[e :U 519 ]
-"568
-[; ;./AUTOMATIZADOR.h: 568:             Rx = UART_read();
-[e = _Rx ( _UART_read ..  ]
-"570
-[; ;./AUTOMATIZADOR.h: 570:             if (Rx >= 48 && Rx <= 57) {
-[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 520  ]
-{
-"571
-[; ;./AUTOMATIZADOR.h: 571:                 Rx -= 48;
-[e =- _Rx -> -> 48 `i `uc ]
 "572
-[; ;./AUTOMATIZADOR.h: 572:                 dato = Rx;
-[e = _dato -> _Rx `ul ]
-"573
-[; ;./AUTOMATIZADOR.h: 573:             } else {
-}
-[e $U 521  ]
-[e :U 520 ]
+[; ;./AUTOMATIZADOR.h: 572:     switch (numCharacters) {
+[e $U 520  ]
 {
 "574
-[; ;./AUTOMATIZADOR.h: 574:                 UART_write('@');
-[e ( _UART_write (1 -> -> 64 `ui `uc ]
-"575
-[; ;./AUTOMATIZADOR.h: 575:                 datoIncorrecto = 1;
-[e = _datoIncorrecto -> -> 1 `i `uc ]
-"576
-[; ;./AUTOMATIZADOR.h: 576:             }
-}
+[; ;./AUTOMATIZADOR.h: 574:         case 1:
 [e :U 521 ]
+"575
+[; ;./AUTOMATIZADOR.h: 575:             Rx = UART_read();
+[e = _Rx ( _UART_read ..  ]
+"577
+[; ;./AUTOMATIZADOR.h: 577:             if (Rx >= 48 && Rx <= 57) {
+[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 522  ]
+{
 "578
-[; ;./AUTOMATIZADOR.h: 578:             break;
-[e $U 517  ]
+[; ;./AUTOMATIZADOR.h: 578:                 Rx -= 48;
+[e =- _Rx -> -> 48 `i `uc ]
+"579
+[; ;./AUTOMATIZADOR.h: 579:                 dato = Rx;
+[e = _dato -> _Rx `ul ]
 "580
-[; ;./AUTOMATIZADOR.h: 580:         case 2:
+[; ;./AUTOMATIZADOR.h: 580:             } else {
+}
+[e $U 523  ]
 [e :U 522 ]
+{
 "581
-[; ;./AUTOMATIZADOR.h: 581:             for (T_INT i = 0; i < 2; i++) {
+[; ;./AUTOMATIZADOR.h: 581:                 UART_write('@');
+[e ( _UART_write (1 -> -> 64 `ui `uc ]
+"582
+[; ;./AUTOMATIZADOR.h: 582:                 datoIncorrecto = 1;
+[e = _datoIncorrecto -> -> 1 `i `uc ]
+"583
+[; ;./AUTOMATIZADOR.h: 583:             }
+}
+[e :U 523 ]
+"585
+[; ;./AUTOMATIZADOR.h: 585:             break;
+[e $U 519  ]
+"587
+[; ;./AUTOMATIZADOR.h: 587:         case 2:
+[e :U 524 ]
+"588
+[; ;./AUTOMATIZADOR.h: 588:             for (T_INT i = 0; i < 2; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 2 `i 523  ]
-[e $U 524  ]
-[e :U 523 ]
-{
-"583
-[; ;./AUTOMATIZADOR.h: 583:                 Rx = UART_read();
-[e = _Rx ( _UART_read ..  ]
-"585
-[; ;./AUTOMATIZADOR.h: 585:                 if (Rx >= 48 && Rx <= 57) {
-[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 526  ]
-{
-"587
-[; ;./AUTOMATIZADOR.h: 587:                     Rx -= 48;
-[e =- _Rx -> -> 48 `i `uc ]
-"589
-[; ;./AUTOMATIZADOR.h: 589:                     switch (i) {
-[e $U 528  ]
+[e $ < _i -> 2 `i 525  ]
+[e $U 526  ]
+[e :U 525 ]
 {
 "590
-[; ;./AUTOMATIZADOR.h: 590:                         case 0:
-[e :U 529 ]
-"591
-[; ;./AUTOMATIZADOR.h: 591:                             dato = Rx;
-[e = _dato -> _Rx `ul ]
+[; ;./AUTOMATIZADOR.h: 590:                 Rx = UART_read();
+[e = _Rx ( _UART_read ..  ]
 "592
-[; ;./AUTOMATIZADOR.h: 592:                             dato *= 10;
-[e =* _dato -> -> -> 10 `i `l `ul ]
-"593
-[; ;./AUTOMATIZADOR.h: 593:                             break;
-[e $U 527  ]
-"595
-[; ;./AUTOMATIZADOR.h: 595:                         case 1:
-[e :U 530 ]
+[; ;./AUTOMATIZADOR.h: 592:                 if (Rx >= 48 && Rx <= 57) {
+[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 528  ]
+{
+"594
+[; ;./AUTOMATIZADOR.h: 594:                     Rx -= 48;
+[e =- _Rx -> -> 48 `i `uc ]
 "596
-[; ;./AUTOMATIZADOR.h: 596:                             dato += Rx;
-[e =+ _dato -> _Rx `ul ]
+[; ;./AUTOMATIZADOR.h: 596:                     switch (i) {
+[e $U 530  ]
+{
 "597
-[; ;./AUTOMATIZADOR.h: 597:                             break;
-[e $U 527  ]
-"599
-[; ;./AUTOMATIZADOR.h: 599:                         default:
+[; ;./AUTOMATIZADOR.h: 597:                         case 0:
 [e :U 531 ]
+"598
+[; ;./AUTOMATIZADOR.h: 598:                             dato = Rx;
+[e = _dato -> _Rx `ul ]
+"599
+[; ;./AUTOMATIZADOR.h: 599:                             dato *= 10;
+[e =* _dato -> -> -> 10 `i `l `ul ]
 "600
 [; ;./AUTOMATIZADOR.h: 600:                             break;
-[e $U 527  ]
-"601
-[; ;./AUTOMATIZADOR.h: 601:                     }
-}
-[e $U 527  ]
-[e :U 528 ]
-[e [\ _i , $ -> 0 `i 529
- , $ -> 1 `i 530
- 531 ]
-[e :U 527 ]
-"603
-[; ;./AUTOMATIZADOR.h: 603:                 } else {
-}
-[e $U 532  ]
-[e :U 526 ]
-{
-"605
-[; ;./AUTOMATIZADOR.h: 605:                     datoIncorrecto = 1;
-[e = _datoIncorrecto -> -> 1 `i `uc ]
-"606
-[; ;./AUTOMATIZADOR.h: 606:                     UART_write('@');
-[e ( _UART_write (1 -> -> 64 `ui `uc ]
-"607
-[; ;./AUTOMATIZADOR.h: 607:                     break;
-[e $U 524  ]
-"608
-[; ;./AUTOMATIZADOR.h: 608:                 }
-}
+[e $U 529  ]
+"602
+[; ;./AUTOMATIZADOR.h: 602:                         case 1:
 [e :U 532 ]
-"609
-[; ;./AUTOMATIZADOR.h: 609:             }
+"603
+[; ;./AUTOMATIZADOR.h: 603:                             dato += Rx;
+[e =+ _dato -> _Rx `ul ]
+"604
+[; ;./AUTOMATIZADOR.h: 604:                             break;
+[e $U 529  ]
+"606
+[; ;./AUTOMATIZADOR.h: 606:                         default:
+[e :U 533 ]
+"607
+[; ;./AUTOMATIZADOR.h: 607:                             break;
+[e $U 529  ]
+"608
+[; ;./AUTOMATIZADOR.h: 608:                     }
+}
+[e $U 529  ]
+[e :U 530 ]
+[e [\ _i , $ -> 0 `i 531
+ , $ -> 1 `i 532
+ 533 ]
+[e :U 529 ]
+"610
+[; ;./AUTOMATIZADOR.h: 610:                 } else {
+}
+[e $U 534  ]
+[e :U 528 ]
+{
+"612
+[; ;./AUTOMATIZADOR.h: 612:                     datoIncorrecto = 1;
+[e = _datoIncorrecto -> -> 1 `i `uc ]
+"613
+[; ;./AUTOMATIZADOR.h: 613:                     UART_write('@');
+[e ( _UART_write (1 -> -> 64 `ui `uc ]
+"614
+[; ;./AUTOMATIZADOR.h: 614:                     break;
+[e $U 526  ]
+"615
+[; ;./AUTOMATIZADOR.h: 615:                 }
+}
+[e :U 534 ]
+"616
+[; ;./AUTOMATIZADOR.h: 616:             }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 2 `i 523  ]
-[e :U 524 ]
+[e $ < _i -> 2 `i 525  ]
+[e :U 526 ]
 }
-"610
-[; ;./AUTOMATIZADOR.h: 610:             break;
-[e $U 517  ]
-"612
-[; ;./AUTOMATIZADOR.h: 612:         case 3:
-[e :U 533 ]
-"613
-[; ;./AUTOMATIZADOR.h: 613:             for (T_INT i = 0; i < 3; i++) {
+"617
+[; ;./AUTOMATIZADOR.h: 617:             break;
+[e $U 519  ]
+"619
+[; ;./AUTOMATIZADOR.h: 619:         case 3:
+[e :U 535 ]
+"620
+[; ;./AUTOMATIZADOR.h: 620:             for (T_INT i = 0; i < 3; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 3 `i 534  ]
-[e $U 535  ]
-[e :U 534 ]
-{
-"615
-[; ;./AUTOMATIZADOR.h: 615:                 Rx = UART_read();
-[e = _Rx ( _UART_read ..  ]
-"617
-[; ;./AUTOMATIZADOR.h: 617:                 if (Rx >= 48 && Rx <= 57) {
-[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 537  ]
-{
-"619
-[; ;./AUTOMATIZADOR.h: 619:                     Rx -= 48;
-[e =- _Rx -> -> 48 `i `uc ]
-"621
-[; ;./AUTOMATIZADOR.h: 621:                     switch (i) {
-[e $U 539  ]
+[e $ < _i -> 3 `i 536  ]
+[e $U 537  ]
+[e :U 536 ]
 {
 "622
-[; ;./AUTOMATIZADOR.h: 622:                         case 0:
-[e :U 540 ]
-"623
-[; ;./AUTOMATIZADOR.h: 623:                             dato = Rx;
-[e = _dato -> _Rx `ul ]
+[; ;./AUTOMATIZADOR.h: 622:                 Rx = UART_read();
+[e = _Rx ( _UART_read ..  ]
 "624
-[; ;./AUTOMATIZADOR.h: 624:                             dato *= 100;
-[e =* _dato -> -> -> 100 `i `l `ul ]
-"625
-[; ;./AUTOMATIZADOR.h: 625:                             break;
-[e $U 538  ]
-"627
-[; ;./AUTOMATIZADOR.h: 627:                         case 1:
-[e :U 541 ]
+[; ;./AUTOMATIZADOR.h: 624:                 if (Rx >= 48 && Rx <= 57) {
+[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 539  ]
+{
+"626
+[; ;./AUTOMATIZADOR.h: 626:                     Rx -= 48;
+[e =- _Rx -> -> 48 `i `uc ]
 "628
-[; ;./AUTOMATIZADOR.h: 628:                             dato += (Rx * 10);
-[e =+ _dato -> -> * -> _Rx `i -> 10 `i `l `ul ]
+[; ;./AUTOMATIZADOR.h: 628:                     switch (i) {
+[e $U 541  ]
+{
 "629
-[; ;./AUTOMATIZADOR.h: 629:                             break;
-[e $U 538  ]
-"631
-[; ;./AUTOMATIZADOR.h: 631:                         case 2:
+[; ;./AUTOMATIZADOR.h: 629:                         case 0:
 [e :U 542 ]
+"630
+[; ;./AUTOMATIZADOR.h: 630:                             dato = Rx;
+[e = _dato -> _Rx `ul ]
+"631
+[; ;./AUTOMATIZADOR.h: 631:                             dato *= 100;
+[e =* _dato -> -> -> 100 `i `l `ul ]
 "632
-[; ;./AUTOMATIZADOR.h: 632:                             dato += Rx;
-[e =+ _dato -> _Rx `ul ]
-"633
-[; ;./AUTOMATIZADOR.h: 633:                             break;
-[e $U 538  ]
-"635
-[; ;./AUTOMATIZADOR.h: 635:                         default:
+[; ;./AUTOMATIZADOR.h: 632:                             break;
+[e $U 540  ]
+"634
+[; ;./AUTOMATIZADOR.h: 634:                         case 1:
 [e :U 543 ]
+"635
+[; ;./AUTOMATIZADOR.h: 635:                             dato += (Rx * 10);
+[e =+ _dato -> -> * -> _Rx `i -> 10 `i `l `ul ]
 "636
 [; ;./AUTOMATIZADOR.h: 636:                             break;
-[e $U 538  ]
-"637
-[; ;./AUTOMATIZADOR.h: 637:                     }
-}
-[e $U 538  ]
-[e :U 539 ]
-[e [\ _i , $ -> 0 `i 540
- , $ -> 1 `i 541
- , $ -> 2 `i 542
- 543 ]
-[e :U 538 ]
-"639
-[; ;./AUTOMATIZADOR.h: 639:                 } else {
-}
-[e $U 544  ]
-[e :U 537 ]
-{
-"641
-[; ;./AUTOMATIZADOR.h: 641:                     datoIncorrecto = 1;
-[e = _datoIncorrecto -> -> 1 `i `uc ]
-"642
-[; ;./AUTOMATIZADOR.h: 642:                     UART_write('@');
-[e ( _UART_write (1 -> -> 64 `ui `uc ]
-"643
-[; ;./AUTOMATIZADOR.h: 643:                     break;
-[e $U 535  ]
-"644
-[; ;./AUTOMATIZADOR.h: 644:                 }
-}
+[e $U 540  ]
+"638
+[; ;./AUTOMATIZADOR.h: 638:                         case 2:
 [e :U 544 ]
-"645
-[; ;./AUTOMATIZADOR.h: 645:             }
+"639
+[; ;./AUTOMATIZADOR.h: 639:                             dato += Rx;
+[e =+ _dato -> _Rx `ul ]
+"640
+[; ;./AUTOMATIZADOR.h: 640:                             break;
+[e $U 540  ]
+"642
+[; ;./AUTOMATIZADOR.h: 642:                         default:
+[e :U 545 ]
+"643
+[; ;./AUTOMATIZADOR.h: 643:                             break;
+[e $U 540  ]
+"644
+[; ;./AUTOMATIZADOR.h: 644:                     }
+}
+[e $U 540  ]
+[e :U 541 ]
+[e [\ _i , $ -> 0 `i 542
+ , $ -> 1 `i 543
+ , $ -> 2 `i 544
+ 545 ]
+[e :U 540 ]
+"646
+[; ;./AUTOMATIZADOR.h: 646:                 } else {
+}
+[e $U 546  ]
+[e :U 539 ]
+{
+"648
+[; ;./AUTOMATIZADOR.h: 648:                     datoIncorrecto = 1;
+[e = _datoIncorrecto -> -> 1 `i `uc ]
+"649
+[; ;./AUTOMATIZADOR.h: 649:                     UART_write('@');
+[e ( _UART_write (1 -> -> 64 `ui `uc ]
+"650
+[; ;./AUTOMATIZADOR.h: 650:                     break;
+[e $U 537  ]
+"651
+[; ;./AUTOMATIZADOR.h: 651:                 }
+}
+[e :U 546 ]
+"652
+[; ;./AUTOMATIZADOR.h: 652:             }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 3 `i 534  ]
-[e :U 535 ]
+[e $ < _i -> 3 `i 536  ]
+[e :U 537 ]
 }
-"646
-[; ;./AUTOMATIZADOR.h: 646:             break;
-[e $U 517  ]
-"648
-[; ;./AUTOMATIZADOR.h: 648:         case 4:
-[e :U 545 ]
-"649
-[; ;./AUTOMATIZADOR.h: 649:             for (T_INT i = 0; i < 4; i++) {
+"653
+[; ;./AUTOMATIZADOR.h: 653:             break;
+[e $U 519  ]
+"655
+[; ;./AUTOMATIZADOR.h: 655:         case 4:
+[e :U 547 ]
+"656
+[; ;./AUTOMATIZADOR.h: 656:             for (T_INT i = 0; i < 4; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 4 `i 546  ]
-[e $U 547  ]
-[e :U 546 ]
-{
-"651
-[; ;./AUTOMATIZADOR.h: 651:                 Rx = UART_read();
-[e = _Rx ( _UART_read ..  ]
-"653
-[; ;./AUTOMATIZADOR.h: 653:                 if (Rx >= 48 && Rx <= 57) {
-[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 549  ]
-{
-"655
-[; ;./AUTOMATIZADOR.h: 655:                     Rx -= 48;
-[e =- _Rx -> -> 48 `i `uc ]
-"657
-[; ;./AUTOMATIZADOR.h: 657:                     switch (i) {
-[e $U 551  ]
+[e $ < _i -> 4 `i 548  ]
+[e $U 549  ]
+[e :U 548 ]
 {
 "658
-[; ;./AUTOMATIZADOR.h: 658:                         case 0:
-[e :U 552 ]
-"659
-[; ;./AUTOMATIZADOR.h: 659:                             dato = Rx;
-[e = _dato -> _Rx `ul ]
+[; ;./AUTOMATIZADOR.h: 658:                 Rx = UART_read();
+[e = _Rx ( _UART_read ..  ]
 "660
-[; ;./AUTOMATIZADOR.h: 660:                             dato *= 1000;
-[e =* _dato -> -> -> 1000 `i `l `ul ]
-"661
-[; ;./AUTOMATIZADOR.h: 661:                             break;
-[e $U 550  ]
-"663
-[; ;./AUTOMATIZADOR.h: 663:                         case 1:
-[e :U 553 ]
+[; ;./AUTOMATIZADOR.h: 660:                 if (Rx >= 48 && Rx <= 57) {
+[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 551  ]
+{
+"662
+[; ;./AUTOMATIZADOR.h: 662:                     Rx -= 48;
+[e =- _Rx -> -> 48 `i `uc ]
 "664
-[; ;./AUTOMATIZADOR.h: 664:                             dato += (Rx * 100);
-[e =+ _dato -> -> * -> _Rx `i -> 100 `i `l `ul ]
+[; ;./AUTOMATIZADOR.h: 664:                     switch (i) {
+[e $U 553  ]
+{
 "665
-[; ;./AUTOMATIZADOR.h: 665:                             break;
-[e $U 550  ]
-"667
-[; ;./AUTOMATIZADOR.h: 667:                         case 2:
+[; ;./AUTOMATIZADOR.h: 665:                         case 0:
 [e :U 554 ]
+"666
+[; ;./AUTOMATIZADOR.h: 666:                             dato = Rx;
+[e = _dato -> _Rx `ul ]
+"667
+[; ;./AUTOMATIZADOR.h: 667:                             dato *= 1000;
+[e =* _dato -> -> -> 1000 `i `l `ul ]
 "668
-[; ;./AUTOMATIZADOR.h: 668:                             dato += (Rx * 10);
-[e =+ _dato -> -> * -> _Rx `i -> 10 `i `l `ul ]
-"669
-[; ;./AUTOMATIZADOR.h: 669:                             break;
-[e $U 550  ]
-"671
-[; ;./AUTOMATIZADOR.h: 671:                         case 3:
+[; ;./AUTOMATIZADOR.h: 668:                             break;
+[e $U 552  ]
+"670
+[; ;./AUTOMATIZADOR.h: 670:                         case 1:
 [e :U 555 ]
+"671
+[; ;./AUTOMATIZADOR.h: 671:                             dato += (Rx * 100);
+[e =+ _dato -> -> * -> _Rx `i -> 100 `i `l `ul ]
 "672
-[; ;./AUTOMATIZADOR.h: 672:                             dato += Rx;
-[e =+ _dato -> _Rx `ul ]
-"673
-[; ;./AUTOMATIZADOR.h: 673:                             break;
-[e $U 550  ]
-"675
-[; ;./AUTOMATIZADOR.h: 675:                         default:
+[; ;./AUTOMATIZADOR.h: 672:                             break;
+[e $U 552  ]
+"674
+[; ;./AUTOMATIZADOR.h: 674:                         case 2:
 [e :U 556 ]
+"675
+[; ;./AUTOMATIZADOR.h: 675:                             dato += (Rx * 10);
+[e =+ _dato -> -> * -> _Rx `i -> 10 `i `l `ul ]
 "676
 [; ;./AUTOMATIZADOR.h: 676:                             break;
-[e $U 550  ]
-"677
-[; ;./AUTOMATIZADOR.h: 677:                     }
-}
-[e $U 550  ]
-[e :U 551 ]
-[e [\ _i , $ -> 0 `i 552
- , $ -> 1 `i 553
- , $ -> 2 `i 554
- , $ -> 3 `i 555
- 556 ]
-[e :U 550 ]
-"679
-[; ;./AUTOMATIZADOR.h: 679:                 } else {
-}
-[e $U 557  ]
-[e :U 549 ]
-{
-"681
-[; ;./AUTOMATIZADOR.h: 681:                     datoIncorrecto = 1;
-[e = _datoIncorrecto -> -> 1 `i `uc ]
-"682
-[; ;./AUTOMATIZADOR.h: 682:                     UART_write('@');
-[e ( _UART_write (1 -> -> 64 `ui `uc ]
-"683
-[; ;./AUTOMATIZADOR.h: 683:                     break;
-[e $U 547  ]
-"684
-[; ;./AUTOMATIZADOR.h: 684:                 }
-}
+[e $U 552  ]
+"678
+[; ;./AUTOMATIZADOR.h: 678:                         case 3:
 [e :U 557 ]
-"685
-[; ;./AUTOMATIZADOR.h: 685:             }
+"679
+[; ;./AUTOMATIZADOR.h: 679:                             dato += Rx;
+[e =+ _dato -> _Rx `ul ]
+"680
+[; ;./AUTOMATIZADOR.h: 680:                             break;
+[e $U 552  ]
+"682
+[; ;./AUTOMATIZADOR.h: 682:                         default:
+[e :U 558 ]
+"683
+[; ;./AUTOMATIZADOR.h: 683:                             break;
+[e $U 552  ]
+"684
+[; ;./AUTOMATIZADOR.h: 684:                     }
+}
+[e $U 552  ]
+[e :U 553 ]
+[e [\ _i , $ -> 0 `i 554
+ , $ -> 1 `i 555
+ , $ -> 2 `i 556
+ , $ -> 3 `i 557
+ 558 ]
+[e :U 552 ]
+"686
+[; ;./AUTOMATIZADOR.h: 686:                 } else {
+}
+[e $U 559  ]
+[e :U 551 ]
+{
+"688
+[; ;./AUTOMATIZADOR.h: 688:                     datoIncorrecto = 1;
+[e = _datoIncorrecto -> -> 1 `i `uc ]
+"689
+[; ;./AUTOMATIZADOR.h: 689:                     UART_write('@');
+[e ( _UART_write (1 -> -> 64 `ui `uc ]
+"690
+[; ;./AUTOMATIZADOR.h: 690:                     break;
+[e $U 549  ]
+"691
+[; ;./AUTOMATIZADOR.h: 691:                 }
+}
+[e :U 559 ]
+"692
+[; ;./AUTOMATIZADOR.h: 692:             }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 4 `i 546  ]
-[e :U 547 ]
+[e $ < _i -> 4 `i 548  ]
+[e :U 549 ]
 }
-"686
-[; ;./AUTOMATIZADOR.h: 686:             break;
-[e $U 517  ]
-"688
-[; ;./AUTOMATIZADOR.h: 688:         case 5:
-[e :U 558 ]
-"689
-[; ;./AUTOMATIZADOR.h: 689:             for (T_INT i = 0; i < 5; i++) {
+"693
+[; ;./AUTOMATIZADOR.h: 693:             break;
+[e $U 519  ]
+"695
+[; ;./AUTOMATIZADOR.h: 695:         case 5:
+[e :U 560 ]
+"696
+[; ;./AUTOMATIZADOR.h: 696:             for (T_INT i = 0; i < 5; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 5 `i 559  ]
-[e $U 560  ]
-[e :U 559 ]
-{
-"691
-[; ;./AUTOMATIZADOR.h: 691:                 Rx = UART_read();
-[e = _Rx ( _UART_read ..  ]
-"693
-[; ;./AUTOMATIZADOR.h: 693:                 if (Rx >= 48 && Rx <= 57) {
-[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 562  ]
-{
-"695
-[; ;./AUTOMATIZADOR.h: 695:                     Rx -= 48;
-[e =- _Rx -> -> 48 `i `uc ]
-"697
-[; ;./AUTOMATIZADOR.h: 697:                     switch (i) {
-[e $U 564  ]
+[e $ < _i -> 5 `i 561  ]
+[e $U 562  ]
+[e :U 561 ]
 {
 "698
-[; ;./AUTOMATIZADOR.h: 698:                         case 0:
-[e :U 565 ]
-"699
-[; ;./AUTOMATIZADOR.h: 699:                             dato = Rx;
-[e = _dato -> _Rx `ul ]
+[; ;./AUTOMATIZADOR.h: 698:                 Rx = UART_read();
+[e = _Rx ( _UART_read ..  ]
 "700
-[; ;./AUTOMATIZADOR.h: 700:                             dato *= 10000;
-[e =* _dato -> -> -> 10000 `i `l `ul ]
-"701
-[; ;./AUTOMATIZADOR.h: 701:                             break;
-[e $U 563  ]
-"703
-[; ;./AUTOMATIZADOR.h: 703:                         case 1:
-[e :U 566 ]
+[; ;./AUTOMATIZADOR.h: 700:                 if (Rx >= 48 && Rx <= 57) {
+[e $ ! && >= -> _Rx `i -> 48 `i <= -> _Rx `i -> 57 `i 564  ]
+{
+"702
+[; ;./AUTOMATIZADOR.h: 702:                     Rx -= 48;
+[e =- _Rx -> -> 48 `i `uc ]
 "704
-[; ;./AUTOMATIZADOR.h: 704:                             dato += (Rx * 1000);
-[e =+ _dato -> -> * -> _Rx `i -> 1000 `i `l `ul ]
+[; ;./AUTOMATIZADOR.h: 704:                     switch (i) {
+[e $U 566  ]
+{
 "705
-[; ;./AUTOMATIZADOR.h: 705:                             break;
-[e $U 563  ]
-"707
-[; ;./AUTOMATIZADOR.h: 707:                         case 2:
+[; ;./AUTOMATIZADOR.h: 705:                         case 0:
 [e :U 567 ]
+"706
+[; ;./AUTOMATIZADOR.h: 706:                             dato = Rx;
+[e = _dato -> _Rx `ul ]
+"707
+[; ;./AUTOMATIZADOR.h: 707:                             dato *= 10000;
+[e =* _dato -> -> -> 10000 `i `l `ul ]
 "708
-[; ;./AUTOMATIZADOR.h: 708:                             dato += (Rx * 100);
-[e =+ _dato -> -> * -> _Rx `i -> 100 `i `l `ul ]
-"709
-[; ;./AUTOMATIZADOR.h: 709:                             break;
-[e $U 563  ]
-"711
-[; ;./AUTOMATIZADOR.h: 711:                         case 3:
+[; ;./AUTOMATIZADOR.h: 708:                             break;
+[e $U 565  ]
+"710
+[; ;./AUTOMATIZADOR.h: 710:                         case 1:
 [e :U 568 ]
+"711
+[; ;./AUTOMATIZADOR.h: 711:                             dato += (Rx * 1000);
+[e =+ _dato -> -> * -> _Rx `i -> 1000 `i `l `ul ]
 "712
-[; ;./AUTOMATIZADOR.h: 712:                             dato += (Rx * 10);
-[e =+ _dato -> -> * -> _Rx `i -> 10 `i `l `ul ]
+[; ;./AUTOMATIZADOR.h: 712:                             break;
+[e $U 565  ]
 "714
-[; ;./AUTOMATIZADOR.h: 714:                         case 4:
+[; ;./AUTOMATIZADOR.h: 714:                         case 2:
 [e :U 569 ]
 "715
-[; ;./AUTOMATIZADOR.h: 715:                             dato += Rx;
-[e =+ _dato -> _Rx `ul ]
+[; ;./AUTOMATIZADOR.h: 715:                             dato += (Rx * 100);
+[e =+ _dato -> -> * -> _Rx `i -> 100 `i `l `ul ]
 "716
 [; ;./AUTOMATIZADOR.h: 716:                             break;
-[e $U 563  ]
+[e $U 565  ]
 "718
-[; ;./AUTOMATIZADOR.h: 718:                         default:
+[; ;./AUTOMATIZADOR.h: 718:                         case 3:
 [e :U 570 ]
 "719
-[; ;./AUTOMATIZADOR.h: 719:                             break;
-[e $U 563  ]
-"720
-[; ;./AUTOMATIZADOR.h: 720:                     }
-}
-[e $U 563  ]
-[e :U 564 ]
-[e [\ _i , $ -> 0 `i 565
- , $ -> 1 `i 566
- , $ -> 2 `i 567
- , $ -> 3 `i 568
- , $ -> 4 `i 569
- 570 ]
-[e :U 563 ]
-"722
-[; ;./AUTOMATIZADOR.h: 722:                 } else {
-}
-[e $U 571  ]
-[e :U 562 ]
-{
-"724
-[; ;./AUTOMATIZADOR.h: 724:                     datoIncorrecto = 1;
-[e = _datoIncorrecto -> -> 1 `i `uc ]
-"725
-[; ;./AUTOMATIZADOR.h: 725:                     UART_write('@');
-[e ( _UART_write (1 -> -> 64 `ui `uc ]
-"726
-[; ;./AUTOMATIZADOR.h: 726:                     break;
-[e $U 560  ]
-"727
-[; ;./AUTOMATIZADOR.h: 727:                 }
-}
+[; ;./AUTOMATIZADOR.h: 719:                             dato += (Rx * 10);
+[e =+ _dato -> -> * -> _Rx `i -> 10 `i `l `ul ]
+"721
+[; ;./AUTOMATIZADOR.h: 721:                         case 4:
 [e :U 571 ]
-"728
-[; ;./AUTOMATIZADOR.h: 728:             }
+"722
+[; ;./AUTOMATIZADOR.h: 722:                             dato += Rx;
+[e =+ _dato -> _Rx `ul ]
+"723
+[; ;./AUTOMATIZADOR.h: 723:                             break;
+[e $U 565  ]
+"725
+[; ;./AUTOMATIZADOR.h: 725:                         default:
+[e :U 572 ]
+"726
+[; ;./AUTOMATIZADOR.h: 726:                             break;
+[e $U 565  ]
+"727
+[; ;./AUTOMATIZADOR.h: 727:                     }
+}
+[e $U 565  ]
+[e :U 566 ]
+[e [\ _i , $ -> 0 `i 567
+ , $ -> 1 `i 568
+ , $ -> 2 `i 569
+ , $ -> 3 `i 570
+ , $ -> 4 `i 571
+ 572 ]
+[e :U 565 ]
+"729
+[; ;./AUTOMATIZADOR.h: 729:                 } else {
+}
+[e $U 573  ]
+[e :U 564 ]
+{
+"731
+[; ;./AUTOMATIZADOR.h: 731:                     datoIncorrecto = 1;
+[e = _datoIncorrecto -> -> 1 `i `uc ]
+"732
+[; ;./AUTOMATIZADOR.h: 732:                     UART_write('@');
+[e ( _UART_write (1 -> -> 64 `ui `uc ]
+"733
+[; ;./AUTOMATIZADOR.h: 733:                     break;
+[e $U 562  ]
+"734
+[; ;./AUTOMATIZADOR.h: 734:                 }
+}
+[e :U 573 ]
+"735
+[; ;./AUTOMATIZADOR.h: 735:             }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 5 `i 559  ]
-[e :U 560 ]
+[e $ < _i -> 5 `i 561  ]
+[e :U 562 ]
 }
-"729
-[; ;./AUTOMATIZADOR.h: 729:             break;
-[e $U 517  ]
-"731
-[; ;./AUTOMATIZADOR.h: 731:         default:
-[e :U 572 ]
-"732
-[; ;./AUTOMATIZADOR.h: 732:             break;
-[e $U 517  ]
-"733
-[; ;./AUTOMATIZADOR.h: 733:     }
-}
-[e $U 517  ]
-[e :U 518 ]
-[e [\ -> _numCharacters `i , $ -> 1 `i 519
- , $ -> 2 `i 522
- , $ -> 3 `i 533
- , $ -> 4 `i 545
- , $ -> 5 `i 558
- 572 ]
-[e :U 517 ]
-"737
-[; ;./AUTOMATIZADOR.h: 737:     if (esperandoDatos || datoIncorrecto) {
-[e $ ! || != -> _esperandoDatos `i -> 0 `i != -> _datoIncorrecto `i -> 0 `i 573  ]
-{
-"740
-[; ;./AUTOMATIZADOR.h: 740:         return '@';
-[e ) -> -> 64 `ui `ul ]
-[e $UE 516  ]
-"741
-[; ;./AUTOMATIZADOR.h: 741:     } else
-}
-[e $U 574  ]
-[e :U 573 ]
-"742
-[; ;./AUTOMATIZADOR.h: 742:         return dato;
-[e ) _dato ]
-[e $UE 516  ]
+"736
+[; ;./AUTOMATIZADOR.h: 736:             break;
+[e $U 519  ]
+"738
+[; ;./AUTOMATIZADOR.h: 738:         default:
 [e :U 574 ]
-"744
-[; ;./AUTOMATIZADOR.h: 744: }
-[e :UE 516 ]
+"739
+[; ;./AUTOMATIZADOR.h: 739:             break;
+[e $U 519  ]
+"740
+[; ;./AUTOMATIZADOR.h: 740:     }
 }
-"746
-[; ;./AUTOMATIZADOR.h: 746: void limpiarBuffer(void) {
+[e $U 519  ]
+[e :U 520 ]
+[e [\ -> _numCharacters `i , $ -> 1 `i 521
+ , $ -> 2 `i 524
+ , $ -> 3 `i 535
+ , $ -> 4 `i 547
+ , $ -> 5 `i 560
+ 574 ]
+[e :U 519 ]
+"744
+[; ;./AUTOMATIZADOR.h: 744:     if (esperandoDatos || datoIncorrecto) {
+[e $ ! || != -> _esperandoDatos `i -> 0 `i != -> _datoIncorrecto `i -> 0 `i 575  ]
+{
+"747
+[; ;./AUTOMATIZADOR.h: 747:         return '@';
+[e ) -> -> 64 `ui `ul ]
+[e $UE 518  ]
+"748
+[; ;./AUTOMATIZADOR.h: 748:     } else
+}
+[e $U 576  ]
+[e :U 575 ]
+"749
+[; ;./AUTOMATIZADOR.h: 749:         return dato;
+[e ) _dato ]
+[e $UE 518  ]
+[e :U 576 ]
+"751
+[; ;./AUTOMATIZADOR.h: 751: }
+[e :UE 518 ]
+}
+"753
+[; ;./AUTOMATIZADOR.h: 753: void limpiarBuffer(void) {
 [v _limpiarBuffer `(v ~T0 @X0 1 ef ]
 {
 [e :U _limpiarBuffer ]
 [f ]
-"747
-[; ;./AUTOMATIZADOR.h: 747:     for (T_INT i = 0; i < 50; i++) {
+"754
+[; ;./AUTOMATIZADOR.h: 754:     for (T_INT i = 0; i < 50; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 50 `i 576  ]
-[e $U 577  ]
-[e :U 576 ]
+[e $ < _i -> 50 `i 578  ]
+[e $U 579  ]
+[e :U 578 ]
 {
-"748
-[; ;./AUTOMATIZADOR.h: 748:         buffer[i] = 0;
+"755
+[; ;./AUTOMATIZADOR.h: 755:         buffer[i] = 0;
 [e = *U + &U _buffer * -> -> _i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 0 `i `uc ]
-"749
-[; ;./AUTOMATIZADOR.h: 749:     }
+"756
+[; ;./AUTOMATIZADOR.h: 756:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 50 `i 576  ]
-[e :U 577 ]
+[e $ < _i -> 50 `i 578  ]
+[e :U 579 ]
 }
-"751
-[; ;./AUTOMATIZADOR.h: 751:     buffer[50 - 1] = '\0';
+"758
+[; ;./AUTOMATIZADOR.h: 758:     buffer[50 - 1] = '\0';
 [e = *U + &U _buffer * -> -> - -> 50 `i -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 0 `ui `uc ]
-"752
-[; ;./AUTOMATIZADOR.h: 752: }
-[e :UE 575 ]
+"759
+[; ;./AUTOMATIZADOR.h: 759: }
+[e :UE 577 ]
 }
-"754
-[; ;./AUTOMATIZADOR.h: 754: void asignarSetPoint(void) {
+"761
+[; ;./AUTOMATIZADOR.h: 761: void asignarSetPoint(void) {
 [v _asignarSetPoint `(v ~T0 @X0 1 ef ]
 {
 [e :U _asignarSetPoint ]
 [f ]
-"756
-[; ;./AUTOMATIZADOR.h: 756:     T_ULONG setPointTemp = 0;
+"763
+[; ;./AUTOMATIZADOR.h: 763:     T_ULONG setPointTemp = 0;
 [v _setPointTemp `ul ~T0 @X0 1 a ]
 [e = _setPointTemp -> -> -> 0 `i `l `ul ]
-"758
-[; ;./AUTOMATIZADOR.h: 758:     setPointTemp = getValue(4);
-[e = _setPointTemp ( _getValue (1 -> -> 4 `i `s ]
-"760
-[; ;./AUTOMATIZADOR.h: 760:     if (setPointTemp != '@') {
-[e $ ! != _setPointTemp -> -> 64 `ui `ul 580  ]
-{
-"762
-[; ;./AUTOMATIZADOR.h: 762:         setPoint = setPointTemp;
-[e = _setPoint _setPointTemp ]
-"763
-[; ;./AUTOMATIZADOR.h: 763:         UART_write('E');
-[e ( _UART_write (1 -> -> 69 `ui `uc ]
 "765
-[; ;./AUTOMATIZADOR.h: 765:     }
+[; ;./AUTOMATIZADOR.h: 765:     setPointIntro = 0;
+[e = _setPointIntro -> -> 0 `i `uc ]
+"767
+[; ;./AUTOMATIZADOR.h: 767:     setPointTemp = getValue(1) * 1000;
+[e = _setPointTemp * ( _getValue (1 -> -> 1 `i `s -> -> -> 1000 `i `l `ul ]
+"768
+[; ;./AUTOMATIZADOR.h: 768:     setPointTemp = getValue(1) * 100;
+[e = _setPointTemp * ( _getValue (1 -> -> 1 `i `s -> -> -> 100 `i `l `ul ]
+"769
+[; ;./AUTOMATIZADOR.h: 769:     setPointTemp += getValue(2);
+[e =+ _setPointTemp ( _getValue (1 -> -> 2 `i `s ]
+"771
+[; ;./AUTOMATIZADOR.h: 771:     if (setPointTemp != '@') {
+[e $ ! != _setPointTemp -> -> 64 `ui `ul 582  ]
+{
+"773
+[; ;./AUTOMATIZADOR.h: 773:         setPoint = setPointTemp;
+[e = _setPoint _setPointTemp ]
+"774
+[; ;./AUTOMATIZADOR.h: 774:         UART_write('E');
+[e ( _UART_write (1 -> -> 69 `ui `uc ]
+"776
+[; ;./AUTOMATIZADOR.h: 776:     }
 }
-[e :U 580 ]
-"766
-[; ;./AUTOMATIZADOR.h: 766: }
-[e :UE 579 ]
+[e :U 582 ]
+"778
+[; ;./AUTOMATIZADOR.h: 778:     setPointIntro = 1;
+[e = _setPointIntro -> -> 1 `i `uc ]
+"779
+[; ;./AUTOMATIZADOR.h: 779: }
+[e :UE 581 ]
 }
 [v $root$_desbordamiento `(v ~T0 @X0 0 e ]
 "13 main.c
@@ -3532,26 +3560,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "15
 [; ;main.c: 15:     if (INTCONbits.TMR0IF) {
-[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 582  ]
+[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 584  ]
 {
 "17
 [; ;main.c: 17:         if (esperandoDatos) {
-[e $ ! != -> _esperandoDatos `i -> 0 `i 583  ]
+[e $ ! != -> _esperandoDatos `i -> 0 `i 585  ]
 {
 "19
 [; ;main.c: 19:             tiempoInactividadTrans++;
 [e ++ _tiempoInactividadTrans -> -> 1 `i `uc ]
 "21
 [; ;main.c: 21:             if (tiempoInactividadTrans == 1)
-[e $ ! == -> _tiempoInactividadTrans `i -> 1 `i 584  ]
+[e $ ! == -> _tiempoInactividadTrans `i -> 1 `i 586  ]
 "22
 [; ;main.c: 22:                 esperaDatoConcluida = 1;
 [e = _esperaDatoConcluida -> -> 1 `i `uc ]
-[e :U 584 ]
+[e :U 586 ]
 "25
 [; ;main.c: 25:         }
 }
-[e :U 583 ]
+[e :U 585 ]
 "27
 [; ;main.c: 27:         INTCONbits.TMR0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
@@ -3564,10 +3592,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "31
 [; ;main.c: 31:     }
 }
-[e :U 582 ]
+[e :U 584 ]
 "33
 [; ;main.c: 33:     if (PIR1bits.RCIF) {
-[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 585  ]
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 587  ]
 {
 "35
 [; ;main.c: 35:         byteUart = RCREG;
@@ -3578,10 +3606,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "38
 [; ;main.c: 38:     }
 }
-[e :U 585 ]
+[e :U 587 ]
 "40
 [; ;main.c: 40: }
-[e :UE 581 ]
+[e :UE 583 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
 "42
@@ -3591,54 +3619,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "44
-[; ;main.c: 44:     UART_init(9600);
-[e ( _UART_init (1 -> -> 9600 `i `l ]
-"45
-[; ;main.c: 45:     i2c_iniciar();
+[; ;main.c: 44:     i2c_iniciar();
 [e ( _i2c_iniciar ..  ]
-"46
-[; ;main.c: 46:     bh1750_iniciar();
+"45
+[; ;main.c: 45:     bh1750_iniciar();
 [e ( _bh1750_iniciar ..  ]
-"47
-[; ;main.c: 47:     configPwm(1);
+"46
+[; ;main.c: 46:     configPwm(1);
 [e ( _configPwm (1 -> -> 1 `i `uc ]
-"48
-[; ;main.c: 48:     inicializarObjetos();
+"47
+[; ;main.c: 47:     inicializarObjetos();
 [e ( _inicializarObjetos ..  ]
-"51
-[; ;main.c: 51:     INTCONbits.GIE = 1;
+"50
+[; ;main.c: 50:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"52
-[; ;main.c: 52:     INTCONbits.PEIE = 1;
+"51
+[; ;main.c: 51:     INTCONbits.PEIE = 1;
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"53
-[; ;main.c: 53:     INTCONbits.TMR0IE = 1;
+"52
+[; ;main.c: 52:     INTCONbits.TMR0IE = 1;
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-"55
-[; ;main.c: 55:     PIE1bits.RCIE = 1;
+"54
+[; ;main.c: 54:     PIE1bits.RCIE = 1;
 [e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-"57
-[; ;main.c: 57:     T0CON = 0b00000111;
+"56
+[; ;main.c: 56:     T0CON = 0b00000111;
 [e = _T0CON -> -> 7 `i `uc ]
-"59
-[; ;main.c: 59:     TMR0 = VALOR_TIMER0;
+"58
+[; ;main.c: 58:     TMR0 = VALOR_TIMER0;
 [e = _TMR0 -> _VALOR_TIMER0 `us ]
-"61
-[; ;main.c: 61:     INTCONbits.TMR0IF = 1;
+"60
+[; ;main.c: 60:     INTCONbits.TMR0IF = 1;
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:     T0CONbits.TMR0ON = 1;
+"63
+[; ;main.c: 63:     T0CONbits.TMR0ON = 1;
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
+"67
+[; ;main.c: 67:     UART_init(9600);
+[e ( _UART_init (1 -> -> 9600 `i `l ]
 "68
 [; ;main.c: 68:     UART_printf("\r\nSistema Iniciado\n\r");
 [e ( _UART_printf (1 :s 31C ]
 "70
 [; ;main.c: 70:     while (1) {
-[e :U 588 ]
+[e :U 590 ]
 {
 "72
 [; ;main.c: 72:         if (datoRecibido) {
-[e $ ! != -> _datoRecibido `i -> 0 `i 590  ]
+[e $ ! != -> _datoRecibido `i -> 0 `i 592  ]
 {
 "74
 [; ;main.c: 74:             datoRecibido = 0;
@@ -3649,39 +3677,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "76
 [; ;main.c: 76:             sistemaPrincipal(byteUart);
 [e ( _sistemaPrincipal (1 _byteUart ]
-"78
-[; ;main.c: 78:         }
+"79
+[; ;main.c: 79:         }
 }
-[e :U 590 ]
-"80
-[; ;main.c: 80:         if (overflowTimer) {
-[e $ ! != -> _overflowTimer `i -> 0 `i 591  ]
+[e :U 592 ]
+"81
+[; ;main.c: 81:         if (overflowTimer) {
+[e $ ! != -> _overflowTimer `i -> 0 `i 593  ]
 {
-"82
-[; ;main.c: 82:             esperandoDatos = 0;
-[e = _esperandoDatos -> -> 0 `i `uc ]
 "83
-[; ;main.c: 83:             overflowTimer = 0;
-[e = _overflowTimer -> -> 0 `i `uc ]
+[; ;main.c: 83:             esperandoDatos = 0;
+[e = _esperandoDatos -> -> 0 `i `uc ]
 "84
-[; ;main.c: 84:             sistemaIluminado();
-[e ( _sistemaIluminado ..  ]
+[; ;main.c: 84:             overflowTimer = 0;
+[e = _overflowTimer -> -> 0 `i `uc ]
 "85
-[; ;main.c: 85:         }
+[; ;main.c: 85:             sistemaIluminado();
+[e ( _sistemaIluminado ..  ]
+"86
+[; ;main.c: 86:         }
 }
-[e :U 591 ]
-"87
-[; ;main.c: 87:     }
-}
-[e :U 587 ]
-[e $U 588  ]
-[e :U 589 ]
+[e :U 593 ]
 "88
-[; ;main.c: 88:     return;
-[e $UE 586  ]
+[; ;main.c: 88:     }
+}
+[e :U 589 ]
+[e $U 590  ]
+[e :U 591 ]
 "89
-[; ;main.c: 89: }
-[e :UE 586 ]
+[; ;main.c: 89:     return;
+[e $UE 588  ]
+"90
+[; ;main.c: 90: }
+[e :UE 588 ]
 }
 [p f _sprintf 8749188 ]
 [a 28C 65 84 43 78 65 77 69 83 77 65 82 84 72 79 77 69 0 ]

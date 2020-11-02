@@ -41,7 +41,6 @@ void __interrupt() desbordamiento(void) {
 
 void main(void) {
 
-    UART_init(9600);
     i2c_iniciar();
     bh1750_iniciar();
     configPwm(CANAL_1);
@@ -65,15 +64,17 @@ void main(void) {
 
     //mostrarMenu(); //comentar
 
+    UART_init(9600);
     UART_printf("\r\nSistema Iniciado\n\r");
 
     while (1) {
 
         if (datoRecibido) {
-            
+
             datoRecibido = 0; //Bajando bandera
             byteUart -= 48; //Convirtiendo ASCII A ENTERO
             sistemaPrincipal(byteUart);
+
 
         }
 
