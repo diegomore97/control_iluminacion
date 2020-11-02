@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Iluminacion.X
+PROJECTNAME=iluminacion.X
 
 # Active Configuration
 DEFAULTCONF=default

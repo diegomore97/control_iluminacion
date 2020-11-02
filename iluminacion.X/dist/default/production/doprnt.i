@@ -888,6 +888,51 @@ static int dtoa(FILE *fp, long long d)
 
     return pad(fp, &dbuf[i], w);
 }
+# 546 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\sources\\c99\\common\\doprnt.c"
+static int stoa(FILE *fp, char *s)
+{
+    char *cp, nuls[] = "(null)";
+    int i, l, p, w;
+
+
+    cp = s;
+    if (!cp) {
+        cp = nuls;
+    }
+
+
+    l = strlen(cp);
+    p = prec;
+    l = (!(p < 0) && (p < l)) ? p : l;
+    p = l;
+    w = width;
+
+
+    if (!(flags & (1 << 0))) {
+        while (l < w) {
+            fputc(' ', fp);
+            ++l;
+        }
+    }
+
+
+    i = 0;
+    while (i < p) {
+        fputc(*cp, fp);
+        ++cp;
+        ++i;
+    }
+
+
+    if (flags & (1 << 0)) {
+        while (l < w) {
+            fputc(' ', fp);
+            ++l;
+        }
+    }
+
+    return l;
+}
 # 670 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\sources\\c99\\common\\doprnt.c"
 static int vfpfcnvrt(FILE *fp, char *fmt[], va_list ap)
 {
@@ -904,6 +949,74 @@ static int vfpfcnvrt(FILE *fp, char *fmt[], va_list ap)
 
         flags = width = 0;
         prec = -1;
+
+
+
+        done = 0;
+        while (!done) {
+            switch ((*fmt)[0]) {
+                case '-' :
+                    flags |= (1 << 0);
+                    ++*fmt;
+                    break;
+                case '0' :
+                    flags |= (1 << 1);
+                    ++*fmt;
+                    break;
+                case '+' :
+                    flags |= (1 << 2);
+                    ++*fmt;
+                    break;
+                case ' ' :
+                    flags |= (1 << 3);
+                    ++*fmt;
+                    break;
+                case '#' :
+                    flags |= (1 << 4);
+                    ++*fmt;
+                    break;
+                default:
+                    done = 1;
+                    break;
+            }
+        }
+        if (flags & (1 << 0)) {
+            flags &= ~(1 << 1);
+        }
+
+
+
+
+        if ((*fmt)[0] == '*') {
+            ++*fmt;
+            width = (*(int *)__va_arg(*(int **)ap, (int)0));
+            if (width < 0) {
+                flags |= (1 << 0);
+                width = -width;
+            }
+        } else {
+            width = atoi(*fmt);
+            while ((0 ? isdigit((*fmt)[0]) : ((unsigned)((*fmt)[0])-'0') < 10)) {
+                ++*fmt;
+            }
+        }
+
+
+
+
+        if ((*fmt)[0] == '.') {
+            prec = 0;
+            ++*fmt;
+            if ((*fmt)[0] == '*') {
+                ++*fmt;
+                prec = (*(int *)__va_arg(*(int **)ap, (int)0));
+            } else {
+                prec = atoi(*fmt);
+                while ((0 ? isdigit((*fmt)[0]) : ((unsigned)((*fmt)[0])-'0') < 10)) {
+                    ++*fmt;
+                }
+            }
+        }
 # 825 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\sources\\c99\\common\\doprnt.c"
         if ((*fmt[0] == 'd') || (*fmt[0] == 'i')) {
 
@@ -911,6 +1024,14 @@ static int vfpfcnvrt(FILE *fp, char *fmt[], va_list ap)
             ll = (long long)(*(int *)__va_arg(*(int **)ap, (int)0));
 
             return dtoa(fp, ll);
+        }
+# 1149 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\sources\\c99\\common\\doprnt.c"
+        if (*fmt[0] == 's') {
+
+            ++*fmt;
+            cp = (*(char * *)__va_arg(*(char * **)ap, (char *)0));
+
+            return stoa(fp, cp);
         }
 # 1350 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\sources\\c99\\common\\doprnt.c"
         if ((*fmt)[0] == '%') {

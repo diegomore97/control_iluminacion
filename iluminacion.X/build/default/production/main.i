@@ -166,6 +166,91 @@ char *ctermid(char *);
 char *tempnam(const char *, const char *);
 # 1 "main.c" 2
 
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+# 173 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 209 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int32_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint32_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 139 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\c99\\stdint.h" 2 3
+# 2 "main.c" 2
+
 # 1 "./config.h" 1
 #pragma config PLLDIV = 1
 #pragma config CPUDIV = OSC1_PLL2
@@ -5825,7 +5910,7 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 32 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.10\\pic\\include\\xc.h" 2 3
 # 65 "./config.h" 2
-# 2 "main.c" 2
+# 3 "main.c" 2
 
 # 1 "./variables.h" 1
 
@@ -5841,26 +5926,24 @@ typedef unsigned int T_UINT;
 typedef int T_INT;
 typedef unsigned char T_BOOL;
 typedef float T_FLOAT;
-# 3 "main.c" 2
+# 4 "main.c" 2
 
 # 1 "./UART.h" 1
+void UART_init(T_LONG BAUD);
+T_UBYTE UART_read(void);
+void UART_write(T_BYTE dato);
+void UART_printf(T_BYTE* cadena);
 
+T_UBYTE tiempoInactividadTrans = 0;
+T_UBYTE byteUart = 0;
+T_UBYTE esperaDatoConcluida = 0;
+T_UBYTE esperandoDatos = 0;
+T_INT VALOR_TIMER0UART = 26473;
 
-
-
-
-
-void uart_iniciar(T_LONG BAUD);
-T_UBYTE uart_leer(void);
-void uart_escribir(T_BYTE dato);
-void uart_printf(T_BYTE* cadena);
-
-
-void uart_iniciar(T_LONG BAUD) {
-
+void UART_init(T_LONG BAUD) {
     T_LONG frecuenciaCristal = 4000000;
-    TRISC6 = 0;
-    TRISC7 = 1;
+    TRISCbits.TRISC6 = 0;
+    TRISCbits.TRISC7 = 1;
 
 
     SPBRG = (frecuenciaCristal / 16 / BAUD) - 1;
@@ -5879,23 +5962,35 @@ void uart_iniciar(T_LONG BAUD) {
     RCSTAbits.CREN = 1;
 }
 
-T_UBYTE uart_leer(void) {
-    while (!RCIF);
-    RCIF = 0;
-    return RCREG;
+T_UBYTE UART_read(void) {
+
+    TMR0 = VALOR_TIMER0UART;
+    esperaDatoConcluida = 0;
+    esperandoDatos = 1;
+    byteUart = 0;
+    tiempoInactividadTrans = 0;
+
+    while (!PIR1bits.RCIF && !esperaDatoConcluida);
+
+    if (!esperaDatoConcluida) {
+        byteUart = RCREG;
+        esperandoDatos = 0;
+    }
+
+    return byteUart;
 }
 
-void uart_escribir(T_BYTE dato) {
+void UART_write(T_BYTE dato) {
     TXREG = dato;
     while (!TXSTAbits.TRMT);
 }
 
-void uart_printf(T_BYTE* cadena) {
+void UART_printf(T_BYTE* cadena) {
     while (*cadena) {
-        uart_escribir(*cadena++);
+        UART_write(*cadena++);
     }
 }
-# 4 "main.c" 2
+# 5 "main.c" 2
 
 # 1 "./I2C.h" 1
 void i2c_iniciar();
@@ -6012,7 +6107,7 @@ T_UBYTE i2c_recibe_datoACK(T_UBYTE a) {
 
     return datoleido;
 }
-# 5 "main.c" 2
+# 6 "main.c" 2
 
 # 1 "./bh1750.h" 1
 # 21 "./bh1750.h"
@@ -6061,29 +6156,981 @@ T_ULONG dameValorLux(T_UBYTE modo) {
 
     return valorLux;
 }
-# 6 "main.c" 2
+# 7 "main.c" 2
+
+# 1 "./pwm.h" 1
+# 12 "./pwm.h"
+void configPwm(T_UBYTE channel);
+void pwmDuty(T_UINT cicloTrabajo, T_UBYTE channel);
+T_LONG map(T_LONG x, T_LONG in_min, T_LONG in_max, T_LONG out_min, T_LONG out_max);
+
+T_LONG map(T_LONG x, T_LONG in_min, T_LONG in_max, T_LONG out_min, T_LONG out_max) {
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void pwmDuty(T_UINT cicloTrabajo, T_UBYTE channel) {
+
+    T_LONG duty = map(cicloTrabajo, 0, 100, 0, 1023);
+
+    if (duty < 1024) {
+
+        duty = ((T_FLOAT) duty / 1023)*(4000000 / (500 * 16));
+
+        switch (channel) {
+
+            case 1:
+                CCPR1L = duty >> 2;
+                CCP1CON &= 0xCF;
+                CCP1CON |= ((duty << 4)&0x30);
+                break;
+
+            case 2:
+                CCPR2L = duty >> 2;
+                CCP2CON &= 0xCF;
+                CCP2CON |= ((duty << 4)&0x30);
+                break;
+
+        }
+    }
+
+}
+
+void configPwm(T_UBYTE channel) {
+
+    if (16 == 1) {
+        T2CKPS0 = 0;
+        T2CKPS1 = 0;
+    } else if (16 == 4) {
+        T2CKPS0 = 1;
+        T2CKPS1 = 0;
+    } else {
+        T2CKPS0 = 1;
+        T2CKPS1 = 1;
+    }
 
 
+    PR2 = (4000000 / (500 * 4 * 16)) - 1;
+
+    switch (channel) {
+
+        case 1:
+            TRISC2 = 0;
+            CCP1M3 = 1;
+            CCP1M2 = 1;
 
 
-void main(void) {
+            break;
 
-    T_ULONG luzMedida = 0;
-    T_BYTE buffer[30];
-
-    uart_iniciar(9600);
-    i2c_iniciar();
-    bh1750_iniciar();
-    uart_printf("\r\nSistema Iniciado\n\r");
-
-    while(1)
-    {
-        luzMedida = dameValorLux(0x10);
-        sprintf(buffer, "\rLuz medida: %d luxs\n\r",luzMedida);
-        uart_printf(buffer);
-        _delay((unsigned long)((500)*(4000000/4000.0)));
+        case 2:
+            TRISC1 = 0;
+            CCP2M3 = 1;
+            CCP2M2 = 1;
+            break;
 
     }
 
+    TMR2ON = 1;
+}
+# 8 "main.c" 2
+
+# 1 "./control.h" 1
+# 14 "./control.h"
+T_BOOL reiniciarPID;
+T_ULONG luzMedida, setPoint = 100;
+
+void PID(void);
+
+void PID(void) {
+
+    T_ULONG dif = 0;
+    T_INT pwmSal = 0;
+    static T_ULONG P, I = 0, D;
+    static T_ULONG difAnt = 0;
+
+    if (reiniciarPID) {
+        I = 0;
+        difAnt = 0;
+        reiniciarPID = 0;
+    }
+
+
+    dif = setPoint - luzMedida;
+
+
+    P = dif * 0.8;
+    I = (I + dif) * 0.1;
+    D = (dif - difAnt) * 1.9;
+
+    difAnt = dif;
+
+    pwmSal = P + I + D;
+
+
+    if(pwmSal > 100)
+        pwmSal = 100;
+    else if(pwmSal < 0)
+        pwmSal = 0;
+
+    pwmDuty(pwmSal, 1);
+
+}
+# 9 "main.c" 2
+
+# 1 "./RTC.h" 1
+
+void escribe_rtc(T_UBYTE direccion, T_UBYTE dato) {
+    i2c_inicia_com();
+    i2c_envia_dato(0xD0);
+    i2c_envia_dato(direccion);
+    i2c_envia_dato(dato);
+    i2c_detener();
+}
+
+
+
+
+T_UBYTE leer_rtc(T_UBYTE direccion) {
+    T_UBYTE dato;
+    i2c_inicia_com();
+    i2c_envia_dato(0xD0);
+    i2c_envia_dato(direccion);
+    i2c_reinicia_com();
+    i2c_envia_dato(0xD1);
+    dato = i2c_recibe_dato();
+    i2c_detener();
+    return dato;
+}
+
+
+
+
+T_UBYTE convertirDato(T_UBYTE dato) {
+    T_UBYTE datoR = 0;
+    datoR = (dato & 0xF0) >> 4;
+    datoR = (datoR * 10) + (dato & 0x0F);
+    return datoR;
+}
+# 10 "main.c" 2
+
+# 1 "./AUTOMATIZADOR.h" 1
+# 22 "./AUTOMATIZADOR.h"
+typedef struct {
+    T_UBYTE hora;
+    T_BYTE dias[7 + 1];
+    T_UBYTE iluminar;
+    T_UBYTE iluminado;
+    T_UBYTE tiempoIluminar;
+} Horario;
+
+Horario horarios[24];
+T_UBYTE hora = 0, minutos = 0, segundos = 0;
+T_UBYTE diaActual = 0;
+T_UBYTE datoRecibido = 0;
+T_UBYTE overflowTimer = 0;
+T_UBYTE tempHora = 0;
+T_UBYTE flagIluminado;
+T_BYTE buffer[50];
+
+T_INT VALOR_TIMER0 = 26473;
+T_INT contInterrupciones = 0;
+T_UWORD minutosIluminar = 0;
+T_UWORD minutosTranscurridos = 0;
+T_UBYTE iluminando = 0;
+T_UBYTE peticionLecturaSensores = 0;
+
+void inicializarObjetos(void);
+void asignarHorarios(void);
+T_INT horaIluminar(void);
+void dameHoraActual(void);
+void dameDiaActual(void);
+T_UBYTE setRtc(T_UBYTE direccion);
+T_UBYTE leer_eeprom(uint16_t direccion);
+void escribe_eeprom(uint16_t direccion, T_UBYTE dato);
+void escribeHorariosMemoria(void);
+void leeHorariosMemoria(void);
+void setRtcDefault(void);
+void fijaHoraRtc(void);
+void fijaDiaRtc(void);
+void setTiempoIluminar(void);
+void mostrarMenu(void);
+void sistemaPrincipal(T_UBYTE opcion);
+void sistemaIluminado(void);
+void dameDatosSistema(void);
+void mostrarDatosSensores(void);
+T_ULONG getValue(T_WORD numCharacters);
+void configBluetoothHC_06(void);
+void limpiarBuffer(void);
+void asignarSetPoint(void);
+
+T_INT horaIluminar() {
+
+    return (horarios[hora].iluminar) && (!horarios[hora].iluminado) &&
+            (horarios[hora].dias[diaActual - 1] == '1');
+}
+
+void inicializarObjetos() {
+
+    for (T_INT i = 0; i < 24; i++) {
+        horarios[i].hora = i;
+        horarios[i].iluminar = 0;
+        horarios[i].iluminado = 0;
+        horarios[i].tiempoIluminar = 1;
+    }
+
+    for (T_INT i = 0; i < 24; i++) {
+
+        for (T_INT j = 0; j < 7; j++)
+            horarios[i].dias[j] = 0;
+
+        horarios[i].dias[7 - 1] = '\0';
+    }
+
+    pwmDuty(0, 1);
+
+}
+
+void dameHoraActual() {
+
+    segundos = convertirDato(leer_rtc(0x00));
+    minutos = convertirDato(leer_rtc(0x01));
+    hora = convertirDato(leer_rtc(0x02));
+}
+
+void dameDiaActual(void) {
+
+    diaActual = convertirDato(leer_rtc(0x03));
+}
+
+void fijaDiaRtc(void) {
+
+
+
+    if (setRtc(0x03)) {
+
+        UART_write('E');
+    }
+
+}
+
+T_UBYTE setRtc(T_UBYTE direccion) {
+
+    T_UBYTE dato = 0;
+    T_UBYTE seteado = 0;
+    T_UBYTE datoRtc = 0;
+
+    dato = getValue(2);
+
+    if (dato != '@') {
+
+        datoRtc = ((dato / 10) & 0x0F) << 4;
+        datoRtc |= (dato % 10) & 0x0F;
+        escribe_rtc(direccion, datoRtc);
+        seteado = 1;
+    }
+
+    return seteado;
+}
+
+void escribe_eeprom(uint16_t direccion, T_UBYTE dato) {
+    i2c_inicia_com();
+    i2c_envia_dato(0xAE);
+    i2c_envia_dato(direccion >> 8);
+
+    i2c_envia_dato(direccion);
+
+    i2c_envia_dato(dato);
+    i2c_detener();
+    _delay((unsigned long)((10)*(4000000/4000.0)));
+}
+
+T_UBYTE leer_eeprom(uint16_t direccion) {
+
+    T_UBYTE dato;
+
+    i2c_inicia_com();
+    i2c_envia_dato(0xAE);
+    i2c_envia_dato(direccion >> 8);
+    i2c_envia_dato(direccion);
+    i2c_reinicia_com();
+    i2c_envia_dato(0xAF);
+    dato = i2c_recibe_dato();
+    i2c_detener();
+    _delay((unsigned long)((10)*(4000000/4000.0)));
+
+    return dato;
+}
+
+void escribeHorariosMemoria() {
+
+    T_INT contMemoria = 0;
+
+    escribe_eeprom(contMemoria++, 'T');
+
+
+    for (T_INT i = 0; i < 24; i++) {
+        escribe_eeprom(contMemoria++, horarios[i].hora);
+
+        for (T_INT j = 0; j < 7; j++) {
+            escribe_eeprom(contMemoria++, horarios[i].dias[j]);
+        }
+
+        escribe_eeprom(contMemoria++, horarios[i].iluminar);
+        escribe_eeprom(contMemoria++, horarios[i].tiempoIluminar);
+    }
+}
+
+void leeHorariosMemoria() {
+
+    T_INT contMemoria = 0;
+    T_UBYTE caracterLeido;
+
+    caracterLeido = leer_eeprom(contMemoria++);
+
+    if (caracterLeido == 'T') {
+
+        for (T_INT i = 0; i < 24; i++) {
+            horarios[i].hora = leer_eeprom(contMemoria++);
+
+            for (T_INT j = 0; j < 7; j++) {
+                horarios[i].dias[j] = leer_eeprom(contMemoria++);
+            }
+
+            horarios[i].iluminar = leer_eeprom(contMemoria++);
+            horarios[i].tiempoIluminar = leer_eeprom(contMemoria++);
+        }
+
+
+        UART_write('E');
+
+    } else {
+
+        UART_write('@');
+
+    }
+
+}
+
+void setRtcDefault(void) {
+    T_UBYTE horaRtc;
+
+    horaRtc = ((1) & 0x0F) << 4;
+
+    horaRtc |= (2) & 0x0F;
+
+    escribe_rtc(0x02, horaRtc);
+
+    escribe_rtc(0x01, 0);
+    escribe_rtc(0x00, 0);
+}
+
+void fijaHoraRtc(void) {
+
+
+
+
+
+
+
+    if (setRtc(0x02)) {
+
+        if (setRtc(0x01)) {
+
+            escribe_rtc(0x00, 0);
+            UART_write('E');
+
+        }
+    }
+
+}
+
+void asignarHorarios()
+{
+    T_UBYTE hora;
+    T_UBYTE Rx;
+    T_UBYTE diaIluminar;
+
+
+
+
+    hora = getValue(2);
+
+    if (hora != '@') {
+
+
+
+        Rx = getValue(1);
+
+
+        if (Rx == 1) {
+
+
+
+
+            for (T_INT i = 0; i < 7; i++) {
+
+
+
+                diaIluminar = getValue(1);
+
+                if (diaIluminar != '@') {
+
+                    switch (diaIluminar) {
+                        case 0:
+                            diaIluminar = '0';
+                            break;
+
+                        case 1:
+                            diaIluminar = '1';
+                            break;
+                    }
+
+
+                    horarios[hora].dias[i] = diaIluminar;
+                }
+
+            }
+
+            horarios[hora].iluminar = Rx;
+
+            escribeHorariosMemoria();
+
+
+
+            UART_write('E');
+
+        } else if (Rx == 0) {
+            horarios[hora].iluminar = Rx;
+
+            UART_write('E');
+        }
+
+    }
+
+}
+
+void setTiempoIluminar() {
+
+    T_UBYTE hora;
+    T_UBYTE tiempoIluminar;
+
+
+
+
+    hora = getValue(2);
+
+    if (hora != '@') {
+
+
+        tiempoIluminar = getValue(2);
+
+        if (tiempoIluminar != '@') {
+
+
+
+
+
+            horarios[hora].tiempoIluminar = tiempoIluminar;
+            minutosIluminar = horarios[hora].tiempoIluminar;
+
+            escribeHorariosMemoria();
+
+            UART_write('E');
+
+        }
+    }
+
+}
+
+void mostrarMenu(void) {
+
+    UART_printf("\r\n Ingresa una opcion a Realizar: \r\n");
+    UART_printf("\r\n 1. Fijar Hora Actual \r\n");
+    UART_printf("\r\n 2. Asignar Horarios para Iluminar \r\n");
+    UART_printf("\r\n 3. Programar tiempo de Iluminacion en un horario \r\n");
+    UART_printf("\r\n 4. Dame datos del sistema \r\n");
+    UART_printf("\r\n 5. Mostrar valores sensores \r\n");
+    UART_printf("\r\n 6. Asignar Setpoint\r\n");
+    UART_printf("\r\n 7. Fijar Dia Actual \r\n");
+    UART_printf("\r\n 8. Cargar datos de la memoria \r\n");
+    UART_printf("\r\n Opcion:  \r");
+    UART_printf("\r\n");
+}
+
+void sistemaPrincipal(T_UBYTE opcion) {
+
+    PIE1bits.RCIE = 0;
+
+    switch (opcion) {
+
+        case 1:
+            fijaHoraRtc();
+            break;
+
+        case 2:
+            asignarHorarios();
+            break;
+
+        case 3:
+            setTiempoIluminar();
+            break;
+
+        case 4:
+            dameDatosSistema();
+            break;
+
+        case 5:
+            mostrarDatosSensores();
+            break;
+
+        case 6:
+            asignarSetPoint();
+
+        case 7:
+            fijaDiaRtc();
+            break;
+
+        case 8:
+            leeHorariosMemoria();
+            break;
+
+
+        default:
+
+            break;
+    }
+
+
+    PIE1bits.RCIE = 1;
+
+}
+
+void sistemaIluminado(void) {
+
+
+
+    if (iluminando) {
+
+
+
+
+        contInterrupciones++;
+
+        if (contInterrupciones == 6) {
+            contInterrupciones = 0;
+            minutosTranscurridos++;
+
+
+            if (minutosTranscurridos >= minutosIluminar) {
+
+                pwmDuty(0, 1);
+                minutosTranscurridos = 0;
+                iluminando = 0;
+                horarios[hora].iluminado = 1;
+                tempHora = hora;
+                flagIluminado = 0;
+            }
+        }
+
+    } else {
+
+        dameHoraActual();
+        dameDiaActual();
+
+        if (hora != tempHora && !flagIluminado) {
+            horarios[tempHora].iluminado = 0;
+            flagIluminado = 1;
+        }
+
+        if (horaIluminar()) {
+
+
+            minutosIluminar = (horarios[hora].tiempoIluminar) * 60;
+            pwmDuty(100, 1);
+
+        }
+    }
+
+}
+
+void dameDatosSistema(void) {
+
+    T_BYTE bufferHorario[30];
+
+
+
+    sprintf(buffer, "\r\nSetpoint = %d | ", setPoint);
+    UART_printf(buffer);
+
+        switch (diaActual) {
+        case 1:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = DOMINGO\r\n", hora, minutos);
+            break;
+
+        case 2:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = LUNES\r\n", hora, minutos);
+            break;
+
+        case 3:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = MARTES\r\n", hora, minutos);
+            break;
+
+        case 4:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = MIERCOLES\r\n", hora, minutos);
+            break;
+
+        case 5:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = JUEVES\r\n", hora, minutos);
+            break;
+
+        case 6:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = VIERNES\r\n", hora, minutos);
+            break;
+
+        case 7:
+            sprintf(buffer, "HORA = %0.2d:%0.2d | DIA = SABADO\r\n", hora, minutos);
+            break;
+
+        default:
+            break;
+    }
+
+
+    UART_printf(buffer);
+
+    UART_printf("\r\nH = HORA\r\n");
+    UART_printf("\r\nR = ILUMINAR( 1 SI | 0 NO)\r\n");
+    UART_printf("\r\nT = MINUTOS QUE DURARA LA ILUMINACION\r\n");
+    UART_printf("\r\nD = DIAS QUE EN LOS QUE SE ILUMINARA\r\n");
+
+    UART_printf("                           DLMIJVS\r\n");
+
+
+    for (T_INT i = 0; i < 24; i++) {
+
+        if (horarios[i].iluminar) {
+
+            sprintf(bufferHorario, "H:%2d|R:%d|T:%2d|D:%s\r\n",
+                    horarios[i].hora, horarios[i].iluminar, horarios[i].tiempoIluminar,
+                    horarios[i].dias);
+
+            UART_printf(bufferHorario);
+
+        }
+
+    }
+
+    limpiarBuffer();
+
+    UART_write('&');
+
+}
+
+void mostrarDatosSensores(void) {
+
+    luzMedida = dameValorLux(0x10);
+    sprintf(buffer, "\rLuz medida: %d luxs\n\r", luzMedida);
+    UART_printf(buffer);
+
+    UART_write('&');
+
+}
+
+void configBluetoothHC_06(void) {
+    _delay((unsigned long)((1000)*(4000000/4000.0)));
+    UART_printf("AT+NAMESMARTHOME");
+    _delay((unsigned long)((1000)*(4000000/4000.0)));
+    UART_printf("AT+BAUD4");
+    _delay((unsigned long)((1000)*(4000000/4000.0)));
+    UART_printf("AT+PIN2501");
+    _delay((unsigned long)((1000)*(4000000/4000.0)));
+}
+
+T_ULONG getValue(T_WORD numCharacters) {
+
+    T_UBYTE Rx = 0;
+    T_UBYTE datoIncorrecto = 0;
+    T_ULONG dato = 0;
+
+    switch (numCharacters) {
+
+        case 1:
+            Rx = UART_read();
+
+            if (Rx >= 48 && Rx <= 57) {
+                Rx -= 48;
+                dato = Rx;
+            } else {
+                UART_write('@');
+                datoIncorrecto = 1;
+            }
+
+            break;
+
+        case 2:
+            for (T_INT i = 0; i < 2; i++) {
+
+                Rx = UART_read();
+
+                if (Rx >= 48 && Rx <= 57) {
+
+                    Rx -= 48;
+
+                    switch (i) {
+                        case 0:
+                            dato = Rx;
+                            dato *= 10;
+                            break;
+
+                        case 1:
+                            dato += Rx;
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                } else {
+
+                    datoIncorrecto = 1;
+                    UART_write('@');
+                    break;
+                }
+            }
+            break;
+
+        case 3:
+            for (T_INT i = 0; i < 3; i++) {
+
+                Rx = UART_read();
+
+                if (Rx >= 48 && Rx <= 57) {
+
+                    Rx -= 48;
+
+                    switch (i) {
+                        case 0:
+                            dato = Rx;
+                            dato *= 100;
+                            break;
+
+                        case 1:
+                            dato += (Rx * 10);
+                            break;
+
+                        case 2:
+                            dato += Rx;
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                } else {
+
+                    datoIncorrecto = 1;
+                    UART_write('@');
+                    break;
+                }
+            }
+            break;
+
+        case 4:
+            for (T_INT i = 0; i < 4; i++) {
+
+                Rx = UART_read();
+
+                if (Rx >= 48 && Rx <= 57) {
+
+                    Rx -= 48;
+
+                    switch (i) {
+                        case 0:
+                            dato = Rx;
+                            dato *= 1000;
+                            break;
+
+                        case 1:
+                            dato += (Rx * 100);
+                            break;
+
+                        case 2:
+                            dato += (Rx * 10);
+                            break;
+
+                        case 3:
+                            dato += Rx;
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                } else {
+
+                    datoIncorrecto = 1;
+                    UART_write('@');
+                    break;
+                }
+            }
+            break;
+
+        case 5:
+            for (T_INT i = 0; i < 5; i++) {
+
+                Rx = UART_read();
+
+                if (Rx >= 48 && Rx <= 57) {
+
+                    Rx -= 48;
+
+                    switch (i) {
+                        case 0:
+                            dato = Rx;
+                            dato *= 10000;
+                            break;
+
+                        case 1:
+                            dato += (Rx * 1000);
+                            break;
+
+                        case 2:
+                            dato += (Rx * 100);
+                            break;
+
+                        case 3:
+                            dato += (Rx * 10);
+
+                        case 4:
+                            dato += Rx;
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                } else {
+
+                    datoIncorrecto = 1;
+                    UART_write('@');
+                    break;
+                }
+            }
+            break;
+
+        default:
+            break;
+    }
+
+
+
+    if (esperandoDatos || datoIncorrecto) {
+
+
+        return '@';
+    } else
+        return dato;
+
+}
+
+void limpiarBuffer(void) {
+    for (T_INT i = 0; i < 50; i++) {
+        buffer[i] = 0;
+    }
+
+    buffer[50 - 1] = '\0';
+}
+
+void asignarSetPoint(void) {
+
+    T_ULONG setPointTemp;
+
+    setPointTemp = getValue(5);
+
+    if (setPointTemp != '@') {
+
+        setPoint = setPointTemp;
+        UART_write('E');
+
+    }
+}
+# 11 "main.c" 2
+
+
+void __attribute__((picinterrupt(("")))) desbordamiento(void) {
+
+    if (INTCONbits.TMR0IF) {
+
+        if (esperandoDatos) {
+
+            tiempoInactividadTrans++;
+
+            if (tiempoInactividadTrans == 1)
+                esperaDatoConcluida = 1;
+
+
+        }
+
+        INTCONbits.TMR0IF = 0;
+        TMR0 = VALOR_TIMER0;
+        overflowTimer = 1;
+
+    }
+
+    if (PIR1bits.RCIF) {
+
+        byteUart = RCREG;
+        datoRecibido = 1;
+
+    }
+
+}
+
+void main(void) {
+
+    UART_init(9600);
+    i2c_iniciar();
+    bh1750_iniciar();
+    configPwm(1);
+    inicializarObjetos();
+
+
+
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+    INTCONbits.TMR0IE = 1;
+
+    PIE1bits.RCIE = 1;
+
+    T0CON = 0b00000111;
+
+    TMR0 = VALOR_TIMER0;
+
+    INTCONbits.TMR0IF = 1;
+
+
+    T0CONbits.TMR0ON = 1;
+
+
+
+    UART_printf("\r\nSistema Iniciado\n\r");
+
+    while (1) {
+
+        if (datoRecibido) {
+
+            datoRecibido = 0;
+            byteUart -= 48;
+            sistemaPrincipal(byteUart);
+
+        }
+
+        if (overflowTimer) {
+
+            esperandoDatos = 0;
+            overflowTimer = 0;
+            sistemaIluminado();
+        }
+
+    }
     return;
 }

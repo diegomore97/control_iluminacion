@@ -1,20 +1,18 @@
-#ifndef UART_H
-#define	UART_H
+void UART_init(T_LONG BAUD);
+T_UBYTE UART_read(void);
+void UART_write(T_BYTE dato);
+void UART_printf(T_BYTE* cadena);
 
-#define RX TRISC7
-#define TX TRISC6
+T_UBYTE tiempoInactividadTrans = 0;
+T_UBYTE byteUart = 0;
+T_UBYTE esperaDatoConcluida = 0;
+T_UBYTE esperandoDatos = 0;
+T_INT VALOR_TIMER0UART = 26473;
 
-void uart_iniciar(T_LONG BAUD);
-T_UBYTE uart_leer(void);
-void uart_escribir(T_BYTE dato);
-void uart_printf(T_BYTE* cadena);
-
-
-void uart_iniciar(T_LONG BAUD) {
-    
+void UART_init(T_LONG BAUD) {
     T_LONG frecuenciaCristal = _XTAL_FREQ;
-    TX = 0; //TX OUTPUT
-    RX = 1; //RX INPUT
+    TRISCbits.TRISC6 = 0; //TX OUTPUT
+    TRISCbits.TRISC7 = 1; //RX INPUT
 
     //Baudios
     SPBRG = (frecuenciaCristal / 16 / BAUD) - 1;
@@ -33,21 +31,31 @@ void uart_iniciar(T_LONG BAUD) {
     RCSTAbits.CREN = 1; //Activamos recepción
 }
 
-T_UBYTE uart_leer(void) {
-    while (!RCIF);
-    RCIF = 0;
-    return RCREG;
+T_UBYTE UART_read(void) {
+
+    TMR0 = VALOR_TIMER0UART; //Overflow cada 10 Segundos
+    esperaDatoConcluida = 0; //Esperar solo 10 segundos a que el usuario ingrese datos
+    esperandoDatos = 1; //Bandera que indica que estamos esperando dato por UART
+    byteUart = 0; //Borrar Byte anterior
+    tiempoInactividadTrans = 0; //Tiempo que ha transcurrido esperando un dato en decenas de segundo
+
+    while (!PIR1bits.RCIF && !esperaDatoConcluida);
+
+    if (!esperaDatoConcluida) {
+        byteUart = RCREG;
+        esperandoDatos = 0;
+    }
+
+    return byteUart;
 }
 
-void uart_escribir(T_BYTE dato) {
+void UART_write(T_BYTE dato) {
     TXREG = dato;
     while (!TXSTAbits.TRMT);
 }
 
-void uart_printf(T_BYTE* cadena) {
+void UART_printf(T_BYTE* cadena) {
     while (*cadena) {
-        uart_escribir(*cadena++);
+        UART_write(*cadena++);
     }
 }
-
-#endif	

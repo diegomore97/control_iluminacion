@@ -9,6 +9,10 @@
       <itemPath>bh1750.h</itemPath>
       <itemPath>../iluminacion.X/UART.h</itemPath>
       <itemPath>../iluminacion.X/variables.h</itemPath>
+      <itemPath>control.h</itemPath>
+      <itemPath>pwm.h</itemPath>
+      <itemPath>RTC.h</itemPath>
+      <itemPath>AUTOMATIZADOR.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
