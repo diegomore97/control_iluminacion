@@ -19,6 +19,8 @@
 #define ENVIANDO_DATOS_SENSORES 'O' //El otro micro ya nos confirmo que mandara los datos
 #define INTERRUMPIR_COMANDOS '&' //Se utiliza esta constante para la opcion de leer sensores
 
+#define DEMO 1 // 1 = Modo Demo | 0 Modo Real (MINUTOS * 60) = Sistema a base de horas
+
 typedef struct {
     T_UBYTE hora; //0 - 23
     T_BYTE dias[DIAS_SEMANA + 1]; //Dias para regar
@@ -461,9 +463,15 @@ void sistemaIluminado(void) {
 
         if (horaIluminar()) {
 
-            //UART_printf("\n\nRiego Iniciado!\n");          
-            minutosIluminar = (horarios[hora].tiempoIluminar) * MINUTOS_HORA;
+            //UART_printf("\n\nRiego Iniciado!\n");    
+            if (DEMO)
+                minutosIluminar = horarios[hora].tiempoIluminar;
+            else
+                minutosIluminar = (horarios[hora].tiempoIluminar) * MINUTOS_HORA;
+
             pwmDuty(100, CANAL_1); //Etapa de pruebas xd, comentar despues
+            iluminando = 1;
+            horarios[hora].iluminado = 0;
 
         }
     }

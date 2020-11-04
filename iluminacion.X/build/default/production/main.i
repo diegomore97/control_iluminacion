@@ -6313,7 +6313,7 @@ T_UBYTE convertirDato(T_UBYTE dato) {
 # 10 "main.c" 2
 
 # 1 "./AUTOMATIZADOR.h" 1
-# 22 "./AUTOMATIZADOR.h"
+# 24 "./AUTOMATIZADOR.h"
 typedef struct {
     T_UBYTE hora;
     T_BYTE dias[7 + 1];
@@ -6757,8 +6757,14 @@ void sistemaIluminado(void) {
         if (horaIluminar()) {
 
 
-            minutosIluminar = (horarios[hora].tiempoIluminar) * 60;
+            if (1)
+                minutosIluminar = horarios[hora].tiempoIluminar;
+            else
+                minutosIluminar = (horarios[hora].tiempoIluminar) * 60;
+
             pwmDuty(100, 1);
+            iluminando = 1;
+            horarios[hora].iluminado = 0;
 
         }
     }
