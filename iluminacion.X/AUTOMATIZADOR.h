@@ -5,7 +5,7 @@
 #define DIAS_SEMANA 7
 #define MINUTOS_HORA 60
 
-#define REPETICIONES 6  //REPETICIONES PARA QUE TRANSCURRA 1 MINUTO
+#define REPETICIONES 30  //REPETICIONES PARA QUE TRANSCURRA 1 MINUTO
 #define MAX_TIEMPO_INACTIVIDAD 1 //Decenas de segundo de espera para que el 
 //usuario setie datos en el sistema a traves del protocolo UART
 #define TAMANO_CADENA 50 
@@ -39,7 +39,7 @@ T_UBYTE flagIluminado;
 T_BYTE buffer[TAMANO_CADENA];
 T_BYTE buffer2[TAMANO_CADENA];
 
-T_INT VALOR_TIMER0 = 26473;
+T_LONG VALOR_TIMER0 = 57723;
 T_INT contInterrupciones = 0;
 T_UWORD minutosIluminar = 0;
 T_UWORD minutosTranscurridos = 0;
@@ -70,6 +70,7 @@ T_ULONG getValue(T_WORD numCharacters); //ASCII TO NUMBER FROM UART
 void configBluetoothHC_06(void);
 void limpiarBuffer(void);
 void asignarSetPoint(void);
+T_BOOL rangoPermitidoSetPoint(void);
 
 T_INT horaIluminar() {
 
@@ -95,6 +96,7 @@ void inicializarObjetos() {
     }
 
     pwmDuty(0, CANAL_1);
+    setPointAnterior = setPoint;
 
 }
 
@@ -430,8 +432,20 @@ void sistemaIluminado(void) {
 
     if (iluminando) {
 
-        //luzMedida = dameValorLux(cont_H_res_mode1);            
-        //PID();
+        luzMedida = dameValorLux(cont_H_res_mode1);
+
+        if (rangoPermitidoSetPoint() && !cambioSetPoint) {
+
+        } else {
+
+            if (cambioSetPoint) {
+                cambioSetPoint = 0;
+                reiniciarPID = 1;
+                pwmDuty(MIN_PWM, CANAL_1);
+            }
+
+            PID();
+        }
 
         contInterrupciones++;
 
@@ -469,7 +483,6 @@ void sistemaIluminado(void) {
             else
                 minutosIluminar = (horarios[hora].tiempoIluminar) * MINUTOS_HORA;
 
-            pwmDuty(100, CANAL_1); //Etapa de pruebas xd, comentar despues
             iluminando = 1;
             horarios[hora].iluminado = 0;
 
@@ -766,6 +779,14 @@ void limpiarBuffer(void) {
     buffer[TAMANO_CADENA - 1] = '\0';
 }
 
+T_BOOL rangoPermitidoSetPoint(void) {
+    if ((luzMedida <= (setPoint + MAX_TOLERANCIA_ERROR)) && (luzMedida >= (setPoint - MAX_TOLERANCIA_ERROR)))
+        return 1;
+    else
+        return 0;
+
+}
+
 void asignarSetPoint(void) {
 
     T_ULONG setPointTemp = 0;
@@ -779,6 +800,15 @@ void asignarSetPoint(void) {
     if (setPointTemp != SETEO_DENEGADO) {
 
         setPoint = setPointTemp;
+
+        if (setPoint != setPointAnterior)
+            cambioSetPoint = 1;
+        else
+            cambioSetPoint = 0;
+
+        setPointAnterior = setPoint;
+
+
         UART_write(SETEO_EXITOSO);
 
     }

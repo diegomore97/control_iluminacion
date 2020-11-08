@@ -3,47 +3,49 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"74 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"75 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _horaIluminar horaIluminar `(i  1 e 2 0 ]
-"80
+"81
 [v _inicializarObjetos inicializarObjetos `(v  1 e 1 0 ]
-"101
+"103
 [v _dameHoraActual dameHoraActual `(v  1 e 1 0 ]
-"108
+"110
 [v _dameDiaActual dameDiaActual `(v  1 e 1 0 ]
-"113
+"115
 [v _fijaDiaRtc fijaDiaRtc `(v  1 e 1 0 ]
-"130
+"132
 [v _setRtc setRtc `(uc  1 e 1 0 ]
-"149
+"151
 [v _escribe_eeprom escribe_eeprom `(v  1 e 1 0 ]
-"161
+"163
 [v _leer_eeprom leer_eeprom `(uc  1 e 1 0 ]
-"178
+"180
 [v _escribeHorariosMemoria escribeHorariosMemoria `(v  1 e 1 0 ]
-"197
+"199
 [v _leeHorariosMemoria leeHorariosMemoria `(v  1 e 1 0 ]
-"228
+"230
 [v _setRtcDefault setRtcDefault `(v  1 e 1 0 ]
-"242
+"244
 [v _fijaHoraRtc fijaHoraRtc `(v  1 e 1 0 ]
-"262
+"264
 [v _asignarHorarios asignarHorarios `(v  1 e 1 0 ]
-"327
+"329
 [v _setTiempoIluminar setTiempoIluminar `(v  1 e 1 0 ]
-"375
+"377
 [v _sistemaPrincipal sistemaPrincipal `(v  1 e 1 0 ]
-"427
+"429
 [v _sistemaIluminado sistemaIluminado `(v  1 e 1 0 ]
-"481
+"494
 [v _dameDatosSistema dameDatosSistema `(v  1 e 1 0 ]
-"554
+"567
 [v _mostrarDatosSensores mostrarDatosSensores `(v  1 e 1 0 ]
-"574
+"587
 [v _getValue getValue `(ul  1 e 4 0 ]
-"761
+"774
 [v _limpiarBuffer limpiarBuffer `(v  1 e 1 0 ]
-"769
+"782
+[v _rangoPermitidoSetPoint rangoPermitidoSetPoint `(uc  1 e 1 0 ]
+"790
 [v _asignarSetPoint asignarSetPoint `(v  1 e 1 0 ]
 "27 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
 [v _bh1750_iniciar bh1750_iniciar `(v  1 e 1 0 ]
@@ -53,6 +55,8 @@
 [v _bh1750_leer bh1750_leer `(ul  1 e 4 0 ]
 "56
 [v _dameValorLux dameValorLux `(ul  1 e 4 0 ]
+"26 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/control.h
+[v _PID PID `(v  1 e 1 0 ]
 "13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
 [v _i2c_iniciar i2c_iniciar `(v  1 e 1 0 ]
 "29
@@ -157,13 +161,13 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+"14 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 [v _desbordamiento desbordamiento `IIH(v  1 e 1 0 ]
-"42
+"43
 [v _main main `(v  1 e 1 0 ]
-[s S294 . 12 `uc 1 hora 1 0 `[8]uc 1 dias 8 1 `uc 1 iluminar 1 9 `uc 1 iluminado 1 10 `uc 1 tiempoIluminar 1 11 ]
+[s S299 . 12 `uc 1 hora 1 0 `[8]uc 1 dias 8 1 `uc 1 iluminar 1 9 `uc 1 iluminado 1 10 `uc 1 tiempoIluminar 1 11 ]
 "32 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
-[v _horarios horarios `[24]S294  1 e 288 0 ]
+[v _horarios horarios `[24]S299  1 e 288 0 ]
 "33
 [v _hora hora `uc  1 e 1 0 ]
 [v _minutos minutos `uc  1 e 1 0 ]
@@ -183,7 +187,7 @@
 "40
 [v _buffer2 buffer2 `[50]uc  1 e 50 0 ]
 "42
-[v _VALOR_TIMER0 VALOR_TIMER0 `i  1 e 2 0 ]
+[v _VALOR_TIMER0 VALOR_TIMER0 `l  1 e 4 0 ]
 "43
 [v _contInterrupciones contInterrupciones `i  1 e 2 0 ]
 "44
@@ -194,11 +198,14 @@
 [v _iluminando iluminando `uc  1 e 1 0 ]
 "47
 [v _setPointIntro setPointIntro `uc  1 e 1 0 ]
-"14 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/control.h
+"19 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/control.h
 [v _reiniciarPID reiniciarPID `uc  1 e 1 0 ]
-"15
+"20
 [v _luzMedida luzMedida `ul  1 e 4 0 ]
 [v _setPoint setPoint `ul  1 e 4 0 ]
+[v _setPointAnterior setPointAnterior `ul  1 e 4 0 ]
+"21
+[v _cambioSetPoint cambioSetPoint `uc  1 e 1 0 ]
 "6 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
 [v _tiempoInactividadTrans tiempoInactividadTrans `uc  1 e 1 0 ]
 "7
@@ -245,7 +252,7 @@
 ]
 [u S38 . 1 `S24 1 . 1 0 `S31 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES38  1 e 1 @3988 ]
-[s S310 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S315 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -255,14 +262,14 @@
 `uc 1 SPPIE 1 0 :1:7 
 ]
 "4408
-[s S319 . 1 `uc 1 . 1 0 :4:0 
+[s S324 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TX1IE 1 0 :1:4 
 `uc 1 RC1IE 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 PSPIE 1 0 :1:7 
 ]
-[u S325 . 1 `S310 1 . 1 0 `S319 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES325  1 e 1 @3997 ]
+[u S330 . 1 `S315 1 . 1 0 `S324 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES330  1 e 1 @3997 ]
 [s S164 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
@@ -373,7 +380,7 @@
 [v _PR2 PR2 `VEuc  1 e 1 @4043 ]
 "8069
 [v _T0CON T0CON `VEuc  1 e 1 @4053 ]
-[s S416 . 1 `uc 1 T0PS 1 0 :3:0 
+[s S425 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -381,15 +388,15 @@
 `uc 1 TMR0ON 1 0 :1:7 
 ]
 "8089
-[s S423 . 1 `uc 1 T0PS0 1 0 :1:0 
+[s S432 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 ]
-[u S427 . 1 `S416 1 . 1 0 `S423 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES427  1 e 1 @4053 ]
+[u S436 . 1 `S425 1 . 1 0 `S432 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES436  1 e 1 @4053 ]
 "8139
 [v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
-[s S366 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S375 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -399,7 +406,7 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "8614
-[s S375 . 1 `uc 1 . 1 0 :1:0 
+[s S384 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -408,12 +415,12 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S384 . 1 `uc 1 . 1 0 :6:0 
+[s S393 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S388 . 1 `S366 1 . 1 0 `S375 1 . 1 0 `S384 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES388  1 e 1 @4082 ]
+[u S397 . 1 `S375 1 . 1 0 `S384 1 . 1 0 `S393 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES397  1 e 1 @4082 ]
 "8910
 [v _ACKDT ACKDT `VEb  1 e 0 @32301 ]
 "8913
@@ -446,122 +453,88 @@
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"42 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+"43 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"90
+"91
 } 0
-"375 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"377 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _sistemaPrincipal sistemaPrincipal `(v  1 e 1 0 ]
 {
 [v sistemaPrincipal@opcion opcion `uc  1 a 1 wreg ]
 [v sistemaPrincipal@opcion opcion `uc  1 a 1 wreg ]
-"377
+"379
 [v sistemaPrincipal@opcion opcion `uc  1 a 1 93 ]
-"425
+"427
 } 0
-"327
+"329
 [v _setTiempoIluminar setTiempoIluminar `(v  1 e 1 0 ]
 {
-"329
+"331
 [v setTiempoIluminar@hora hora `uc  1 a 1 36 ]
-"330
+"332
 [v setTiempoIluminar@tiempoIluminar tiempoIluminar `uc  1 a 1 35 ]
-"358
+"360
 } 0
-"228
+"230
 [v _setRtcDefault setRtcDefault `(v  1 e 1 0 ]
 {
-"229
+"231
 [v setRtcDefault@horaRtc horaRtc `uc  1 a 1 4 ]
-"240
+"242
 } 0
-"554
+"567
 [v _mostrarDatosSensores mostrarDatosSensores `(v  1 e 1 0 ]
 {
-"562
+"575
 } 0
-"56 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
-[v _dameValorLux dameValorLux `(ul  1 e 4 0 ]
-{
-[v dameValorLux@modo modo `uc  1 a 1 wreg ]
-"57
-[v dameValorLux@valorLux valorLux `ul  1 a 4 1 ]
-"56
-[v dameValorLux@modo modo `uc  1 a 1 wreg ]
-[v dameValorLux@modo modo `uc  1 a 1 0 ]
-"65
-} 0
-"39
-[v _bh1750_leer bh1750_leer `(ul  1 e 4 0 ]
-{
-"40
-[v bh1750_leer@valor valor `ul  1 a 4 82 ]
-"42
-[v bh1750_leer@hb hb `uc  1 a 1 81 ]
-"41
-[v bh1750_leer@lb lb `uc  1 a 1 80 ]
-"54
-} 0
-"103 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
-[v _i2c_recibe_datoACK i2c_recibe_datoACK `(uc  1 e 1 0 ]
-{
-[v i2c_recibe_datoACK@a a `uc  1 a 1 wreg ]
-"105
-[v i2c_recibe_datoACK@datoleido datoleido `uc  1 a 1 2 ]
-"103
-[v i2c_recibe_datoACK@a a `uc  1 a 1 wreg ]
-"108
-[v i2c_recibe_datoACK@a a `uc  1 a 1 1 ]
-"121
-} 0
-"197 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"199
 [v _leeHorariosMemoria leeHorariosMemoria `(v  1 e 1 0 ]
 {
-"209
+"211
 [v leeHorariosMemoria@j j `i  1 a 2 9 ]
-"206
+"208
 [v leeHorariosMemoria@i i `i  1 a 2 13 ]
-"199
+"201
 [v leeHorariosMemoria@contMemoria contMemoria `i  1 a 2 11 ]
-"200
+"202
 [v leeHorariosMemoria@caracterLeido caracterLeido `uc  1 a 1 8 ]
-"226
+"228
 } 0
-"161
+"163
 [v _leer_eeprom leer_eeprom `(uc  1 e 1 0 ]
 {
-"163
+"165
 [v leer_eeprom@dato dato `uc  1 a 1 5 ]
-"161
+"163
 [v leer_eeprom@direccion direccion `us  1 p 2 2 ]
-"176
+"178
 } 0
-"242
+"244
 [v _fijaHoraRtc fijaHoraRtc `(v  1 e 1 0 ]
 {
-"260
+"262
 } 0
-"113
+"115
 [v _fijaDiaRtc fijaDiaRtc `(v  1 e 1 0 ]
 {
-"128
-} 0
 "130
+} 0
+"132
 [v _setRtc setRtc `(uc  1 e 1 0 ]
 {
 [v setRtc@direccion direccion `uc  1 a 1 wreg ]
-"132
-[v setRtc@dato dato `uc  1 a 1 37 ]
 "134
+[v setRtc@dato dato `uc  1 a 1 37 ]
+"136
 [v setRtc@datoRtc datoRtc `uc  1 a 1 36 ]
-"133
+"135
 [v setRtc@seteado seteado `uc  1 a 1 35 ]
-"130
+"132
 [v setRtc@direccion direccion `uc  1 a 1 wreg ]
-"133
+"135
 [v setRtc@direccion direccion `uc  1 a 1 34 ]
-"147
+"149
 } 0
 "2 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/RTC.h
 [v _escribe_rtc escribe_rtc `(v  1 e 1 0 ]
@@ -596,21 +569,21 @@
 [v ___awdiv@divisor divisor `i  1 p 2 2 ]
 "41
 } 0
-"481 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"494 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _dameDatosSistema dameDatosSistema `(v  1 e 1 0 ]
 {
-"534
+"547
 [v dameDatosSistema@i i `i  1 a 2 66 ]
-"483
+"496
 [v dameDatosSistema@bufferHorario bufferHorario `[30]uc  1 a 30 28 ]
-"552
+"565
 } 0
 "9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[s S1312 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[s S1321 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
 "13
-[v sprintf@f f `S1312  1 a 6 22 ]
+[v sprintf@f f `S1321  1 a 6 22 ]
 "12
 [v sprintf@ap ap `[1]*.39v  1 a 2 20 ]
 "9
@@ -623,9 +596,9 @@
 {
 "1371
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 89 ]
-[s S748 _IO_FILE 0 ]
+[s S761 _IO_FILE 0 ]
 "1368
-[v vfprintf@fp fp `*.39S748  1 p 2 0 ]
+[v vfprintf@fp fp `*.39S761  1 p 2 0 ]
 [v vfprintf@fmt fmt `*.25Cuc  1 p 2 2 ]
 [v vfprintf@ap ap `*.39*.39v  1 p 2 4 ]
 "1382
@@ -639,9 +612,9 @@
 [v vfpfcnvrt@done done `i  1 a 2 83 ]
 "672
 [v vfpfcnvrt@cp cp `*.39uc  1 a 2 81 ]
-[s S748 _IO_FILE 0 ]
+[s S761 _IO_FILE 0 ]
 "670
-[v vfpfcnvrt@fp fp `*.39S748  1 p 2 63 ]
+[v vfpfcnvrt@fp fp `*.39S761  1 p 2 63 ]
 [v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 65 ]
 [v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
 "1365
@@ -659,9 +632,9 @@
 "549
 [v stoa@w w `i  1 a 2 23 ]
 [v stoa@i i `i  1 a 2 21 ]
-[s S748 _IO_FILE 0 ]
+[s S761 _IO_FILE 0 ]
 "546
-[v stoa@fp fp `*.39S748  1 p 2 9 ]
+[v stoa@fp fp `*.39S761  1 p 2 9 ]
 [v stoa@s s `*.39uc  1 p 2 11 ]
 "548
 [v stoa@F1139 F1139 `[7]uc  1 s 7 F1139 ]
@@ -677,9 +650,9 @@
 [v dtoa@s s `i  1 a 2 51 ]
 [v dtoa@w w `i  1 a 2 49 ]
 [v dtoa@p p `i  1 a 2 47 ]
-[s S748 _IO_FILE 0 ]
+[s S761 _IO_FILE 0 ]
 "274
-[v dtoa@fp fp `*.39S748  1 p 2 27 ]
+[v dtoa@fp fp `*.39S761  1 p 2 27 ]
 [v dtoa@d d `o  1 p 8 29 ]
 "315
 } 0
@@ -689,9 +662,9 @@
 "74
 [v pad@w w `i  1 a 2 25 ]
 [v pad@i i `i  1 a 2 23 ]
-[s S748 _IO_FILE 0 ]
+[s S761 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.39S748  1 p 2 16 ]
+[v pad@fp fp `*.39S761  1 p 2 16 ]
 [v pad@buf buf `*.39uc  1 p 2 18 ]
 [v pad@p p `i  1 p 2 20 ]
 "95
@@ -714,28 +687,22 @@
 [v fputs@c c `uc  1 a 1 13 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 9 ]
-[s S1312 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.39S1312  1 p 2 11 ]
+[s S1321 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S1321  1 p 2 11 ]
 "19
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[s S1312 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.39S1312  1 p 2 2 ]
+[s S1321 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S1321  1 p 2 2 ]
 "21
 } 0
 "7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\putch.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 "9
-} 0
-"1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
-[v _abs abs `(i  1 e 2 0 ]
-{
-[v abs@a a `i  1 p 2 18 ]
-"4
 } 0
 "9 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aomod.c
 [v ___aomod __aomod `(o  1 e 8 0 ]
@@ -783,12 +750,12 @@
 [v isdigit@c c `i  1 p 2 0 ]
 "8
 } 0
-"761 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"774 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _limpiarBuffer limpiarBuffer `(v  1 e 1 0 ]
 {
-"762
+"775
 [v limpiarBuffer@i i `i  1 a 2 0 ]
-"767
+"780
 } 0
 "57 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
 [v _UART_printf UART_printf `(v  1 e 1 0 ]
@@ -796,46 +763,46 @@
 [v UART_printf@cadena cadena `*.35uc  1 p 2 1 ]
 "61
 } 0
-"769 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"790 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _asignarSetPoint asignarSetPoint `(v  1 e 1 0 ]
 {
-"771
+"792
 [v asignarSetPoint@setPointTemp setPointTemp `ul  1 a 4 38 ]
-"787
+"817
 } 0
-"262
+"264
 [v _asignarHorarios asignarHorarios `(v  1 e 1 0 ]
 {
-"285
+"287
 [v asignarHorarios@i i `i  1 a 2 36 ]
-"265
+"267
 [v asignarHorarios@Rx Rx `uc  1 a 1 40 ]
-"264
-[v asignarHorarios@hora hora `uc  1 a 1 39 ]
 "266
+[v asignarHorarios@hora hora `uc  1 a 1 39 ]
+"268
 [v asignarHorarios@diaIluminar diaIluminar `uc  1 a 1 38 ]
-"325
+"327
 } 0
-"574
+"587
 [v _getValue getValue `(ul  1 e 4 0 ]
 {
-"704
-[v getValue@i_703 i `i  1 a 2 27 ]
-"664
-[v getValue@i_702 i `i  1 a 2 25 ]
-"628
-[v getValue@i_701 i `i  1 a 2 23 ]
-"596
+"717
+[v getValue@i_715 i `i  1 a 2 27 ]
+"677
+[v getValue@i_714 i `i  1 a 2 25 ]
+"641
+[v getValue@i_713 i `i  1 a 2 23 ]
+"609
 [v getValue@i i `i  1 a 2 21 ]
-"578
+"591
 [v getValue@dato dato `ul  1 a 4 29 ]
-"576
+"589
 [v getValue@Rx Rx `uc  1 a 1 33 ]
-"577
+"590
 [v getValue@datoIncorrecto datoIncorrecto `uc  1 a 1 20 ]
-"574
+"587
 [v getValue@numCharacters numCharacters `s  1 p 2 12 ]
-"759
+"772
 } 0
 "52 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/UART.h
 [v _UART_write UART_write `(v  1 e 1 0 ]
@@ -850,43 +817,82 @@
 {
 "50
 } 0
-"178 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"180 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _escribeHorariosMemoria escribeHorariosMemoria `(v  1 e 1 0 ]
 {
-"188
+"190
 [v escribeHorariosMemoria@j j `i  1 a 2 12 ]
-"185
+"187
 [v escribeHorariosMemoria@i i `i  1 a 2 16 ]
-"180
+"182
 [v escribeHorariosMemoria@contMemoria contMemoria `i  1 a 2 14 ]
-"195
+"197
 } 0
-"149
+"151
 [v _escribe_eeprom escribe_eeprom `(v  1 e 1 0 ]
 {
 [v escribe_eeprom@direccion direccion `us  1 p 2 6 ]
 [v escribe_eeprom@dato dato `uc  1 p 1 8 ]
-"159
+"161
 } 0
-"427
+"429
 [v _sistemaIluminado sistemaIluminado `(v  1 e 1 0 ]
 {
-"479
+"492
 } 0
-"74
+"782
+[v _rangoPermitidoSetPoint rangoPermitidoSetPoint `(uc  1 e 1 0 ]
+{
+"788
+} 0
+"75
 [v _horaIluminar horaIluminar `(i  1 e 2 0 ]
 {
-"78
+"79
 } 0
-"101
+"56 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/bh1750.h
+[v _dameValorLux dameValorLux `(ul  1 e 4 0 ]
+{
+[v dameValorLux@modo modo `uc  1 a 1 wreg ]
+"57
+[v dameValorLux@valorLux valorLux `ul  1 a 4 1 ]
+"56
+[v dameValorLux@modo modo `uc  1 a 1 wreg ]
+[v dameValorLux@modo modo `uc  1 a 1 0 ]
+"65
+} 0
+"39
+[v _bh1750_leer bh1750_leer `(ul  1 e 4 0 ]
+{
+"40
+[v bh1750_leer@valor valor `ul  1 a 4 82 ]
+"42
+[v bh1750_leer@hb hb `uc  1 a 1 81 ]
+"41
+[v bh1750_leer@lb lb `uc  1 a 1 80 ]
+"54
+} 0
+"103 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/I2C.h
+[v _i2c_recibe_datoACK i2c_recibe_datoACK `(uc  1 e 1 0 ]
+{
+[v i2c_recibe_datoACK@a a `uc  1 a 1 wreg ]
+"105
+[v i2c_recibe_datoACK@datoleido datoleido `uc  1 a 1 2 ]
+"103
+[v i2c_recibe_datoACK@a a `uc  1 a 1 wreg ]
+"108
+[v i2c_recibe_datoACK@a a `uc  1 a 1 1 ]
+"121
+} 0
+"103 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _dameHoraActual dameHoraActual `(v  1 e 1 0 ]
 {
-"106
-} 0
 "108
+} 0
+"110
 [v _dameDiaActual dameDiaActual `(v  1 e 1 0 ]
 {
-"111
+"113
 } 0
 "13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/RTC.h
 [v _leer_rtc leer_rtc `(uc  1 e 1 0 ]
@@ -923,16 +929,37 @@
 [v convertirDato@dato dato `uc  1 a 1 1 ]
 "33
 } 0
-"80 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
+"26 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/control.h
+[v _PID PID `(v  1 e 1 0 ]
+{
+"28
+[v PID@dif dif `ul  1 a 4 90 ]
+"29
+[v PID@pwmSal pwmSal `i  1 a 2 88 ]
+"30
+[v PID@P P `ul  1 s 4 P ]
+[v PID@I I `ul  1 s 4 I ]
+[v PID@D D `ul  1 s 4 D ]
+"31
+[v PID@difAnt difAnt `ul  1 s 4 difAnt ]
+"59
+} 0
+"1 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 18 ]
+"4
+} 0
+"81 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/AUTOMATIZADOR.h
 [v _inicializarObjetos inicializarObjetos `(v  1 e 1 0 ]
 {
-"91
+"92
 [v inicializarObjetos@j j `i  1 a 2 88 ]
-"89
-[v inicializarObjetos@i_594 i `i  1 a 2 90 ]
-"82
+"90
+[v inicializarObjetos@i_605 i `i  1 a 2 90 ]
+"83
 [v inicializarObjetos@i i `i  1 a 2 92 ]
-"99
+"101
 } 0
 "20 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X/pwm.h
 [v _pwmDuty pwmDuty `(v  1 e 1 0 ]
@@ -992,17 +1019,17 @@
 "8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1143 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1152 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1148 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S1151 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1143 1 fAsBytes 4 0 `S1148 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1151  1 a 4 58 ]
+[s S1157 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1160 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1152 1 fAsBytes 4 0 `S1157 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1160  1 a 4 58 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 52 ]
-[s S1219 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1228 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1222 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1219 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1222  1 a 2 62 ]
+[u S1231 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1228 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1231  1 a 2 62 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 57 ]
 "11
@@ -1112,8 +1139,8 @@
 [v ___aldiv@divisor divisor `l  1 p 4 16 ]
 "41
 } 0
-"13 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
+"14 C:\Users\Diego Moreno\Documents\Mis Proyectos con Pic\Control Iluminacion\iluminacion.X\main.c
 [v _desbordamiento desbordamiento `IIH(v  1 e 1 0 ]
 {
-"40
+"41
 } 0

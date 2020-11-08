@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <math.h>
 #include "config.h"
 #include "variables.h"
 #include "UART.h"
